@@ -318,13 +318,16 @@
   });
 
   // ================= INIT =================
-  document.addEventListener(
-    "DOMContentLoaded",
-    function () {
-      loadSliders();
-      loadAnnouncement();
-      runWhenIdle(loadCertificates);
-      runWhenIdle(() => loadScriptOnce("https://elfsightcdn.com/platform.js"), 4500);
-    },
-  );
+  function initHomeApi() {
+    loadSliders();
+    loadAnnouncement();
+    runWhenIdle(loadCertificates);
+    runWhenIdle(() => loadScriptOnce("https://elfsightcdn.com/platform.js"), 4500);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initHomeApi, { once: true });
+  } else {
+    initHomeApi();
+  }
 })();

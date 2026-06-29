@@ -1,6 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   poweredByHeader: false,
+  outputFileTracingIncludes: {
+    "/[[...path]]": [
+      "./*.html",
+      "./config/**/*",
+      "./controllers/**/*",
+      "./favicon/**/*",
+      "./images/**/*",
+      "./includes/**/*",
+      "./style/**/*"
+    ]
+  },
   async headers() {
     return [
       {

@@ -1,0 +1,1861 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glacier Treks & Adventure | Best Trekking Packages in Sikkim</title>
+  <meta name="description"
+    content="Discover the best trekking packages in Sikkim, Darjeeling, and North Bengal with Glacier Treks & Adventure. Explore Himalayan trails, camping tours, and guided mountain adventures." />
+  <meta name="keywords"
+    content="trekking packages in Sikkim, Himalayan treks, trekking in Darjeeling, North Bengal trekking, adventure tours, mountain trekking, guided treks, Glacier Treks & Adventure" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon" sizes="16x16" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <link rel="stylesheet" href="/style/package.css" />
+
+  <style>
+    /* =========================
+     Paragraph / body text
+  ========================== */
+    #pagecontent p,
+    #pagecontent li,
+    #pagecontent span,
+    #pagecontent a,
+    #pagecontent div,
+    #overview p,
+    #overview li,
+    #overview span,
+    #overview a,
+    #overview div,
+    #inclusionsContent p,
+    #inclusionsContent li,
+    #inclusionsContent span,
+    #inclusionsContent a,
+    #inclusionsContent div,
+    #inclusionsPera p,
+    #inclusionsPera li,
+    #inclusionsPera span,
+    #inclusionsPera a,
+    #inclusionsPera div,
+    #itineraryContent p,
+    #itineraryContent li,
+    #itineraryContent span,
+    #itineraryContent a,
+    #itineraryContent div,
+    #dayTabsWrapper p,
+    #dayTabsWrapper li,
+    #dayTabsWrapper span,
+    #dayTabsWrapper a,
+    #dayTabsWrapper div,
+    #faq-content p,
+    #faq-content li,
+    #faq-content span,
+    #faq-content a,
+    #faq-content div {
+      font-family: "Plus Jakarta Sans", sans-serif !important;
+      font-size: 16px !important;
+      font-weight: 400 !important;
+      line-height: 1.8 !important;
+      color: #475569 !important;
+      margin-bottom: 10px !important;
+    }
+
+    /* h1 */
+    #pagecontent h1,
+    #overview h1,
+    #inclusionsContent h1,
+    #inclusionsPera h1,
+    #itineraryContent h1,
+    #dayTabsWrapper h1,
+    #faq-content h1 {
+      font-family: "Gloock", serif !important;
+      font-size: 36px !important;
+      font-weight: 700 !important;
+      line-height: 1.2 !important;
+      color: #0f172a !important;
+      margin: 10px 0 14px !important;
+    }
+
+    /* h2 */
+    #pagecontent h2,
+    #overview h2,
+    #inclusionsContent h2,
+    #inclusionsPera h2,
+    #itineraryContent h2,
+    #dayTabsWrapper h2,
+    #faq-content h2 {
+      font-family: "Gloock", serif !important;
+      font-size: 24px !important;
+      font-weight: 700 !important;
+      line-height: 1.3 !important;
+      color: #0f172a !important;
+      margin: 10px 0 12px !important;
+    }
+
+    /* h3 */
+    #pagecontent h3,
+    #overview h3,
+    #inclusionsContent h3,
+    #inclusionsPera h3,
+    #itineraryContent h3,
+    #dayTabsWrapper h3,
+    #faq-content h3 {
+      font-family: "Gloock", serif !important;
+      font-size: 18.72px !important;
+      font-weight: 600 !important;
+      line-height: 1.4 !important;
+      color: #0f172a !important;
+      margin: 10px 0 10px !important;
+    }
+
+    /* h4 */
+    #pagecontent h4,
+    #overview h4,
+    #inclusionsContent h4,
+    #inclusionsPera h4,
+    #itineraryContent h4,
+    #dayTabsWrapper h4,
+    #faq-content h4 {
+      font-family: "Gloock", serif !important;
+      font-size: 16px !important;
+      font-weight: 600 !important;
+      line-height: 1.4 !important;
+      color: #0f172a !important;
+      margin: 10px 0 8px !important;
+    }
+
+    /* h5 */
+    #pagecontent h5,
+    #overview h5,
+    #inclusionsContent h5,
+    #inclusionsPera h5,
+    #itineraryContent h5,
+    #dayTabsWrapper h5,
+    #faq-content h5 {
+      font-family: "Gloock", serif !important;
+      font-size: 13.28px !important;
+      font-weight: 500 !important;
+      line-height: 1.5 !important;
+      color: #0f172a !important;
+      margin: 10px 0 6px !important;
+    }
+
+    /* h6 */
+    #pagecontent h6,
+    #overview h6,
+    #inclusionsContent h6,
+    #inclusionsPera h6,
+    #itineraryContent h6,
+    #dayTabsWrapper h6,
+    #faq-content h6 {
+      font-family: "Gloock", serif !important;
+      font-size: 10.72px !important;
+      font-weight: 500 !important;
+      line-height: 1.5 !important;
+      color: #0f172a !important;
+      margin: 10px 0 4px !important;
+    }
+  </style>
+
+  <!-- for image gallary -->
+  <style>
+    .gallery-img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 24px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .gallery-img:hover {
+      transform: scale(1.03);
+    }
+
+    .gallery-tab {
+      background: #f1f5f9;
+      color: #243146;
+    }
+
+    .active-tab {
+      background: #243146;
+      color: #d5e880;
+    }
+
+    /* scroll bar hide */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+  <!-- gallary  -->
+  <style>
+    .gallery-img {
+      width: 100%;
+      height: 180px;
+      /* mobile */
+      object-fit: cover;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .gallery-img:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
+    }
+
+    /* tablet */
+    @media (min-width: 768px) {
+      .gallery-img {
+        height: 240px;
+      }
+    }
+
+    /* desktop */
+    @media (min-width: 1024px) {
+      .gallery-img {
+        height: 280px;
+      }
+    }
+
+    /* tab buttons */
+    .gallery-tab {
+      background: white;
+      color: #334155;
+      border: 1px solid #e2e8f0;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .gallery-tab:hover {
+      background: #f8fafc;
+    }
+
+    .active-tab {
+      background: #d5e880 !important;
+      color: #0f172a !important;
+      border-color: #d5e880 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header section -->
+  <div id="header"></div>
+
+  <!-- Top banner Section -->
+  <section class="relative w-full min-h-[460px] md:min-h-[600px] overflow-hidden pb-4 md:0">
+    <!-- Background -->
+    <img id="packageBanner" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" width="1920" height="720" alt="Everest Base Camp Trek Banner" fetchpriority="high" decoding="async"
+      class="absolute inset-0 w-full h-full object-cover" />
+
+    <!-- Overlays -->
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-900/45 to-transparent"></div>
+    <div class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-slate-950/70 to-transparent"></div>
+
+    <!-- Header -->
+    <div id="header" class="relative z-30"></div>
+
+    <!-- Content -->
+    <div class="relative z-20 flex items-center justify-center text-center min-h-[460px] md:min-h-[600px]">
+      <!-- PDF Download Button -->
+      <a href="/pdf/package-details.pdf" download class="absolute bottom-6 right-4 md:bottom-10 md:right-20
+           inline-flex items-center gap-2
+           px-4 py-2 md:px-5 md:py-3
+           rounded-full
+           bg-[#d5e880]
+           text-slate-900
+           font-semibold
+           text-sm md:text-base
+           plus-jakarta-sans
+           shadow-xl
+           hover:bg-white
+           hover:scale-105
+           transition duration-300
+           z-30">
+        <!-- Download Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 md:w-5 md:h-5" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v10m0 0l-4-4m4 4l4-4M4 20h16" />
+        </svg>
+        PDF
+      </a>
+
+      <!-- Main Content -->
+      <div class="max-w-7xl mx-auto w-full px-6 lg:px-10 pt-28 md:pt-32">
+        <div class="max-w-4xl mx-auto">
+
+          <!-- Badge -->
+          <!-- <span class="hidden lg:inline-block mb-5 px-4 py-2 rounded-full
+               bg-[#d5e880]/15 border border-[#d5e880]/30
+               text-[#d5e880]
+               text-xs sm:text-sm
+               font-semibold
+               tracking-[2px]
+               uppercase
+               plus-jakarta-sans">
+            Glacier Treks And Adventure
+          </span> -->
+
+          <!-- Dynamic Heading -->
+          <h1 id="packageHeading" class="text-white text-3xl sm:text-4xl md:text-5xl
+               leading-tight gloock-regular mb-6">
+          </h1>
+          <!-- Description -->
+          <p id="packageShortDescription"
+            class="text-white/85 text-base sm:text-lg md:text-xl leading-8 plus-jakarta-sans mb-8 max-w-3xl mx-auto">
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trip facts Section -->
+  <section class="py-2 bg-[#fff] md:bg-[#f8faf7]">
+    <div class="w-full bg-[#fff]">
+      <div class="grid grid-cols-1 md:grid-cols-3">
+        <!-- card 1 -->
+        <div
+          class="bg-white p-1 md:p-4 shadow-[0_10px_30px_rgba(15,23,42,0.04)] border-b-2 md:border-r-[#d5e880] md:border-r-2 md:border-r-[#d5e880]">
+          <!-- Heading -->
+          <div class="flex justify-center md:justify-start items-center gap-4 mb-10">
+            <h3 class="gloock-regular text-3xl text-slate-900 text-center md:text-left">
+              Trip Facts
+            </h3>
+          </div>
+
+          <!-- Facts Row -->
+          <div id="facts" class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 text-center">
+            <!-- REGION -->
+            <div class="flex flex-col items-center gap-2">
+              <img src="https://img.icons8.com/color/48/mountain.png" class="w-8 h-8" />
+              <p class="text-xs text-slate-500 uppercase tracking-wide">
+                Region
+              </p>
+              <p class="text-sm font-semibold text-slate-900">
+                Everest Region
+              </p>
+            </div>
+
+            <!-- DURATION -->
+            <div class="flex flex-col items-center gap-2">
+              <img src="https://img.icons8.com/color/48/time.png" class="w-8 h-8" />
+              <p class="text-xs text-slate-500 uppercase tracking-wide">
+                Duration
+              </p>
+              <p class="text-sm font-semibold text-slate-900">12 Days</p>
+            </div>
+
+            <!-- DIFFICULTY -->
+            <div class="flex flex-col items-center gap-2">
+              <img src="https://img.icons8.com/color/48/trekking.png" class="w-8 h-8" />
+              <p class="text-xs text-slate-500 uppercase tracking-wide">
+                Difficulty
+              </p>
+              <p class="text-sm font-semibold text-slate-900">Challenging</p>
+            </div>
+
+            <!-- ALTITUDE -->
+            <div class="flex flex-col items-center gap-2">
+              <svg class="w-7 h-7 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M3 20h18L14 4l-3 5-2-3-6 14z" />
+              </svg>
+              <p class="text-xs text-slate-500 uppercase tracking-wide">
+                Max Altitude
+              </p>
+              <p class="text-sm font-semibold text-slate-900">5,364 m</p>
+            </div>
+
+            <!-- START -->
+            <div class="flex flex-col items-center gap-2">
+              <img src="https://img.icons8.com/color/48/marker.png" class="w-8 h-8" />
+              <p class="text-xs text-slate-500 uppercase tracking-wide">
+                Trip Starts
+              </p>
+              <p class="text-sm font-semibold text-slate-900">Kathmandu</p>
+            </div>
+
+            <!-- END -->
+            <div class="flex flex-col items-center gap-2">
+              <img src="https://img.icons8.com/color/48/finish-flag.png" class="w-8 h-8" />
+              <p class="text-xs text-slate-500 uppercase tracking-wide">
+                End Trip
+              </p>
+              <p class="text-sm font-semibold text-slate-900">Kathmandu</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <!-- booking card -->
+        <div class="border-b-2 md:border-r-[#d5e880] md:border-r-2 md:border-r-[#d5e880]">
+          <div id="trekFess"
+            class="bg-white border-none overflow-hidden shadow-[0_20px_50px_rgba(213,232,128,0.15)] border-b md:border-r-[#d5e880] md:border-r md:border-r-[#d5e880]">
+          </div>
+        </div>
+
+        <!-- acvailable dates -->
+        <div class="bg-white p-4">
+          <h4 class="gloock-regular text-3xl text-slate-900 text-center md:text-left mb-6">
+            Available Dates
+          </h4>
+          <div id="availableDate"></div>
+        </div>
+      </div>
+
+      <!-- Main Box (keep this for theme) -->
+    </div>
+  </section>
+
+  <!-- over view -->
+  <section class="w-full px-3">
+    <div class="max-w-[95%] md:max-w-[85%] mx-auto bg-white p-0 md:p-8 md:p-10 h-full">
+      <h2 class="gloock-regular text-2xl md:text-4xl mb-6 text-center md:text-left text-[#243146]">
+        Overview
+      </h2>
+
+      <div class="space-y-6 text-slate-600 plus-jakarta-sans leading-7 md:leading-8 text-base md:text-lg">
+        <div id="overview"></div>
+
+        <div class="pt-2">
+          <button id="toggleBtn"
+            class="inline-flex items-center gap-2 rounded-full border border-[#d5e880] bg-[#f8faf7] px-5 py-2.5 text-sm md:text-base font-medium text-[#243146] transition-all duration-300 hover:bg-[#d5e880] hover:text-[#243146] shadow-sm">
+            <span id="toggleText">See More</span>
+            <svg id="toggleIcon" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition-transform duration-300"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- itaniry section section -->
+  <section class="w-full">
+    <!-- Tab section (Itinerary, Inclusions, FAQ) -->
+    <div class="max-w-[95%] md:max-w-[85%] mx-auto mt-12 bg-white rounded-none p-0 md:p-6">
+      <div class="flex flex-col gap-5">
+        <!-- Itinerary -->
+        <div class="overflow-hidden border-b border-[#d5e880]">
+          <button type="button"
+            class="accordion-btn flex w-full items-center justify-between px-3 md:px-6 py-2 text-left">
+            <div>
+              <h4 class="text-[20px] md:text-[22px] font-[600] text-[#243146] gloock-regular">
+                Itinerary
+              </h4>
+              <p class="mt-1 text-sm text-slate-500 plus-jakarta-sans">
+                Day-wise trek plan
+              </p>
+            </div>
+            <svg class="accordion-icon h-7 w-7 text-slate-700 transition-transform duration-300" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.3">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <div class="accordion-content hidden border-t border-[#e5e6dc] bg-white px-0 md:px-6 py-2">
+            <!-- Days Nav -->
+            <div id="dayTabsWrapper" class="flex gap-3 overflow-x-auto whitespace-nowrap pb-4 scrollbar-hide"></div>
+
+            <!-- Day Content -->
+            <div id="itineraryContent" class="mt-2 md:mt-3"></div>
+          </div>
+        </div>
+
+        <!-- Inclusions -->
+        <div id="inclusionsContent"></div>
+
+        <!-- FAQs -->
+        <div class="overflow-hidden border-b border-[#d5e880]">
+          <button type="button"
+            class="accordion-btn flex w-full items-center justify-between px-3 md:px-6 py-2 text-left"></button>
+          <div class="accordion-content hidden border-t border-[#e5e6dc] bg-white px-1 md:px-6 py-2">
+            <div id="faqs" class="space-y-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="w-full py-2 md:py-5 bg-[#f8faf7]">
+    <div class="max-w-[95%] md:max-w-[85%] mx-auto flex flex-col gap-10">
+      <!-- Heading -->
+      <div class="flex flex-col justify-start items-start px-3 px-6">
+        <!-- <span class="uppercase tracking-[3px] text-sm font-semibold text-[#8aa43c] plus-jakarta-sans">
+                    FAQ
+                </span> -->
+        <h4 class="gloock-regular text-2xl md:text-4xl text-slate-900 mt-2">
+          Frequently Asked Questions
+        </h4>
+      </div>
+
+      <!-- FAQ List -->
+      <div id="faq-item" class="flex flex-col gap-4" id="faq-container">
+        <!-- Dynamic FAQs will come here -->
+        <div class="faq-item bg-white p-5 pl-6 transition-all duration-300">
+          <!-- <div class="faq-question flex justify-between items-center w-full text-left">
+            <h3 class="text-lg md:text-xl font-semibold text-slate-900">
+              Heading
+            </h3>
+
+            <span class="faq-icon-wrapper w-10 h-10 rounded-full bg-[#f1f6d8] flex items-center justify-center">
+              <svg class="faq-icon w-5 h-5 text-[#8aa43c] transition-transform duration-300" fill="none"
+                stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14" />
+              </svg>
+            </span>
+          </div>
+
+          <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+            <p class="pt-4 text-slate-600">Answer</p>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  new gallary2 -->
+  <section class="py-14 bg-white">
+    <div class="max-w-[85%] mx-auto">
+      <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-6 mb-6">
+        <!-- heading -->
+        <div class="flex flex-col items-center md:items-start gap-2">
+          <p class="text-center md:text-left text-slate-500 plus-jakarta-sans text-lg">
+            Capturing moments from the roof of the world
+          </p>
+
+          <h2 class="gloock-regular text-2xl lg:text-4xl text-slate-900">
+            Trek Photo Gallery
+          </h2>
+
+          <!-- tabs -->
+          <div class="w-full md:w-auto overflow-x-auto scrollbar-hide">
+            <div id="galleryTabs" class="inline-flex md:flex gap-3 min-w-max md:min-w-0 py-2">
+              <button id="summerBtn" onclick="showGallery('summer')"
+                class="gallery-tab active-tab px-6 py-3 rounded-full whitespace-nowrap">
+                Summer
+              </button>
+
+              <button id="winterBtn" onclick="showGallery('winter')"
+                class="gallery-tab px-6 py-3 rounded-full whitespace-nowrap">
+                Winter
+              </button>
+
+              <button id="springBtn" onclick="showGallery('spring')"
+                class="gallery-tab px-6 py-3 rounded-full whitespace-nowrap">
+                Spring
+              </button>
+
+              <button id="rainBtn" onclick="showGallery('rain')"
+                class="gallery-tab px-6 py-3 rounded-full whitespace-nowrap">
+                Rain
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="relative mt-8">
+        <!-- Left Arrow -->
+        <button id="galleryPrev" onclick="prevGalleryPage()"
+          class="hidden absolute left-2 md:left-0 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/90 shadow-lg border border-slate-200 hover:bg-[#d5e880] transition">
+          ❮
+        </button>
+
+        <!-- Gallery -->
+        <div id="galleryContainer" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"></div>
+        <!-- <div
+            id="summerGallery"
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+          ></div> -->
+
+        <!-- <div
+            id="winterGallery"
+            class="hidden grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+          ></div> -->
+
+        <!-- Right Arrow -->
+        <button id="galleryNext" onclick="nextGalleryPage()"
+          class="absolute right-2 md:right-0 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/90 shadow-lg border border-slate-200 hover:bg-[#d5e880] transition">
+          ❯
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox gallary-->
+  <div id="lightbox" class="fixed inset-0 bg-black/90 hidden items-center justify-center z-50 p-4" style="display:none">
+    <button onclick="closeLightbox()" class="absolute top-6 right-8 text-white text-4xl">
+      ×
+    </button>
+
+    <button onclick="prevImage()" class="absolute left-6 text-white text-5xl">
+      ‹
+    </button>
+
+    <img id="lightboxImage" class="max-w-[90%] max-h-[85vh] rounded-2xl" />
+
+    <button onclick="nextImage()" class="absolute right-6 text-white text-5xl">
+      ›
+    </button>
+  </div>
+
+  <!-- Similar Treks Section -->
+  <section class="py-6 md:py-10 bg-[#f8faf7] overflow-hidden">
+    <div class="max-w-[85%] mx-auto">
+      <div class="text-start mb-10 md:mb-14">
+        <h2 class="gloock-regular text-3xl md:text-4xl text-slate-950 inline-block relative pb-4">
+          Similar Treks
+          <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-20 md:w-24 h-1 rounded-full bg-[#d5e880]"></span>
+        </h2>
+      </div>
+
+      <div class="flex items-center justify-between gap-4 mb-6 md:mb-8">
+        <h3 class="text-xl md:text-2xl font-bold text-slate-800 plus-jakarta-sans">
+          Highly Rated Similar Treks
+        </h3>
+
+        <div class="hidden lg:flex items-center gap-3">
+          <button id="similarPrev" type="button"
+            class="flex h-11 w-11 items-center justify-center rounded-full border border-[#dfe8d0] bg-white text-slate-700 shadow-sm transition-all duration-300 hover:bg-[#d5e880] hover:border-[#d5e880] hover:text-slate-900 disabled:opacity-40 disabled:cursor-not-allowed"
+            aria-label="Previous similar treks">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2.2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+
+          <button id="similarNext" type="button"
+            class="flex h-11 w-11 items-center justify-center rounded-full border border-[#dfe8d0] bg-white text-slate-700 shadow-sm transition-all duration-300 hover:bg-[#d5e880] hover:border-[#d5e880] hover:text-slate-900 disabled:opacity-40 disabled:cursor-not-allowed"
+            aria-label="Next similar treks">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2.2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="similarViewport"
+        class="overflow-x-auto lg:overflow-hidden scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none]">
+        <div id="similarTrack"
+          class="flex gap-4 md:gap-6 will-change-transform lg:transition-transform lg:duration-500 lg:ease-out">
+          <!-- Card 1 -->
+          <!-- <article
+            class="similar-card group w-full sm:w-[82%] md:w-[48%] lg:w-[31.8%] xl:w-[23.5%] shrink-0 overflow-hidden rounded-[24px] bg-white shadow-sm ring-1 ring-[#e9efdf] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl snap-start">
+            <div class="relative h-[220px] md:h-[240px] overflow-hidden">
+              <img src="./images/blog-photo.webp" alt="Goenchala Trek"
+                class="w-full h-full object-cover transition duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/45 via-transparent to-transparent"></div>
+
+              <span
+                class="absolute left-4 top-4 inline-flex items-center gap-1 rounded-full bg-white/90 px-3 py-1 text-[10px] font-bold uppercase tracking-[1px] text-slate-800 shadow-sm plus-jakarta-sans">
+                Featured
+              </span>
+            </div>
+
+            <div class="p-5 md:p-6">
+              <div class="flex items-start justify-between gap-3 mb-4">
+                <h4 class="text-xl font-bold text-slate-900 plus-jakarta-sans">
+                  Goenchala Trek
+                </h4>
+
+                <span
+                  class="inline-flex shrink-0 items-center gap-1 rounded-full bg-[#d5e880]/35 px-3 py-1 text-[10px] font-bold uppercase tracking-[1px] text-slate-800 plus-jakarta-sans">
+                  <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" />
+                  </svg>
+                  Sikkim
+                </span>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2 mb-5">
+                <div class="rounded-2xl bg-[#f8faf7] px-3 py-3">
+                  <p class="text-[10px] font-semibold uppercase tracking-[1.1px] text-slate-500 plus-jakarta-sans">
+                    Duration
+                  </p>
+                  <p class="text-sm font-semibold text-slate-800 plus-jakarta-sans mt-1">
+                    11 Days
+                  </p>
+                </div>
+                <div class="rounded-2xl bg-[#f8faf7] px-3 py-3">
+                  <p class="text-[10px] font-semibold uppercase tracking-[1.1px] text-slate-500 plus-jakarta-sans">
+                    Grade
+                  </p>
+                  <p class="text-sm font-semibold text-slate-800 plus-jakarta-sans mt-1">
+                    Challenging
+                  </p>
+                </div>
+              </div>
+
+              <a href="#"
+                class="inline-flex w-full items-center justify-center rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold uppercase tracking-[0.6px] text-slate-800 shadow-sm transition-all duration-300 hover:border-[#d5e880] hover:bg-[#d5e880] hover:text-slate-900 plus-jakarta-sans">
+                View Trek Details
+              </a>
+            </div>
+          </article> -->
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Trek Guides & Articles Section -->
+  <section class="py-4 bg-white">
+    <div class="max-w-[85%] mx-auto">
+      <div class="text-start mb-16">
+        <h2 class="gloock-regular text-4xl text-slate-950 inline-block relative pb-4">
+          Essential Trekking Articles
+          <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-24 h-1 bg-[#d5e880]"></div>
+        </h2>
+        <p class="mt-4 text-slate-500 plus-jakarta-sans text-lg">
+          Expert advice, packing guides, and safety tips for your next
+          adventure
+        </p>
+      </div>
+
+      <div id="limitedBlog" class="grid grid-cols-1 md:grid-cols-4 gap-8 text-left"></div>
+    </div>
+  </section>
+
+  <!-- Why Hikers Choosing Section -->
+  <section class="py-4 bg-[#fbfcf8]">
+    <div class="max-w-[85%] mx-auto">
+      <div class="text-left mb-12 border-b-2 border-[#d5e880] pb-6">
+        <h2 class="gloock-regular text-4xl text-slate-900">
+          Why Hikers Choosing
+        </h2>
+      </div>
+
+      <div id="stories-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1: Gear List -->
+        <div class="group relative overflow-hidden rounded-[24px] h-[220px] shadow-lg cursor-pointer">
+          <img src="/images/blog-photo.webp" alt="Gear List"
+            class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+          <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center p-6 text-center">
+            <div
+              class="w-14 h-14 rounded-full bg-red-600 flex items-center justify-center shadow-2xl mb-4 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+            <h4 class="text-white font-extrabold text-xl leading-tight uppercase tracking-wide">
+              Trekking Gear List
+            </h4>
+            <p class="text-white/80 text-xs mt-1">What to Pack?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Treks by Categories Section -->
+  <section class="py-4 bg-white border-t border-slate-100">
+    <div class="max-w-[85%] mx-auto">
+      <div class="max-w-4xl mb-12">
+        <h2 class="gloock-regular text-4xl text-slate-950 mb-6">
+          Treks by Categories
+        </h2>
+        <div class="w-full h-1 bg-red-500 mt-8"></div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10">
+        <!-- Season -->
+        <div>
+          <div class="flex items-center gap-2 mb-6 border-b-2 border-[#d5e880] pb-3">
+            <svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <h5 class="font-bold text-slate-900 text-sm uppercase">
+              By Season
+            </h5>
+          </div>
+          <ul id="seasonList" class="space-y-3 text-slate-500 text-sm font-medium">
+            <!-- <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Autumn</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Himalayan Treks</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Monsoon</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Spring</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Summer</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Winter</a
+                >
+              </li> -->
+          </ul>
+        </div>
+
+        <!-- Month -->
+        <div>
+          <div class="flex items-center gap-2 mb-6 border-b-2 border-[#d5e880] pb-3">
+            <svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <h5 class="font-bold text-slate-900 text-sm uppercase">
+              By Month
+            </h5>
+          </div>
+          <div id="monthList" class="grid grid-cols-2 gap-x-4 gap-y-3 text-slate-500 text-sm font-medium">
+            <!-- <a href="#" class="hover:text-red-500 transition-colors"
+                >January</a
+              ><a href="#" class="hover:text-red-500 transition-colors">July</a>
+              <a href="#" class="hover:text-red-500 transition-colors"
+                >February</a
+              ><a href="#" class="hover:text-red-500 transition-colors"
+                >August</a
+              >
+              <a href="#" class="hover:text-red-500 transition-colors">March</a
+              ><a href="#" class="hover:text-red-500 transition-colors"
+                >September</a
+              >
+              <a href="#" class="hover:text-red-500 transition-colors">April</a
+              ><a href="#" class="hover:text-red-500 transition-colors"
+                >October</a
+              >
+              <a href="#" class="hover:text-red-500 transition-colors">May</a
+              ><a href="#" class="hover:text-red-500 transition-colors"
+                >November</a
+              >
+              <a href="#" class="hover:text-red-500 transition-colors">June</a
+              ><a href="#" class="hover:text-red-500 transition-colors"
+                >December</a 
+              >-->
+          </div>
+        </div>
+
+        <!-- Duration -->
+        <div>
+          <div class="flex items-center gap-2 mb-6 border-b-2 border-[#d5e880] pb-3">
+            <svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <h5 class="font-bold text-slate-900 text-sm uppercase">
+              By Duration
+            </h5>
+          </div>
+          <ul id="durationList" class="space-y-3 text-slate-500 text-sm font-medium">
+            <!-- <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >2 Days</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >3 Days</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >4 Days</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >5 Days</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >6 Days</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >7+ Days</a
+                >
+              </li> -->
+          </ul>
+        </div>
+
+        <!-- Difficulty -->
+        <div>
+          <div class="flex items-center gap-2 mb-6 border-b-2 border-[#d5e880] pb-3">
+            <svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+            </svg>
+            <h5 class="font-bold text-slate-900 text-sm uppercase">
+              By Difficulty
+            </h5>
+          </div>
+          <ul id="difficultyList" class="space-y-3 text-slate-500 text-sm font-medium text-xs">
+            <!-- <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Easy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Easy To Moderate</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Moderate</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Moderate To Difficult</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Difficult</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Challenging</a
+                >
+              </li> -->
+          </ul>
+        </div>
+
+        <!-- Region -->
+        <div>
+          <div class="flex items-center gap-2 mb-6 border-b-2 border-[#d5e880] pb-3">
+            <svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <h5 class="font-bold text-slate-900 text-sm uppercase">
+              By Region
+            </h5>
+          </div>
+          <ul id="regionList" class="space-y-3 text-slate-500 text-sm font-medium">
+            <!-- <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Uttarakhand</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Sikkim</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Nepal</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Ladakh</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Kashmir</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Himachal Pradesh</a
+                >
+              </li> -->
+          </ul>
+        </div>
+
+        <!-- Nature -->
+        <!-- <div>
+            <div
+              class="flex items-center gap-2 mb-6 border-b-2 border-[#d5e880] pb-3"
+            >
+              <svg
+                class="w-4 h-4 text-slate-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                />
+              </svg>
+              <h5 class="font-bold text-slate-900 text-sm uppercase">
+                By Nature
+              </h5>
+            </div>
+            <ul class="space-y-3 text-slate-500 text-sm font-medium">
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Lake Treks</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Glacier Treks</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Forest Treks</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Snow Treks</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Meadow Treks</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Summit Treks</a
+                >
+              </li>
+            </ul>
+          </div> -->
+
+        <!-- Features -->
+        <!-- <div>
+            <div
+              class="flex items-center gap-2 mb-6 border-b-2 border-[#d5e880] pb-3"
+            >
+              <svg
+                class="w-4 h-4 text-slate-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+              <h5 class="font-bold text-slate-900 text-sm uppercase">
+                By Features
+              </h5>
+            </div>
+            <ul class="space-y-3 text-slate-500 text-sm font-medium">
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >River Crossings</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >High Altitude</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Bird Watching</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Family Friendly</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Solo Treks</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500 transition-colors"
+                  >Star Gazing</a
+                >
+              </li>
+            </ul>
+          </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- packages additioanl modal -->
+  <div id="chargeModal"
+    class="fixed inset-0 bg-black/50 hidden items-start md:items-center justify-center z-50 p-4 pt-[20vh] md:pt-4">
+    <div class="bg-white rounded-2xl p-6 w-full max-w-md max-h-[90vh] relative overflow-y-auto">
+      <button onclick="closeChargeModal()" class="absolute top-3 right-4 text-2xl text-slate-700">
+        ×
+      </button>
+
+      <h3 class="text-xl font-bold mb-4 pr-6 plus-jakarta-sans">
+        Additional Charges
+      </h3>
+
+      <div id="chargeModalContent" class="space-y-3 text-slate-700 plus-jakarta-sans">
+        <!-- <p>₹500 Permit Fee</p>
+          <p>₹1,000 Transport Fee</p>
+          <p>₹800 Camping Charge</p>
+          <p>₹600 Food Charge</p> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- footer section -->
+  <div id="footer"></div>
+  <script src="/config/apiConfig.js"></script>
+  <script src="/controllers/function.js"></script>
+  <script src="/controllers/users.js"></script>
+  <script src="/controllers/package.js"></script>
+  <script src="/includes/common.js"></script>
+  <script src="/controllers/footerdetails.js"></script>
+  <script src="/controllers/filteredPackages.js"></script>
+
+  <!--Over view see more & see less script-->
+  <script>
+    // const toggleBtn = document.getElementById("toggleBtn");
+    // const moreContent = document.getElementById("moreContent");
+    // const toggleText = document.getElementById("toggleText");
+    // const toggleIcon = document.getElementById("toggleIcon");
+
+    // toggleBtn.addEventListener("click", () => {
+    //     moreContent.classList.toggle("hidden");
+
+    //     const isHidden = moreContent.classList.contains("hidden");
+
+    //     toggleText.textContent = isHidden ? "See More" : "See Less";
+    //     toggleIcon.classList.toggle("rotate-180", !isHidden);
+    // });
+  </script>
+  <!-- header treeking/tour/ expedition script -->
+  <script>
+    async function loadCategory() {
+      try {
+        const endpoint = "/api/categories";
+        const url = API_CONFIG.getUrl(endpoint);
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        // console.log("Categories:", data);
+
+        const trekkingDropdown = document.getElementById("trekkingDropdown");
+        const tourDropdown = document.getElementById("tourDropdown");
+        const expeditionDropdown =
+          document.getElementById("expeditionDropdown");
+        trekkingDropdown.innerHTML = "";
+        tourDropdown.innerHTML = "";
+        expeditionDropdown.innerHTML = "";
+
+        data.forEach((item) => {
+          let pageLink = "";
+
+          // ✅ page decide based on type
+          if (item.categoryType === "Trek") {
+            pageLink = "/trek";
+          }
+
+          if (item.categoryType === "Tour") {
+            pageLink = "/trek";
+          }
+
+          if (item.categoryType === "Expedition") {
+            pageLink = "/trek";
+          }
+
+          const link = `
+                                    <a href="${pageLink}?slug=${item.slug}" 
+                                    class="block px-4 py-3 text-slate-700 hover:bg-[#d5e880]/20">
+                                    ${item.name}
+                                    </a>
+                                `;
+
+          // ✅ condition per category
+          if (item.categoryType === "Trek") {
+            trekkingDropdown.innerHTML += link;
+          }
+
+          if (item.categoryType === "Tour") {
+            tourDropdown.innerHTML += link;
+          }
+
+          if (item.categoryType === "Expedition") {
+            expeditionDropdown.innerHTML += link;
+          }
+        });
+      } catch (error) {
+        console.error("Error fetching About Us data:", error);
+      }
+    }
+  </script>
+
+  <!--slider script  -->
+  <script>
+    (() => {
+      const viewport = document.getElementById("similarViewport");
+      const track = document.getElementById("similarTrack");
+      const prevBtn = document.getElementById("similarPrev");
+      const nextBtn = document.getElementById("similarNext");
+
+      if (!viewport || !track || !prevBtn || !nextBtn) return;
+
+      let index = 0;
+      let step = 0;
+      let maxIndex = 0;
+      let cardsPerView = 1;
+      let ticking = false;
+
+      const isDesktop = () => window.innerWidth >= 1024;
+
+      const getGap = () => {
+        const styles = window.getComputedStyle(track);
+        return parseFloat(styles.columnGap || styles.gap || 24) || 24;
+      };
+
+      const updateButtons = () => {
+        if (!isDesktop()) {
+          prevBtn.disabled = true;
+          nextBtn.disabled = false;
+          return;
+        }
+
+        prevBtn.disabled = index <= 0;
+        nextBtn.disabled = index >= maxIndex;
+      };
+
+      const updateSlider = () => {
+        if (!isDesktop()) {
+          track.style.transform = "translate3d(0,0,0)";
+          updateButtons();
+          return;
+        }
+
+        const moveX = -(index * step);
+        track.style.transform = `translate3d(${moveX}px, 0, 0)`;
+        updateButtons();
+      };
+
+      const measure = () => {
+        const cards = track.querySelectorAll(".similar-card");
+        if (!cards.length) return;
+
+        if (!isDesktop()) {
+          index = 0;
+          track.style.transform = "translate3d(0,0,0)";
+          updateButtons();
+          return;
+        }
+
+        const cardWidth = cards[0].getBoundingClientRect().width;
+        const gap = getGap();
+        step = cardWidth + gap;
+
+        cardsPerView = window.innerWidth >= 1280 ? 4 : 3;
+        maxIndex = Math.max(0, cards.length - cardsPerView);
+
+        if (index > maxIndex) index = maxIndex;
+
+        updateSlider();
+      };
+
+      const requestMeasure = () => {
+        if (ticking) return;
+        ticking = true;
+
+        requestAnimationFrame(() => {
+          measure();
+          ticking = false;
+        });
+      };
+
+      prevBtn.addEventListener("click", () => {
+        if (!isDesktop()) return;
+        index = Math.max(0, index - 1);
+        updateSlider();
+      });
+
+      nextBtn.addEventListener("click", () => {
+        if (!isDesktop()) return;
+        index = Math.min(maxIndex, index + 1);
+        updateSlider();
+      });
+
+      window.addEventListener("resize", requestMeasure, { passive: true });
+
+      if ("ResizeObserver" in window) {
+        const resizeObserver = new ResizeObserver(requestMeasure);
+        resizeObserver.observe(viewport);
+        track
+          .querySelectorAll(".similar-card")
+          .forEach((card) => resizeObserver.observe(card));
+      }
+
+      window.addEventListener("load", requestMeasure);
+      requestMeasure();
+    })();
+  </script>
+
+  <script>
+    // ✅ STRONG YOUTUBE FIX (IMPORTANT)
+    function extractYouTubeId(url) {
+      if (!url) return "";
+
+      const match = url.match(/(?:v=|youtu\.be\/|embed\/)([^&\n?#]+)/);
+      return match ? match[1] : "";
+    }
+
+    async function loadStories() {
+      try {
+        // const url = "https://glacier-treks-adventures-admin-back.vercel.app/api/customer-stories";
+        const endpoint =
+          API_CONFIG?.ENDPOINTS?.STORIES || "/api/customer-stories";
+        const url = API_CONFIG.getUrl(endpoint);
+
+        const response = await fetch(url);
+        const data = await response.json();
+
+        const container = document.getElementById("stories-container");
+        container.innerHTML = "";
+
+        data.forEach((item) => {
+          const videoId = extractYouTubeId(item.youtubeLink);
+
+          if (!videoId) return;
+
+          const html = `
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+                    <div class="aspect-video">
+                        <iframe class="w-full h-full"
+                            src="https://www.youtube.com/embed/${videoId}"
+                            frameborder="0"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                   
+                </div>
+            `;
+
+          container.insertAdjacentHTML("beforeend", html);
+        });
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    async function loadLimitedBlog(limit) {
+      try {
+        // const endpoint = API_CONFIG?.ENDPOINTS?.BLOGS || "/api/blogs";
+        const endpoint = "/api/blogs/recent/list?limit=" + limit;
+        const url = API_CONFIG.getUrl(endpoint);
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        // console.log("Limited Blogs:", data);
+        const limitedBlog = document.getElementById("limitedBlog");
+        limitedBlog.innerHTML = "";
+        // ✅ EMPTY CHECK
+        if (!Array.isArray(data) || data.length === 0) {
+          limitedBlog.innerHTML = `
+                        <div class="col-span-full text-center py-10">
+                            <p class="text-slate-500 text-lg plus-jakarta-sans">
+                                No Blogs Found 😢
+                            </p>
+                        </div>
+                    `;
+          return;
+        }
+
+        data.forEach((blog) => {
+          const createdAt = new Date(blog.createdAt);
+          const options = { year: "numeric", month: "short", day: "2-digit" };
+          const formattedDate = createdAt.toLocaleDateString(
+            "en-US",
+            options,
+          );
+          const words = blog.content.trim().split(/\s+/).length;
+          const readTimes = Math.ceil(words / 200);
+          // console.log("Read Time:", readTimes, "minutes");
+          const title = limitWords(blog.heading, 8);
+          const description = limitWords(blog.metaDescription, 15);
+          const card = `
+
+
+                       <article class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-[32px] aspect-[16/10] mb-6">
+                        <img src="${blog.thumbnail.url || "/images/blog1.webp"}" alt="Article 1"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="bg-white/90 backdrop-blur-md text-slate-900 text-[10px] font-bold px-4 py-2 rounded-full uppercase tracking-widest shadow-sm">${formattedDate || "N/A"}</span>
+                        </div>
+                    </div>
+                    <h4
+                        class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors gloock-regular leading-tight">
+                        ${title || "No Title"}</h4>
+                    <p class="text-slate-500 line-clamp-2 plus-jakarta-sans leading-relaxed mb-4">${description || ""}</p>
+                    <a href="/blog/${blog.slug}"
+                        class="text-slate-900 font-extrabold text-sm uppercase tracking-widest inline-flex items-center gap-2 group/link">
+                        Read Full Article
+                        <svg class="w-4 h-4 group-hover/link:translate-x-2 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </article>
+
+            `;
+
+          limitedBlog.innerHTML += card;
+        });
+      } catch (error) {
+        console.error("Error fetching About Us data:", error);
+      }
+    }
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      //================== FILTERED PACKAGES ================
+      loadGroupedData(); //function are defined in filteredPackages.js
+      loadSimilarPackages(); //function are defined in package.js
+
+
+      // Accordion Logic
+      const accordionButtons = document.querySelectorAll(".accordion-btn");
+      accordionButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const content = button.nextElementSibling;
+          const icon = button.querySelector(".accordion-icon");
+          document.querySelectorAll(".accordion-content").forEach((item) => {
+            if (item !== content) item.classList.add("hidden");
+          });
+          document.querySelectorAll(".accordion-icon").forEach((ic) => {
+            if (ic !== icon) ic.classList.remove("rotate-180");
+          });
+          content.classList.toggle("hidden");
+          icon.classList.toggle("rotate-180");
+        });
+      });
+
+      // Gallery Tab Logic
+      const seasonTabs = document.querySelectorAll(".season-tab");
+      const galleryItems = document.querySelectorAll(".gallery-item");
+
+      seasonTabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          const season = tab.dataset.season;
+
+          // Update Tab Styles
+          seasonTabs.forEach((btn) => {
+            btn.classList.remove(
+              "bg-slate-900",
+              "text-[#d5e880]",
+              "border-slate-900",
+            );
+            btn.classList.add(
+              "bg-white",
+              "text-slate-600",
+              "border-[#e5e6dc]",
+            );
+          });
+          tab.classList.add(
+            "bg-slate-900",
+            "text-[#d5e880]",
+            "border-slate-900",
+          );
+          tab.classList.remove(
+            "bg-white",
+            "text-slate-600",
+            "border-[#e5e6dc]",
+          );
+
+          // Update Gallery Items
+          galleryItems.forEach((item) => {
+            if (item.classList.contains(season)) {
+              item.classList.remove("hidden");
+              setTimeout(() => item.classList.add("opacity-100"), 10);
+            } else {
+              item.classList.add("hidden");
+              item.classList.remove("opacity-100");
+            }
+          });
+        });
+      });
+      initFaqToggle(); //function are defined in function.js
+    });
+
+    // loadInclude('includes/header.html', 'header');
+    loadInclude("/includes/header.html", "header").then(() => {
+      toggleBtn(); //function are defined in common.js
+      loadCategory(); //function are defined in common.js
+      loadAboutusToggle(); //function are defined in common.js
+      upcomingdropdown(); //function are defined in common.js
+      document
+        .getElementById("logout-btn")
+        .addEventListener("click", function () {
+          logout();
+        });
+    });
+
+    loadInclude("/includes/footer.html", "footer").then(() => {
+      loadSettings(); // function are defined in footerdetails.js
+      footerCategoryList(); //function are defined in footerdetails.js
+      footerUpcomingDropdown(); //function are defined in footerdetails.js
+    });
+    const limit = 4; // Set the limit for the number of blogs to fetch
+    document.addEventListener("DOMContentLoaded", function () {
+      const params = new URLSearchParams(window.location.search);
+      // const slug = params.get("slug");
+      let slug = null;
+      // const currentPackageId = params.get("id");
+      // SEO URL
+      const pathParts = window.location.pathname.split("/").filter(Boolean);
+      if (pathParts[0] === "package") {
+        slug = pathParts[1];
+      } else if (pathParts.length === 1 && !pathParts[0].includes(".")) {
+        slug = pathParts[0];
+      }
+      // Old URL support
+      if (!slug) {
+        const params = new URLSearchParams(window.location.search);
+        slug = params.get("slug");
+      }
+
+      console.log("Slug:", slug);
+
+      loadLimitedBlog(limit); //function are defined in blog.js
+      loadStories(); //function are defined in stories.js
+      if (slug) {
+        console.log("Current Path:", window.location.pathname);
+        console.log("Slug:", slug);
+        loadPackageDetails(slug); //function are defined in package.js
+      }
+
+      const dayTabs = document.querySelectorAll(".day-tab");
+      const dayContents = document.querySelectorAll(".day-content");
+      dayTabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          const targetId = tab.dataset.day;
+          dayTabs.forEach((btn) => {
+            btn.classList.remove(
+              "bg-[#cddc67]",
+              "text-[#243146]",
+              "border-[#cddc67]",
+            );
+            btn.classList.add(
+              "bg-white",
+              "text-slate-700",
+              "border-[#dfe3d3]",
+            );
+          });
+          dayContents.forEach((content) => content.classList.add("hidden"));
+          tab.classList.add(
+            "bg-[#cddc67]",
+            "text-[#243146]",
+            "border-[#cddc67]",
+          );
+          tab.classList.remove(
+            "bg-white",
+            "text-slate-700",
+            "border-[#dfe3d3]",
+          );
+          const target = document.getElementById(targetId);
+          if (target) target.classList.remove("hidden");
+          tab.scrollIntoView({
+            behavior: "smooth",
+            inline: "center",
+            block: "nearest",
+          });
+        });
+      });
+    });
+  </script>
+
+  <!-- Weaver modal -->
+  <div id="scholarshipModal"
+    class="fixed inset-0 bg-black/50 hidden items-start md:items-center justify-center z-50 p-4 pt-8 md:pt-4">
+    <div class="bg-white w-full max-w-lg max-h-[90vh] rounded-2xl p-6 relative overflow-y-auto">
+      <!-- Close Button -->
+      <button onclick="closeScholarshipModal()" class="absolute top-3 right-4 text-2xl text-slate-700">
+        ×
+      </button>
+
+      <!-- Heading -->
+      <h2 class="text-xl font-bold mb-4 pr-6 plus-jakarta-sans">
+        Scholarships & Waivers
+      </h2>
+
+      <!-- Content -->
+      <div class="space-y-4 text-slate-700 plus-jakarta-sans leading-7">
+        <div>
+          <h3 class="font-semibold text-lg text-[#243146] mb-2">
+            Scholarships for Children
+          </h3>
+          <p>
+            At Glacier Trek, we strongly believe that children must trek.
+            Children aged <strong>14 and below</strong> qualify for a
+            <strong>30% trek fee scholarship</strong>. Check out this article.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-lg text-[#243146] mb-2">Waivers</h3>
+          <p>
+            For every <strong>ten adult trekkers</strong> (aged 15 and above)
+            in a group booking, we will waive off the trek fee for
+            <strong>one trekker</strong>. Glacier Trek will reimburse the said
+            trek fee after you complete your trek.
+          </p>
+        </div>
+
+        <p class="text-sm text-slate-500 italic">
+          (These benefits will be applicable only if our team is informed at
+          <a href="mailto:experience@glaciertrek.com" class="text-[#243146] underline">
+            experience@glaciertrek.com
+          </a>
+          after completion of your trek and within 30 days from your trek
+          date. Requests made beyond this period will not be eligible.)
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--  -->
+
+  <script>
+    function openChargeModal() {
+      const modal = document.getElementById("chargeModal");
+
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+
+      // stop page scroll
+      document.body.classList.add("overflow-hidden");
+    }
+
+    function closeChargeModal() {
+      const modal = document.getElementById("chargeModal");
+
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+
+      // allow page scroll again
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    /* click outside close */
+    document.addEventListener("click", function (e) {
+      const modal = document.getElementById("chargeModal");
+
+      if (e.target === modal) {
+        closeChargeModal();
+      }
+    });
+  </script>
+
+  <!-- weaver modal script -->
+  <script>
+    function openScholarshipModal() {
+      const modal = document.getElementById("scholarshipModal");
+
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+
+      document.body.classList.add("overflow-hidden");
+    }
+
+    function closeScholarshipModal() {
+      const modal = document.getElementById("scholarshipModal");
+
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    document.addEventListener("click", function (e) {
+      const modal = document.getElementById("scholarshipModal");
+
+      if (e.target === modal) {
+        closeScholarshipModal();
+      }
+    });
+  </script>
+
+  <!-- for photo gallay script -->
+  <!-- <script>
+      const summerImages = [
+        "./images/blog1.webp",
+        "./images/blog1.webp",
+        "./images/blog1.webp",
+        "./images/blog1.webp",
+        "./images/blog1.webp",
+        "./images/blog1.webp",
+        "./images/blog1.webp",
+        "./images/blog1.webp",
+      ];
+
+      const winterImages = [
+        "./images/blog1.webp",
+        "./images/blog1.webp",
+        "./images/blog1.webp",
+        "./images/blog1.webp",
+        "./images/blog1.webp",
+        "./images/blog1.webp",
+     
+      ];
+
+      let currentTab = "summer";
+      let currentPage = 0;
+      let currentIndex = 0;
+      let currentImages = [];
+
+      /* responsive images count */
+      function getPerPage() {
+        if (window.innerWidth < 768) return 4; // mobile = 4 images
+        if (window.innerWidth < 1024) return 6; // tablet = 6
+        return 12; // desktop = 12
+      }
+
+      function showGallery(type) {
+        currentTab = type;
+        currentPage = 0;
+
+        document
+          .getElementById("summerGallery")
+          .classList.toggle("hidden", type !== "summer");
+
+        document
+          .getElementById("winterGallery")
+          .classList.toggle("hidden", type !== "winter");
+
+        document
+          .getElementById("summerBtn")
+          .classList.toggle("active-tab", type === "summer");
+
+        document
+          .getElementById("winterBtn")
+          .classList.toggle("active-tab", type === "winter");
+
+        loadImages();
+      }
+
+      function loadImages() {
+        const images = currentTab === "summer" ? summerImages : winterImages;
+
+        const gallery =
+          currentTab === "summer"
+            ? document.getElementById("summerGallery")
+            : document.getElementById("winterGallery");
+
+        gallery.innerHTML = "";
+
+        const perPage = getPerPage();
+        const start = currentPage * perPage;
+        const end = start + perPage;
+
+        images.slice(start, end).forEach((img, index) => {
+          gallery.innerHTML += `
+        <img
+          src="${img}"
+          onclick="openLightbox(${start + index}, '${currentTab}')"
+          class="gallery-img"
+        />
+      `;
+        });
+
+        const nextBtn = document.getElementById("galleryNext");
+        const prevBtn = document.getElementById("galleryPrev");
+
+        nextBtn.classList.toggle("hidden", end >= images.length);
+        prevBtn.classList.toggle("hidden", currentPage === 0);
+      }
+
+      function nextGalleryPage() {
+        currentPage++;
+        loadImages();
+      }
+
+      function prevGalleryPage() {
+        if (currentPage > 0) {
+          currentPage--;
+          loadImages();
+        }
+      }
+
+      function openLightbox(index, type) {
+        currentImages = type === "summer" ? summerImages : winterImages;
+        currentIndex = index;
+
+        document.getElementById("lightbox").classList.remove("hidden");
+        document.getElementById("lightbox").classList.add("flex");
+        document.body.classList.add("overflow-hidden");
+
+        updateLightbox();
+      }
+
+      function updateLightbox() {
+        document.getElementById("lightboxImage").src =
+          currentImages[currentIndex];
+      }
+
+      function nextImage() {
+        currentIndex = (currentIndex + 1) % currentImages.length;
+        updateLightbox();
+      }
+
+      function prevImage() {
+        currentIndex =
+          (currentIndex - 1 + currentImages.length) % currentImages.length;
+        updateLightbox();
+      }
+
+      function closeLightbox() {
+        document.getElementById("lightbox").classList.add("hidden");
+        document.getElementById("lightbox").classList.remove("flex");
+        document.body.classList.remove("overflow-hidden");
+      }
+
+      window.addEventListener("resize", loadImages);
+
+      window.onload = function () {
+        showGallery("summer");
+      };
+    </script> -->
+
+</body>
+
+</html>

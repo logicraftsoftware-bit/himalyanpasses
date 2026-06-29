@@ -1,0 +1,238 @@
+#aboutContent {
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.plus-jakarta-sans {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gloock-regular {
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.packageSlider .swiper-wrapper {
+  align-items: stretch;
+}
+
+.packageSlider .swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+.package-card {
+  width: 100%;
+}
+
+.package-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(138, 164, 60, 0.18);
+}
+
+.package-card.active-package {
+  transform: translateY(-10px);
+  border: 2px solid #d5e880;
+  box-shadow: 0 22px 55px rgba(213, 232, 128, 0.3);
+}
+
+/* pagination wrapper */
+.packageSlider .swiper-pagination {
+  position: static !important;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.packageSlider .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 0 !important;
+  background: #cbd5e1;
+  opacity: 1;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.packageSlider .swiper-pagination-bullet-active {
+  width: 28px;
+  background: #d5e880;
+}
+
+.certificateSlider .swiper-wrapper {
+  align-items: start;
+}
+
+.certificateSlider .swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+.certificate-pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.certificate-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #cbd5e1;
+  opacity: 1;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  margin: 0 !important;
+}
+
+.certificate-pagination .swiper-pagination-bullet-active {
+  width: 28px;
+  background: #d5e880;
+}
+
+.certificate-open img {
+  transition: transform 0.4s ease;
+}
+
+.certificate-open:hover img {
+  transform: scale(1.03);
+}
+
+@keyframes marqueeSlow {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-slow {
+  width: max-content;
+  animation: marqueeSlow 35s linear infinite;
+}
+
+/* for scroll bar hide */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.pricing-tab {
+  background: #ffffff;
+  color: #243146;
+  border-color: #e5e6dc;
+  white-space: nowrap;
+}
+
+.pricing-tab:hover {
+  background: rgba(213, 232, 128, 0.35);
+  border-color: #d5e880;
+}
+
+.pricing-tab.active-tab {
+  background: #d5e880;
+  color: #243146;
+  border-color: #d5e880;
+  box-shadow: 0 10px 24px rgba(213, 232, 128, 0.35);
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.pricing-tab {
+  background: #ffffff;
+  color: #243146;
+  border-color: #e5e6dc;
+}
+
+.pricing-tab.active-tab {
+  background: #d5e880;
+  color: #243146;
+  border-color: #d5e880;
+  box-shadow: 0 10px 24px rgba(213, 232, 128, 0.35);
+}
+
+.pricing-tab {
+  background: #ffffff;
+  color: #243146;
+  border-color: #e5e6dc;
+  transition: all 0.3s ease;
+}
+
+.pricing-tab.active-tab {
+  background: #d5e880;
+  color: #243146;
+  border-color: #d5e880;
+  box-shadow: 0 10px 24px rgba(213, 232, 128, 0.35);
+}
+
+.pricing-tab:hover {
+  background: rgba(213, 232, 128, 0.4);
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* mobile nav style */
+.menu-link,
+.dropdown-btn{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  padding:16px 0;
+  color:white;
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.dropdown-btn{
+  background:none;
+  border:none;
+  cursor:pointer;
+}
+
+.dropdown-content{
+  display:none;
+  padding-left:20px;
+}
+
+.dropdown-content a{
+  display:block;
+  padding:10px 0;
+  color:#d1d5db;
+}
+
+.mobile-dropdown.active .dropdown-content{
+  display:block;
+}
+
+.mobile-dropdown.active .arrow{
+  transform:rotate(45deg);
+  color:#d5e880;
+}
+
+.arrow{
+  transition:.3s;
+}

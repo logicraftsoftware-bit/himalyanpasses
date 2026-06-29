@@ -1,0 +1,1554 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glacier Treks & Adventure | Best Trekking Packages in Sikkim</title>
+  <meta name="description"
+    content="Discover the best trekking packages in Sikkim, Darjeeling, and North Bengal with Glacier Treks & Adventure. Explore Himalayan trails, camping tours, and guided mountain adventures." />
+  <meta name="keywords"
+    content="trekking packages in Sikkim, Himalayan treks, trekking in Darjeeling, North Bengal trekking, adventure tours, mountain trekking, guided treks, Glacier Treks & Adventure" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon" sizes="16x16" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="style/tour.css">
+
+  <style>
+    /* =========================
+     Paragraph / body text
+  ========================== */
+    #pagecontent p,
+    #pagecontent li,
+    #pagecontent span,
+    #pagecontent a,
+    #pagecontent div,
+    #overview p,
+    #overview li,
+    #overview span,
+    #overview a,
+    #overview div,
+    #overviewText p,
+    #overviewText li,
+    #overviewText span,
+    #overviewText a,
+    #overviewText div,
+    #inclusionsContent p,
+    #inclusionsContent li,
+    #inclusionsContent span,
+    #inclusionsContent a,
+    #inclusionsContent div,
+    #inclusionsPera p,
+    #inclusionsPera li,
+    #inclusionsPera span,
+    #inclusionsPera a,
+    #inclusionsPera div,
+    #itineraryContent p,
+    #itineraryContent li,
+    #itineraryContent span,
+    #itineraryContent a,
+    #itineraryContent div,
+    #dayTabsWrapper p,
+    #dayTabsWrapper li,
+    #dayTabsWrapper span,
+    #dayTabsWrapper a,
+    #dayTabsWrapper div,
+    #faq-content p,
+    #faq-content li,
+    #faq-content span,
+    #faq-content a,
+    #faq-content div {
+      font-family: "Plus Jakarta Sans", sans-serif !important;
+      font-size: 16px !important;
+      font-weight: 400 !important;
+      line-height: 1.8 !important;
+      color: #475569 !important;
+      margin-bottom: 16px !important;
+    }
+
+    /* h1 */
+    #pagecontent h1,
+    #overview h1,
+    #overviewText h1,
+    #inclusionsContent h1,
+    #inclusionsPera h1,
+    #itineraryContent h1,
+    #dayTabsWrapper h1,
+    #faq-content h1 {
+      font-family: "Gloock", serif !important;
+      font-size: 36px !important;
+      font-weight: 700 !important;
+      line-height: 1.2 !important;
+      color: #0f172a !important;
+      margin: 20px 0 14px !important;
+    }
+
+    /* h2 */
+    #pagecontent h2,
+    #overview h2,
+    #overviewText h2,
+    #inclusionsContent h2,
+    #inclusionsPera h2,
+    #itineraryContent h2,
+    #dayTabsWrapper h2,
+    #faq-content h2 {
+      font-family: "Gloock", serif !important;
+      font-size: 24px !important;
+      font-weight: 700 !important;
+      line-height: 1.3 !important;
+      color: #0f172a !important;
+      margin: 18px 0 12px !important;
+    }
+
+    /* h3 */
+    #pagecontent h3,
+    #overview h3,
+    #overviewText h3,
+    #inclusionsContent h3,
+    #inclusionsPera h3,
+    #itineraryContent h3,
+    #dayTabsWrapper h3,
+    #faq-content h3 {
+      font-family: "Gloock", serif !important;
+      font-size: 18.72px !important;
+      font-weight: 600 !important;
+      line-height: 1.4 !important;
+      color: #0f172a !important;
+      margin: 16px 0 10px !important;
+    }
+
+    /* h4 */
+    #pagecontent h4,
+    #overview h4,
+    #overviewText h4,
+    #inclusionsContent h4,
+    #inclusionsPera h4,
+    #itineraryContent h4,
+    #dayTabsWrapper h4,
+    #faq-content h4 {
+      font-family: "Gloock", serif !important;
+      font-size: 16px !important;
+      font-weight: 600 !important;
+      line-height: 1.4 !important;
+      color: #0f172a !important;
+      margin: 14px 0 8px !important;
+    }
+
+    /* h5 */
+    #pagecontent h5,
+    #overview h5,
+    #overviewText h5,
+    #inclusionsContent h5,
+    #inclusionsPera h5,
+    #itineraryContent h5,
+    #dayTabsWrapper h5,
+    #faq-content h5 {
+      font-family: "Gloock", serif !important;
+      font-size: 13.28px !important;
+      font-weight: 500 !important;
+      line-height: 1.5 !important;
+      color: #0f172a !important;
+      margin: 12px 0 6px !important;
+    }
+
+    /* h6 */
+    #pagecontent h6,
+    #overview h6,
+    #overviewText h6,
+    #inclusionsContent h6,
+    #inclusionsPera h6,
+    #itineraryContent h6,
+    #dayTabsWrapper h6,
+    #faq-content h6 {
+      font-family: "Gloock", serif !important;
+      font-size: 10.72px !important;
+      font-weight: 500 !important;
+      line-height: 1.5 !important;
+      color: #0f172a !important;
+      margin: 10px 0 4px !important;
+    }
+  </style>
+
+</head>
+
+<body>
+  <section class="relative w-full min-h-[420px] md:min-h-[560px] overflow-hidden">
+    <!-- Background -->
+    <img src="./images/blog-banner.webp" alt="Kashmir Tour Banner" class="absolute inset-0 w-full h-full object-cover" />
+
+    <!-- Overlays -->
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-900/45 to-transparent"></div>
+    <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-slate-950/70 to-transparent"></div>
+
+    <!-- Header -->
+    <div id="header" class="relative z-30"></div>
+
+    <!-- Content -->
+    <div class="relative z-20 flex items-center justify-center min-h-[420px] md:min-h-[560px]">
+      <div class="max-w-7xl mx-auto w-full px-6 lg:px-10 pt-28 md:pt-32">
+        <div class="max-w-3xl text-center mx-auto">
+          <!-- Badge -->
+
+
+          <!-- Tour Title -->
+          <h1 id="packageHeading" class="text-white text-3xl sm:text-4xl md:text-5xl leading-tight gloock-regular mb-5">
+            Kashmir Tour Package
+          </h1>
+
+          <!-- Short Info -->
+          <p id="packageShortInfo"
+            class="text-white/85 text-base sm:text-lg md:text-xl leading-8 plus-jakarta-sans mb-8 max-w-2xl mx-auto">
+          </p>
+
+          <!-- Tour Meta Info -->
+          <div
+            class="flex flex-wrap justify-center items-center gap-3 sm:gap-5 mb-8 text-white/90 plus-jakarta-sans text-sm sm:text-base">
+            <span id="packageDurationTop" class="px-4 py-2 rounded-full bg-white/10 border border-white/15"></span>
+            <span id="packageRegion" class="px-4 py-2 rounded-full bg-white/10 border border-white/15"></span>
+            <span id="packageHighestAltitude" class="px-4 py-2 rounded-full bg-white/10 border border-white/15"></span>
+          </div>
+
+          <!-- Breadcrumb -->
+          <!-- <div
+                        class="flex flex-wrap justify-center items-center gap-3 text-white/90 plus-jakarta-sans text-sm sm:text-base mb-6">
+                        <a href="/" class="hover:text-[#d5e880] transition duration-300">Home</a>
+                        <span class="text-white/40">/</span>
+                        <a href="/tour" class="hover:text-[#d5e880] transition duration-300">Tours</a>
+                        <span class="text-white/40">/</span>
+                        <span class="text-[#d5e880] font-medium">Kashmir Tour Package</span>
+                    </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 md:py-16 bg-[#f8faf7] overflow-hidden">
+    <div class="w-full px-5">
+      <div class="flex flex-col gap-4">
+        <span
+          class="inline-flex w-fit items-center rounded-full border border-[#d5e880]/40 bg-[#d5e880]/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-[#243146]">
+          Adventure
+        </span>
+
+        <h2 id="packageSubheading" class="gloock-regular text-xl md:text-3xl leading-tight text-[#243146] max-w-5xl">
+          Kashmir Tour Package 4 Days 3 Nights Srinagar, Gulmarg, Pahalgam and
+          Dal Lake
+        </h2>
+
+        <div class="flex items-center gap-2 text-slate-600">
+          <svg class="w-5 h-5 text-[#8aa43c]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="8"></circle>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 2"></path>
+          </svg>
+          <span id="packageDuration" class="text-sm md:text-base font-medium">Duration: 4 Days / 3 Nights</span>
+        </div>
+      </div>
+
+      <!-- for tour section-->
+      <div class="flex flex-col lg:flex-row justify-between gap-5 lg:gap-6">
+        <!-- Left Side Panel-->
+        <div class="flex-1 flex flex-col gap-4">
+          <div>
+            <!-- Title -->
+            <div class="flex items-center gap-4">
+              <span
+                class="flex h-9 w-9 items-center justify-center rounded-xl bg-[#d5e880]/20 border border-[#d5e880]/30 shadow-sm">
+                <svg class="w-4 h-4 text-[#243146]" fill="none" stroke="currentColor" stroke-width="1.8"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <span class="text-sm md:text-base font-semibold text-[#243146] tracking-wide">
+                Tour Includes
+              </span>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-2.5">
+              <!-- Card -->
+              <div
+                class="group flex items-center gap-2.5 rounded-[18px] border border-[#e5e6dc] bg-[#f8faf7] px-3 py-2.5 shadow-sm transition-all duration-300 hover:-translate-y-[1px] hover:border-[#d5e880]/50 hover:bg-white hover:shadow-[0_10px_24px_rgba(15,23,42,0.06)]">
+                <span
+                  class="flex h-9 w-9 items-center justify-center rounded-lg bg-white border border-[#d5e880]/30 shadow-sm transition-all duration-300 group-hover:bg-[#d5e880]/15">
+                  <svg class="w-4 h-4 text-[#8aa43c]" fill="none" stroke="currentColor" stroke-width="1.8"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 11l9-7 9 7"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 10v9h14v-9"></path>
+                  </svg>
+                </span>
+                <span class="text-sm font-medium text-slate-700">Accommodation</span>
+              </div>
+
+              <!-- Card -->
+              <div
+                class="group flex items-center gap-2.5 rounded-[18px] border border-[#e5e6dc] bg-[#f8faf7] px-3 py-2.5 shadow-sm transition-all duration-300 hover:-translate-y-[1px] hover:border-[#d5e880]/50 hover:bg-white hover:shadow-[0_10px_24px_rgba(15,23,42,0.06)]">
+                <span
+                  class="flex h-9 w-9 items-center justify-center rounded-lg bg-white border border-[#d5e880]/30 shadow-sm transition-all duration-300 group-hover:bg-[#d5e880]/15">
+                  <svg class="w-4 h-4 text-[#8aa43c]" fill="none" stroke="currentColor" stroke-width="1.8"
+                    viewBox="0 0 24 24">
+                    <rect x="3" y="7" width="18" height="10" rx="2"></rect>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M7 17v2M17 17v2"></path>
+                  </svg>
+                </span>
+                <span class="text-sm font-medium text-slate-700">Transportation</span>
+              </div>
+
+              <!-- Card -->
+              <div
+                class="group flex items-center gap-2.5 rounded-[18px] border border-[#e5e6dc] bg-[#f8faf7] px-3 py-2.5 shadow-sm transition-all duration-300 hover:-translate-y-[1px] hover:border-[#d5e880]/50 hover:bg-white hover:shadow-[0_10px_24px_rgba(15,23,42,0.06)]">
+                <span
+                  class="flex h-9 w-9 items-center justify-center rounded-lg bg-white border border-[#d5e880]/30 shadow-sm transition-all duration-300 group-hover:bg-[#d5e880]/15">
+                  <svg class="w-4 h-4 text-[#8aa43c]" fill="none" stroke="currentColor" stroke-width="1.8"
+                    viewBox="0 0 24 24">
+                    <circle cx="12" cy="8" r="3"></circle>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 20c0-3.314 2.686-6 6-6s6 2.686 6 6">
+                    </path>
+                  </svg>
+                </span>
+                <span class="text-sm font-medium text-slate-700">Guided Tours</span>
+              </div>
+
+              <!-- Card -->
+              <div
+                class="group flex items-center gap-2.5 rounded-[18px] border border-[#e5e6dc] bg-[#f8faf7] px-3 py-2.5 shadow-sm transition-all duration-300 hover:-translate-y-[1px] hover:border-[#d5e880]/50 hover:bg-white hover:shadow-[0_10px_24px_rgba(15,23,42,0.06)]">
+                <span
+                  class="flex h-9 w-9 items-center justify-center rounded-lg bg-white border border-[#d5e880]/30 shadow-sm transition-all duration-300 group-hover:bg-[#d5e880]/15">
+                  <svg class="w-4 h-4 text-[#8aa43c]" fill="none" stroke="currentColor" stroke-width="1.8"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 18l5-8 4 6 3-4 6 6H3z"></path>
+                  </svg>
+                </span>
+                <span class="text-sm font-medium text-slate-700">Excursions</span>
+              </div>
+
+              <!-- Card -->
+              <div
+                class="group flex items-center gap-2.5 rounded-[18px] border border-[#e5e6dc] bg-[#f8faf7] px-3 py-2.5 shadow-sm transition-all duration-300 hover:-translate-y-[1px] hover:border-[#d5e880]/50 hover:bg-white hover:shadow-[0_10px_24px_rgba(15,23,42,0.06)]">
+                <span
+                  class="flex h-9 w-9 items-center justify-center rounded-lg bg-white border border-[#d5e880]/30 shadow-sm transition-all duration-300 group-hover:bg-[#d5e880]/15">
+                  <svg class="w-4 h-4 text-[#8aa43c]" fill="none" stroke="currentColor" stroke-width="1.8"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 3v8M12 3v8M8 7h4M16 3v18"></path>
+                  </svg>
+                </span>
+                <span class="text-sm font-medium text-slate-700">Meals</span>
+              </div>
+            </div>
+          </div>
+
+          <!--  -->
+          <div class="w-full">
+            <div
+              class="rounded-[22px] border border-[#e5e6dc]  p-4 md:p-5 shadow-[0_12px_30px_rgba(15,23,42,0.05)]">
+              <!-- Heading -->
+              <h4 class="text-base md:text-lg font-semibold text-[#243146] mb-2">
+                Overview
+              </h4>
+
+              <!-- Paragraph -->
+              <div id="overview">
+                <div id="overviewText" class="text-sm md:text-[15px] text-slate-600 leading-relaxed"></div>
+
+                <button id="readMoreBtn" type="button"
+                  class="mt-2 hidden rounded-xl bg-[#d5e880] px-4 py-2 text-sm font-semibold text-[#243146] transition-all duration-300 hover:bg-[#cfe46f]">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side Panel -->
+        <div class="w-full lg:w-[40%] flex flex-col gap-3">
+          <!-- discount sammary -->
+          <div
+            class="relative rounded-[28px] border border-[#e5e6dc] bg-white p-4 md:p-5 shadow-[0_12px_35px_rgba(15,23,42,0.06)]">
+            <!-- Offer Badge -->
+            <div class="absolute -top-3 left-5">
+              <!-- <span id="discountPercentage"
+                class="inline-flex items-center rounded-xl bg-[#243146] px-4 py-2 text-sm font-bold text-[#d5e880] shadow-[0_10px_25px_rgba(36,49,70,0.18)]">
+                
+              </span> -->
+            </div>
+
+            <!-- Main Content -->
+            <div class="mt-4 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+              <!-- Price Info -->
+              <div id="priceInfo" class="flex flex-col gap-2">
+                <!-- <span class="text-sm md:text-base font-semibold text-slate-500">
+                                    Starts From:
+                                </span>
+
+                                <span id="originalPriceINR" class="text-lg font-semibold text-red-500 line-through">
+                                    ₹10,799
+                                </span>
+
+                                <span id="discountedPriceINR" class="text-xl md:text-2xl font-bold text-[#243146]">
+                                    ₹8,900
+                                </span> -->
+              </div>
+
+              <!-- Actions -->
+              <div class="flex flex-col gap-3 w-full md:w-auto">
+                <!-- Share + Wishlist -->
+                <!-- Share Area -->
+                <div class="relative flex justify-end gap-3">
+                  <button id="shareToggle"
+                    class="flex-1 md:flex-none inline-flex items-center justify-center gap-2 rounded-2xl border border-[#e5e6dc] bg-[#f8faf7] px-4 py-3 text-sm font-semibold text-[#243146] transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:shadow-md">
+                    <svg class="w-4 h-4 text-[#8aa43c]" fill="none" stroke="currentColor" stroke-width="1.8"
+                      viewBox="0 0 24 24">
+                      <circle cx="18" cy="5" r="3"></circle>
+                      <circle cx="6" cy="12" r="3"></circle>
+                      <circle cx="18" cy="19" r="3"></circle>
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98" />
+                    </svg>
+                    Share
+                  </button>
+
+                  <!-- Share Popup -->
+                  <div id="sharePopup"
+                    class="absolute right-0 top-full z-30 mt-3 hidden w-[240px] rounded-[22px] border border-[#e5e6dc] bg-white p-3 shadow-[0_18px_40px_rgba(15,23,42,0.12)]">
+                    <div class="mb-2 px-2">
+                      <p class="text-sm font-semibold text-[#243146]">
+                        Share this tour
+                      </p>
+                      <p class="text-xs text-slate-500">Choose platform</p>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                      <!-- WhatsApp -->
+                      <a id="shareWhatsapp" href="#" target="_blank"
+                        class="flex items-center gap-3 rounded-2xl border border-[#e5e6dc] bg-[#f8faf7] px-4 py-3 text-sm font-medium text-slate-700 transition-all duration-300 hover:bg-white hover:shadow-sm">
+                        <span
+                          class="flex h-9 w-9 items-center justify-center rounded-xl bg-white border border-[#d5e880]/30 shadow-sm">
+                          <svg class="w-4 h-4 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                              d="M20.52 3.48A11.78 11.78 0 0012.06 0C5.5 0 .17 5.33.17 11.89c0 2.09.55 4.14 1.59 5.95L0 24l6.35-1.67a11.83 11.83 0 005.71 1.46h.01c6.56 0 11.89-5.33 11.89-11.89 0-3.17-1.23-6.15-3.44-8.42zM12.07 21.7h-.01a9.78 9.78 0 01-4.99-1.37l-.36-.21-3.77.99 1-3.68-.24-.38a9.8 9.8 0 01-1.5-5.18c0-5.42 4.41-9.83 9.84-9.83 2.62 0 5.08 1.02 6.93 2.88a9.73 9.73 0 012.88 6.94c0 5.42-4.41 9.84-9.83 9.84zm5.39-7.34c-.29-.14-1.72-.85-1.99-.94-.27-.1-.46-.15-.66.15-.19.29-.76.94-.93 1.13-.17.19-.34.22-.63.07-.29-.14-1.22-.45-2.32-1.45-.86-.77-1.44-1.72-1.6-2.01-.17-.29-.02-.44.12-.59.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.14-.66-1.59-.9-2.18-.24-.57-.49-.49-.66-.5h-.56c-.19 0-.51.07-.78.36-.27.29-1.03 1.01-1.03 2.45s1.06 2.83 1.2 3.03c.15.19 2.08 3.18 5.04 4.45.7.3 1.25.48 1.67.61.7.22 1.34.19 1.84.12.56-.08 1.72-.7 1.96-1.37.24-.67.24-1.25.17-1.37-.07-.12-.27-.19-.56-.34z" />
+                          </svg>
+                        </span>
+                        WhatsApp
+                      </a>
+
+                      <!-- Facebook -->
+                      <a id="shareFacebook" href="#" target="_blank"
+                        class="flex items-center gap-3 rounded-2xl border border-[#e5e6dc] bg-[#f8faf7] px-4 py-3 text-sm font-medium text-slate-700 transition-all duration-300 hover:bg-white hover:shadow-sm">
+                        <span
+                          class="flex h-9 w-9 items-center justify-center rounded-xl bg-white border border-[#d5e880]/30 shadow-sm">
+                          <svg class="w-4 h-4 text-[#1877F2]" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                              d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.03 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.88v2.26h3.32l-.53 3.49h-2.79V24C19.61 23.08 24 18.09 24 12.07z" />
+                          </svg>
+                        </span>
+                        Facebook
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Dates & Prices Button -->
+                <!-- <div class="flex flex-col gap-2">
+                                    <label for="departureDate" class="text-sm font-semibold text-[#243146]">
+                                        Select Date
+                                    </label>
+
+                                    <div
+                                        class="flex items-center gap-3 rounded-[20px] border border-[#e5e6dc] bg-[#f8faf7] px-4 py-3 shadow-sm transition-all duration-300 focus-within:border-[#d5e880] focus-within:bg-white focus-within:shadow-[0_12px_30px_rgba(213,232,128,0.14)]">
+
+                                        <span
+                                            class="flex h-10 w-10 items-center justify-center rounded-xl bg-white border border-[#d5e880]/30 shadow-sm">
+                                            <svg class="w-5 h-5 text-[#8aa43c]" fill="none" stroke="currentColor"
+                                                stroke-width="1.8" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M8 2v3M16 2v3M4 9h16M5 5h14a1 1 0 011 1v13a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1z" />
+                                            </svg>
+                                        </span>
+
+                                        <input id="departureDate" type="date"
+                                            class="w-full border-0 bg-transparent p-0 text-sm md:text-[15px] font-medium text-slate-700 outline-none focus:ring-0" />
+                                    </div>
+                                </div> -->
+
+                <!-- new dynamic date-->
+                <div class="bg-white p-4">
+                  <h4 class="text-lg font-bold text-slate-900 mb-6 plus-jakarta-sans">
+                    Available Dates
+                  </h4>
+                  <div id="availableDate">
+                    <!-- Available dates will be populated here -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tour summary -->
+          <div class="">
+            <div
+              class="overflow-hidden rounded-[24px] border border-[#e5e6dc] bg-white shadow-[0_10px_28px_rgba(15,23,42,0.05)]">
+              <!-- Header -->
+              <div class="border-b border-[#eef0e7] bg-[#f8faf7] px-4 py-3 md:px-5">
+                <h3 class="text-xl md:text-2xl font-semibold text-[#243146]">
+                  Booking Summary
+                </h3>
+              </div>
+
+              <!-- Body -->
+              <div class="p-4 md:p-5">
+                <div id="bookingSummary" class="flex flex-col gap-4">
+                  <!-- dynamic data will be inserted here -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 md:py-16 bg-[#f8faf7]">
+    <div class="w-full px-5 pt-2">
+      <!-- Tabs -->
+      <!-- Tabs -->
+      <div class="border-t border-[#e5e6dc] pt-4 mb-6">
+        <div class="overflow-x-auto scrollbar-hide">
+          <div class="flex items-center gap-2 w-max min-w-full md:min-w-0 md:flex-wrap">
+            <button data-tab="tour"
+              class="tab-btn active whitespace-nowrap px-5 md:px-6 py-2.5 md:py-3 rounded-xl text-sm md:text-xl font-semibold border border-[#e5e6dc] bg-white text-[#243146] transition-all duration-300">
+              Itinerary
+            </button>
+            <div id="otherOptions">
+              <!-- Other options will be populated here -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content Box -->
+      <div class="rounded-[22px] border border-[#e5e6dc] bg-white p-4 md:p-6 shadow-[0_12px_30px_rgba(15,23,42,0.05)]">
+        <!-- Tour -->
+        <!-- <div class="tab-content" id="tour"> -->
+        <div class="tab-content" id="tour">
+          <div>
+            <!-- Heading -->
+            <div class="flex items-center justify-between gap-3 mb-5 flex-wrap">
+              <!-- <h3 class="text-lg md:text-xl font-semibold text-[#243146]">Itinerary</h3> -->
+
+              <div class="w-full flex items-center justify-between gap-2">
+                <!-- Scrollable buttons -->
+                <div class="flex-1 min-w-0 overflow-x-auto scrollbar-hide">
+                  <div id="dayTabsWrapper" class="flex items-center gap-2 w-max pr-1">
+                    <!-- Day tabs will be populated here -->
+                  </div>
+                </div>
+
+                <!-- Fixed View All -->
+
+                <button id="viewAllDays"
+                  class="rounded-xl bg-[#243146] px-4 py-2 text-sm font-semibold text-[#d5e880] shadow-[0_8px_20px_rgba(36,49,70,0.16)] transition-all duration-300 hover:bg-[#1d283b]">
+                  View All
+                </button>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div id="itineraryContent" class="flex flex-col gap-3">
+              <!-- Itinerary content will be populated here -->
+            </div>
+          </div>
+        </div>
+
+        <div id="otherOptionsContent"></div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ -->
+  <section class="py-20 bg-[#f8faf7]">
+    <div class="max-w-[85%] mx-auto flex flex-col gap-10">
+      <!-- Heading -->
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="uppercase tracking-[3px] text-sm font-semibold text-[#8aa43c] plus-jakarta-sans">
+          FAQ
+        </span>
+        <h4 class="gloock-regular text-3xl md:text-5xl text-slate-900 mt-2">
+          Frequently Asked Questions
+        </h4>
+      </div>
+
+      <!-- FAQ List -->
+      <div id="faq-item" class="flex flex-col gap-4" id="faq-container">
+        <!-- Dynamic FAQs will come here -->
+        <div class="faq-item bg-white border border-slate-200 rounded-2xl p-5 pl-6 transition-all duration-300">
+          <button class="faq-question flex justify-between items-center w-full text-left">
+            <h3 class="text-lg md:text-xl font-semibold text-slate-900">
+              Heading
+            </h3>
+
+            <span class="faq-icon-wrapper w-10 h-10 rounded-full bg-[#f1f6d8] flex items-center justify-center">
+              <svg class="faq-icon w-5 h-5 text-[#8aa43c] transition-transform duration-300" fill="none"
+                stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14" />
+              </svg>
+            </span>
+          </button>
+
+          <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+            <p class="pt-4 text-slate-600">Answer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="py-4 bg-white">
+    <div class="max-w-[85%] mx-auto">
+      <div class="mb-12">
+        <div class="flex flex-col gap-3">
+          <p class="text-slate-500 plus-jakarta-sans text-lg">
+            Capturing moments from the roof of the world
+          </p>
+          <h2 class="gloock-regular text-2xl md:text-4xl text-slate-900 mt-2">
+            Trek Photo Gallery
+          </h2>
+
+          <!-- Gallery Tabs -->
+          <div id="photoTypeTab" class="flex flex-wrap gap-3">
+            <button
+              class="active-season-tab bg-slate-900 text-[#d5e880] season-tab px-8 py-3 rounded-xl font-bold border-2 border-slate-900 transition-all duration-300"
+              data-season="summer">
+              Summer
+            </button>
+            <button
+              class="season-tab px-8 py-3 rounded-xl bg-white text-slate-600 font-bold border-2 border-[#e5e6dc] hover:border-slate-900 hover:text-slate-900 transition-all duration-300"
+              data-season="autumn">
+              Autumn
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Mosaic Grid Layout -->
+      <div id="galleryGrid" class="grid grid-cols-1 md:grid-cols-12 gap-5 min-h-[600px]">
+        <!-- Summer Gallery (Shown by default) -->
+        <div
+          class="gallery-item summer col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-5 transition-all duration-500">
+          <div class="md:col-span-7 group relative overflow-hidden rounded-[32px] h-[400px] md:h-[600px]">
+            <img src="./images/blog-photo.webp" alt="Summer Expedition"
+              class="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-8">
+              <span class="text-white font-bold text-xl">Base Camp Morning - Summer</span>
+            </div>
+          </div>
+          <div class="md:col-span-5 grid grid-cols-2 gap-5">
+            <div class="col-span-2 group relative overflow-hidden rounded-[32px] h-[290px]">
+              <img src="./images/blog1.webp" alt="Summer View"
+                class="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
+            </div>
+            <div class="group relative overflow-hidden rounded-[32px] h-[290px]">
+              <img src="./images/blog2.webp" alt="Summer Trail"
+                class="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
+            </div>
+            <div class="group relative overflow-hidden rounded-[32px] h-[290px]">
+              <img src="./images/blog-photo.webp" alt="More Photos"
+                class="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
+              <div class="absolute inset-0 bg-black/50 flex items-center justify-center cursor-pointer">
+                <span class="text-white text-2xl font-bold">+ 16 Photos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Autumn Gallery (Hidden by default) -->
+        <div
+          class="gallery-item autumn hidden col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-5 transition-all duration-500">
+          <div class="md:col-span-7 group relative overflow-hidden rounded-[32px] h-[400px] md:h-[600px]">
+            <img src="./images/blog2.webp" alt="Autumn Expedition"
+              class="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-8">
+              <span class="text-white font-bold text-xl">Golden Valleys - Autumn</span>
+            </div>
+          </div>
+          <div class="md:col-span-5 grid grid-cols-2 gap-5">
+            <div class="col-span-2 group relative overflow-hidden rounded-[32px] h-[290px]">
+              <img src="./images/blog-photo.webp" alt="Autumn View"
+                class="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
+            </div>
+            <div class="group relative overflow-hidden rounded-[32px] h-[290px]">
+              <img src="./images/blog1.webp" alt="Autumn Trail"
+                class="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
+            </div>
+            <div class="group relative overflow-hidden rounded-[32px] h-[290px]">
+              <img src="./images/blog2.webp" alt="More Photos"
+                class="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
+              <div class="absolute inset-0 bg-black/50 flex items-center justify-center cursor-pointer">
+                <span class="text-white text-2xl font-bold">+ 24 Photos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Similar Treks Section -->
+  <section class="py-6 md:py-10 bg-[#f8faf7] overflow-hidden">
+    <div class="max-w-[85%] mx-auto">
+      <div class="text-start mb-10 md:mb-14">
+        <h2 class="gloock-regular text-3xl md:text-4xl text-slate-950 inline-block relative pb-4">
+          Similar Treks
+          <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-20 md:w-24 h-1 rounded-full bg-[#d5e880]"></span>
+        </h2>
+      </div>
+
+      <div class="flex items-center justify-between gap-4 mb-6 md:mb-8">
+        <h3 class="text-xl md:text-2xl font-bold text-slate-800 plus-jakarta-sans">
+          Highly Rated Similar Treks
+        </h3>
+
+        <div class="hidden lg:flex items-center gap-3">
+          <button id="similarPrev" type="button"
+            class="flex h-11 w-11 items-center justify-center rounded-full border border-[#dfe8d0] bg-white text-slate-700 shadow-sm transition-all duration-300 hover:bg-[#d5e880] hover:border-[#d5e880] hover:text-slate-900 disabled:opacity-40 disabled:cursor-not-allowed"
+            aria-label="Previous similar treks">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2.2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+
+          <button id="similarNext" type="button"
+            class="flex h-11 w-11 items-center justify-center rounded-full border border-[#dfe8d0] bg-white text-slate-700 shadow-sm transition-all duration-300 hover:bg-[#d5e880] hover:border-[#d5e880] hover:text-slate-900 disabled:opacity-40 disabled:cursor-not-allowed"
+            aria-label="Next similar treks">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2.2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="similarViewport"
+        class="overflow-x-auto lg:overflow-hidden scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none]">
+        <div id="similarTrack"
+          class="flex gap-4 md:gap-6 will-change-transform lg:transition-transform lg:duration-500 lg:ease-out">
+          <!-- Card 1 -->
+          <article
+            class="similar-card group w-full sm:w-[82%] md:w-[48%] lg:w-[31.8%] xl:w-[23.5%] shrink-0 overflow-hidden rounded-[24px] bg-white shadow-sm ring-1 ring-[#e9efdf] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl snap-start">
+            <div class="relative h-[220px] md:h-[240px] overflow-hidden">
+              <img src="./images/blog-photo.webp" alt="Goenchala Trek"
+                class="w-full h-full object-cover transition duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/45 via-transparent to-transparent"></div>
+
+              <span
+                class="absolute left-4 top-4 inline-flex items-center gap-1 rounded-full bg-white/90 px-3 py-1 text-[10px] font-bold uppercase tracking-[1px] text-slate-800 shadow-sm plus-jakarta-sans">
+                Featured
+              </span>
+            </div>
+
+            <div class="p-5 md:p-6">
+              <div class="flex items-start justify-between gap-3 mb-4">
+                <h4 class="text-xl font-bold text-slate-900 plus-jakarta-sans">
+                  Goenchala Trek
+                </h4>
+
+                <span
+                  class="inline-flex shrink-0 items-center gap-1 rounded-full bg-[#d5e880]/35 px-3 py-1 text-[10px] font-bold uppercase tracking-[1px] text-slate-800 plus-jakarta-sans">
+                  <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" />
+                  </svg>
+                  Sikkim
+                </span>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2 mb-5">
+                <div class="rounded-2xl bg-[#f8faf7] px-3 py-3">
+                  <p class="text-[10px] font-semibold uppercase tracking-[1.1px] text-slate-500 plus-jakarta-sans">
+                    Duration
+                  </p>
+                  <p class="text-sm font-semibold text-slate-800 plus-jakarta-sans mt-1">
+                    11 Days
+                  </p>
+                </div>
+                <div class="rounded-2xl bg-[#f8faf7] px-3 py-3">
+                  <p class="text-[10px] font-semibold uppercase tracking-[1.1px] text-slate-500 plus-jakarta-sans">
+                    Grade
+                  </p>
+                  <p class="text-sm font-semibold text-slate-800 plus-jakarta-sans mt-1">
+                    Challenging
+                  </p>
+                </div>
+              </div>
+
+              <a href="#"
+                class="inline-flex w-full items-center justify-center rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold uppercase tracking-[0.6px] text-slate-800 shadow-sm transition-all duration-300 hover:border-[#d5e880] hover:bg-[#d5e880] hover:text-slate-900 plus-jakarta-sans">
+                View Trek Details
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article
+            class="similar-card group w-full sm:w-[82%] md:w-[48%] lg:w-[31.8%] xl:w-[23.5%] shrink-0 overflow-hidden rounded-[24px] bg-white shadow-sm ring-1 ring-[#e9efdf] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl snap-start">
+            <div class="relative h-[220px] md:h-[240px] overflow-hidden">
+              <img src="./images/blog1.webp" alt="Sandakphu Trek"
+                class="w-full h-full object-cover transition duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/45 via-transparent to-transparent"></div>
+
+              <span
+                class="absolute left-4 top-4 inline-flex items-center gap-1 rounded-full bg-white/90 px-3 py-1 text-[10px] font-bold uppercase tracking-[1px] text-slate-800 shadow-sm plus-jakarta-sans">
+                Popular
+              </span>
+            </div>
+
+            <div class="p-5 md:p-6">
+              <div class="flex items-start justify-between gap-3 mb-4">
+                <h4 class="text-xl font-bold text-slate-900 plus-jakarta-sans">
+                  Sandakphu Trek
+                </h4>
+
+                <span
+                  class="inline-flex shrink-0 items-center gap-1 rounded-full bg-[#d5e880]/35 px-3 py-1 text-[10px] font-bold uppercase tracking-[1px] text-slate-800 plus-jakarta-sans">
+                  <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" />
+                  </svg>
+                  Bengal
+                </span>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2 mb-5">
+                <div class="rounded-2xl bg-[#f8faf7] px-3 py-3">
+                  <p class="text-[10px] font-semibold uppercase tracking-[1.1px] text-slate-500 plus-jakarta-sans">
+                    Duration
+                  </p>
+                  <p class="text-sm font-semibold text-slate-800 plus-jakarta-sans mt-1">
+                    6 Days
+                  </p>
+                </div>
+                <div class="rounded-2xl bg-[#f8faf7] px-3 py-3">
+                  <p class="text-[10px] font-semibold uppercase tracking-[1.1px] text-slate-500 plus-jakarta-sans">
+                    Grade
+                  </p>
+                  <p class="text-sm font-semibold text-slate-800 plus-jakarta-sans mt-1">
+                    Moderate
+                  </p>
+                </div>
+              </div>
+
+              <a href="#"
+                class="inline-flex w-full items-center justify-center rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold uppercase tracking-[0.6px] text-slate-800 shadow-sm transition-all duration-300 hover:border-[#d5e880] hover:bg-[#d5e880] hover:text-slate-900 plus-jakarta-sans">
+                View Trek Details
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article
+            class="similar-card group w-full sm:w-[82%] md:w-[48%] lg:w-[31.8%] xl:w-[23.5%] shrink-0 overflow-hidden rounded-[24px] bg-white shadow-sm ring-1 ring-[#e9efdf] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl snap-start">
+            <div class="relative h-[220px] md:h-[240px] overflow-hidden">
+              <img src="./images/blog2.webp" alt="Dzongri Trek"
+                class="w-full h-full object-cover transition duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/45 via-transparent to-transparent"></div>
+
+              <span
+                class="absolute left-4 top-4 inline-flex items-center gap-1 rounded-full bg-white/90 px-3 py-1 text-[10px] font-bold uppercase tracking-[1px] text-slate-800 shadow-sm plus-jakarta-sans">
+                Trending
+              </span>
+            </div>
+
+            <div class="p-5 md:p-6">
+              <div class="flex items-start justify-between gap-3 mb-4">
+                <h4 class="text-xl font-bold text-slate-900 plus-jakarta-sans">
+                  Dzongri Trek
+                </h4>
+
+                <span
+                  class="inline-flex shrink-0 items-center gap-1 rounded-full bg-[#d5e880]/35 px-3 py-1 text-[10px] font-bold uppercase tracking-[1px] text-slate-800 plus-jakarta-sans">
+                  <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" />
+                  </svg>
+                  Sikkim
+                </span>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2 mb-5">
+                <div class="rounded-2xl bg-[#f8faf7] px-3 py-3">
+                  <p class="text-[10px] font-semibold uppercase tracking-[1.1px] text-slate-500 plus-jakarta-sans">
+                    Duration
+                  </p>
+                  <p class="text-sm font-semibold text-slate-800 plus-jakarta-sans mt-1">
+                    8 Days
+                  </p>
+                </div>
+                <div class="rounded-2xl bg-[#f8faf7] px-3 py-3">
+                  <p class="text-[10px] font-semibold uppercase tracking-[1.1px] text-slate-500 plus-jakarta-sans">
+                    Grade
+                  </p>
+                  <p class="text-sm font-semibold text-slate-800 plus-jakarta-sans mt-1">
+                    Moderate
+                  </p>
+                </div>
+              </div>
+
+              <a href="#"
+                class="inline-flex w-full items-center justify-center rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold uppercase tracking-[0.6px] text-slate-800 shadow-sm transition-all duration-300 hover:border-[#d5e880] hover:bg-[#d5e880] hover:text-slate-900 plus-jakarta-sans">
+                View Trek Details
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article
+            class="similar-card group w-full sm:w-[82%] md:w-[48%] lg:w-[31.8%] xl:w-[23.5%] shrink-0 overflow-hidden rounded-[24px] bg-white shadow-sm ring-1 ring-[#e9efdf] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl snap-start">
+            <div class="relative h-[220px] md:h-[240px] overflow-hidden">
+              <img src="./images/blog-photo.webp" alt="Singalila Ridge"
+                class="w-full h-full object-cover transition duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/45 via-transparent to-transparent"></div>
+
+              <span
+                class="absolute left-4 top-4 inline-flex items-center gap-1 rounded-full bg-white/90 px-3 py-1 text-[10px] font-bold uppercase tracking-[1px] text-slate-800 shadow-sm plus-jakarta-sans">
+                Best Seller
+              </span>
+            </div>
+
+            <div class="p-5 md:p-6">
+              <div class="flex items-start justify-between gap-3 mb-4">
+                <h4 class="text-xl font-bold text-slate-900 plus-jakarta-sans">
+                  Singalila Ridge
+                </h4>
+
+                <span
+                  class="inline-flex shrink-0 items-center gap-1 rounded-full bg-[#d5e880]/35 px-3 py-1 text-[10px] font-bold uppercase tracking-[1px] text-slate-800 plus-jakarta-sans">
+                  <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" />
+                  </svg>
+                  Nepal
+                </span>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2 mb-5">
+                <div class="rounded-2xl bg-[#f8faf7] px-3 py-3">
+                  <p class="text-[10px] font-semibold uppercase tracking-[1.1px] text-slate-500 plus-jakarta-sans">
+                    Duration
+                  </p>
+                  <p class="text-sm font-semibold text-slate-800 plus-jakarta-sans mt-1">
+                    10 Days
+                  </p>
+                </div>
+                <div class="rounded-2xl bg-[#f8faf7] px-3 py-3">
+                  <p class="text-[10px] font-semibold uppercase tracking-[1.1px] text-slate-500 plus-jakarta-sans">
+                    Grade
+                  </p>
+                  <p class="text-sm font-semibold text-slate-800 plus-jakarta-sans mt-1">
+                    Moderate
+                  </p>
+                </div>
+              </div>
+
+              <a href="#"
+                class="inline-flex w-full items-center justify-center rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold uppercase tracking-[0.6px] text-slate-800 shadow-sm transition-all duration-300 hover:border-[#d5e880] hover:bg-[#d5e880] hover:text-slate-900 plus-jakarta-sans">
+                View Trek Details
+              </a>
+            </div>
+          </article>
+
+          <!--card 5 -->
+          <article
+            class="similar-card group w-full sm:w-[82%] md:w-[48%] lg:w-[31.8%] xl:w-[23.5%] shrink-0 overflow-hidden rounded-[24px] bg-white shadow-sm ring-1 ring-[#e9efdf] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl snap-start">
+            <div class="relative h-[220px] md:h-[240px] overflow-hidden">
+              <img src="./images/blog-photo.webp" alt="Singalila Ridge"
+                class="w-full h-full object-cover transition duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/45 via-transparent to-transparent"></div>
+
+              <span
+                class="absolute left-4 top-4 inline-flex items-center gap-1 rounded-full bg-white/90 px-3 py-1 text-[10px] font-bold uppercase tracking-[1px] text-slate-800 shadow-sm plus-jakarta-sans">
+                Best Seller
+              </span>
+            </div>
+
+            <div class="p-5 md:p-6">
+              <div class="flex items-start justify-between gap-3 mb-4">
+                <h4 class="text-xl font-bold text-slate-900 plus-jakarta-sans">
+                  Singalila Ridge
+                </h4>
+
+                <span
+                  class="inline-flex shrink-0 items-center gap-1 rounded-full bg-[#d5e880]/35 px-3 py-1 text-[10px] font-bold uppercase tracking-[1px] text-slate-800 plus-jakarta-sans">
+                  <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" />
+                  </svg>
+                  Nepal
+                </span>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2 mb-5">
+                <div class="rounded-2xl bg-[#f8faf7] px-3 py-3">
+                  <p class="text-[10px] font-semibold uppercase tracking-[1.1px] text-slate-500 plus-jakarta-sans">
+                    Duration
+                  </p>
+                  <p class="text-sm font-semibold text-slate-800 plus-jakarta-sans mt-1">
+                    10 Days
+                  </p>
+                </div>
+                <div class="rounded-2xl bg-[#f8faf7] px-3 py-3 flex items-center">
+                  <p class="text-[10px] font-semibold uppercase tracking-[1.1px] text-slate-500 plus-jakarta-sans">
+                    Grade
+                  </p>
+                  <p class="text-sm font-semibold text-slate-800 plus-jakarta-sans mt-1">
+                    Moderate
+                  </p>
+                </div>
+              </div>
+
+              <a href="#"
+                class="inline-flex w-full items-center justify-center rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold uppercase tracking-[0.6px] text-slate-800 shadow-sm transition-all duration-300 hover:border-[#d5e880] hover:bg-[#d5e880] hover:text-slate-900 plus-jakarta-sans">
+                View Trek Details
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Trek Guides & Articles Section -->
+  <section class="py-4 bg-white">
+    <div class="max-w-[85%] mx-auto">
+      <div class="text-start mb-16">
+        <h2 class="gloock-regular text-4xl text-slate-950 inline-block relative pb-4">
+          Essential Trekking Articles
+          <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-24 h-1 bg-[#d5e880]"></div>
+        </h2>
+        <p class="mt-4 text-slate-500 plus-jakarta-sans text-lg">
+          Expert advice, packing guides, and safety tips for your next
+          adventure
+        </p>
+      </div>
+
+      <div id="limitedBlog" class="grid grid-cols-1 md:grid-cols-4 gap-8 text-left"></div>
+    </div>
+  </section>
+
+  <!-- Why Hikers Choosing Section -->
+  <section class="py-4 bg-[#fbfcf8]">
+    <div class="max-w-[85%] mx-auto">
+      <div class="text-left mb-12 border-b-2 border-[#d5e880] pb-6">
+        <h2 class="gloock-regular text-4xl text-slate-900">
+          Why Hikers Choosing
+        </h2>
+      </div>
+
+      <div id="stories-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1: Gear List -->
+        <div class="group relative overflow-hidden rounded-[24px] h-[220px] shadow-lg cursor-pointer">
+          <img src="./images/blog-photo.webp" alt="Gear List"
+            class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+          <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center p-6 text-center">
+            <div
+              class="w-14 h-14 rounded-full bg-red-600 flex items-center justify-center shadow-2xl mb-4 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+            <h4 class="text-white font-extrabold text-xl leading-tight uppercase tracking-wide">
+              Trekking Gear List
+            </h4>
+            <p class="text-white/80 text-xs mt-1">What to Pack?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- footer section -->
+  <div id="footer"></div>
+  <script src="config/apiConfig.js"></script>
+  <script src="controllers/function.js"></script>
+  <script src="controllers/footerdetails.js"></script>
+  <script src="controllers/users.js"></script>
+  <script src="controllers/tour.js?v=2"></script>
+  <script src="/includes/common.js"></script>
+
+  <!-- summary script -->
+  <script>
+    const guestDecrease = document.getElementById("guestDecrease");
+    const guestIncrease = document.getElementById("guestIncrease");
+    const guestCountEl = document.getElementById("guestCount");
+
+    const groupDiscountDisplay = document.getElementById(
+      "groupDiscountDisplay",
+    );
+    const discountedPriceDisplay = document.getElementById(
+      "discountedPriceDisplay",
+    );
+    const totalPriceDisplay = document.getElementById("totalPriceDisplay");
+    const payNowDisplay = document.getElementById("payNowDisplay");
+
+    let guests = 3;
+
+    const minGuests = 1;
+    const maxGuests = 10;
+
+    const basicPricePerGuest = 8900;
+    const groupDiscountPerGuest = 2000;
+    const payNowPercent = 0.2;
+
+    function formatINR(amount) {
+      return "₹" + amount.toLocaleString("en-IN");
+    }
+
+    function updateSummary() {
+      const totalBasic = basicPricePerGuest * guests;
+      const totalDiscount = groupDiscountPerGuest * guests;
+      const discountedPrice = totalBasic - totalDiscount;
+      const payNowAmount = Math.round(discountedPrice * payNowPercent);
+
+      guestCountEl.textContent = guests;
+      groupDiscountDisplay.textContent = "-" + formatINR(totalDiscount);
+      discountedPriceDisplay.textContent = formatINR(discountedPrice);
+      totalPriceDisplay.textContent = formatINR(discountedPrice);
+      payNowDisplay.textContent = formatINR(payNowAmount);
+
+      guestDecrease.disabled = guests === minGuests;
+      guestIncrease.disabled = guests === maxGuests;
+
+      if (guests === minGuests) {
+        guestDecrease.classList.add("opacity-50", "cursor-not-allowed");
+      } else {
+        guestDecrease.classList.remove("opacity-50", "cursor-not-allowed");
+      }
+
+      if (guests === maxGuests) {
+        guestIncrease.classList.add("opacity-50", "cursor-not-allowed");
+      } else {
+        guestIncrease.classList.remove("opacity-50", "cursor-not-allowed");
+      }
+    }
+
+    guestIncrease.addEventListener("click", () => {
+      if (guests < maxGuests) {
+        guests++;
+        updateSummary();
+      }
+    });
+
+    guestDecrease.addEventListener("click", () => {
+      if (guests > minGuests) {
+        guests--;
+        updateSummary();
+      }
+    });
+
+    updateSummary();
+  </script>
+
+  <!-- itanary scruipt -->
+  <script>
+    const itineraryBtns = document.querySelectorAll(".itinerary-btn");
+    const itineraryDays = document.querySelectorAll(".itinerary-day");
+    const viewAllDaysBtn = document.getElementById("viewAllDays");
+
+    itineraryBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const targetDay = btn.getAttribute("data-day");
+
+        itineraryBtns.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        itineraryDays.forEach((day) => {
+          day.classList.add("hidden");
+        });
+
+        document.getElementById(targetDay).classList.remove("hidden");
+      });
+    });
+
+    viewAllDaysBtn.addEventListener("click", () => {
+      itineraryBtns.forEach((b) => b.classList.remove("active"));
+
+      itineraryDays.forEach((day) => {
+        day.classList.remove("hidden");
+      });
+    });
+  </script>
+
+  <!-- accordion script -->
+  <script>
+    const detailTabs = document.querySelectorAll(".detail-tab");
+    const detailContents = document.querySelectorAll(".detail-content");
+
+    detailTabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const target = tab.getAttribute("data-detail");
+
+        detailTabs.forEach((btn) => btn.classList.remove("active"));
+        tab.classList.add("active");
+
+        detailContents.forEach((content) => content.classList.add("hidden"));
+        document.getElementById(target).classList.remove("hidden");
+      });
+    });
+  </script>
+
+  <!-- tour details script -->
+  <script>
+    const infoTabs = document.querySelectorAll(".info-tab");
+    const infoContents = document.querySelectorAll(".info-content");
+
+    infoTabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const target = tab.getAttribute("data-info");
+
+        infoTabs.forEach((btn) => btn.classList.remove("active"));
+        tab.classList.add("active");
+
+        infoContents.forEach((content) => content.classList.add("hidden"));
+        document.getElementById(target).classList.remove("hidden");
+      });
+    });
+  </script>
+
+  <!-- pop-up wp-facebook-->
+  <script>
+    const shareToggle = document.getElementById("shareToggle");
+    const sharePopup = document.getElementById("sharePopup");
+    const shareWhatsapp = document.getElementById("shareWhatsapp");
+    const shareFacebook = document.getElementById("shareFacebook");
+
+    const shareUrl = window.location.href;
+    const shareTitle = document.title || "Check out this tour package";
+
+    shareWhatsapp.href = `https://wa.me/?text=${encodeURIComponent(shareTitle + " - " + shareUrl)}`;
+
+    shareFacebook.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`;
+
+    shareToggle.addEventListener("click", function (e) {
+      e.stopPropagation();
+      sharePopup.classList.toggle("hidden");
+    });
+
+    document.addEventListener("click", function (e) {
+      if (!sharePopup.contains(e.target) && !shareToggle.contains(e.target)) {
+        sharePopup.classList.add("hidden");
+      }
+    });
+  </script>
+
+  <!-- tour tap script -->
+  <script>
+    const tabs = document.querySelectorAll(".tab-btn");
+    const contents = document.querySelectorAll(".tab-content");
+
+    tabs.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        // remove active
+        tabs.forEach((b) => b.classList.remove("active"));
+
+        // add active
+        btn.classList.add("active");
+
+        // hide all content
+        contents.forEach((c) => c.classList.add("hidden"));
+
+        // show selected
+        document.getElementById(btn.dataset.tab).classList.remove("hidden");
+      });
+    });
+  </script>
+
+  <script>
+    // function loadInclude(file, elementId) {
+    //     fetch(file)
+    //         .then(response => response.text())
+    //         .then(data => {
+    //             document.getElementById(elementId).innerHTML = data;
+    //             if (elementId === "header") initMobileMenu();
+    //         })
+    //         .catch(error => console.error(`Error loading ${file}:`, error));
+    // }
+
+    // function initMobileMenu() {
+    //     const mobileSlider = document.getElementById("mobileSlider");
+    //     const menuOverlay = document.getElementById("menuOverlay");
+    //     document.addEventListener("click", (e) => {
+    //         if (e.target.closest("#menuBtn")) {
+    //             mobileSlider?.classList.remove("translate-x-full");
+    //             menuOverlay?.classList.remove("opacity-0", "invisible");
+    //             document.body.classList.add("overflow-hidden");
+    //         }
+    //         if (e.target.closest("#closeMenu") || e.target.id === "menuOverlay") {
+    //             mobileSlider?.classList.add("translate-x-full");
+    //             menuOverlay?.classList.add("opacity-0", "invisible");
+    //             document.body.classList.remove("overflow-hidden");
+    //         }
+    //     });
+    // }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      // Accordion Logic
+      const accordionButtons = document.querySelectorAll(".accordion-btn");
+      accordionButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const content = button.nextElementSibling;
+          const icon = button.querySelector(".accordion-icon");
+          document.querySelectorAll(".accordion-content").forEach((item) => {
+            if (item !== content) item.classList.add("hidden");
+          });
+          document.querySelectorAll(".accordion-icon").forEach((ic) => {
+            if (ic !== icon) ic.classList.remove("rotate-180");
+          });
+          content.classList.toggle("hidden");
+          icon.classList.toggle("rotate-180");
+        });
+      });
+
+      // Day Tab Logic
+      // const dayTabs = document.querySelectorAll(".day-tab");
+      // const dayContents = document.querySelectorAll(".day-content");
+      // dayTabs.forEach((tab) => {
+      //     tab.addEventListener("click", () => {
+      //         const targetId = tab.dataset.day;
+      //         dayTabs.forEach((btn) => {
+      //             btn.classList.remove("bg-[#cddc67]", "text-[#243146]", "border-[#cddc67]");
+      //             btn.classList.add("bg-white", "text-slate-700", "border-[#dfe3d3]");
+      //         });
+      //         dayContents.forEach((content) => content.classList.add("hidden"));
+      //         tab.classList.add("bg-[#cddc67]", "text-[#243146]", "border-[#cddc67]");
+      //         tab.classList.remove("bg-white", "text-slate-700", "border-[#dfe3d3]");
+      //         const target = document.getElementById(targetId);
+      //         if (target) target.classList.remove("hidden");
+      //         tab.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+      //     });
+      // });
+
+      // Gallery Tab Logic
+      // const seasonTabs = document.querySelectorAll(".season-tab");
+      // const galleryItems = document.querySelectorAll(".gallery-item");
+
+      // seasonTabs.forEach((tab) => {
+      //     tab.addEventListener("click", () => {
+      //         const season = tab.dataset.season;
+
+      //         // Update Tab Styles
+      //         seasonTabs.forEach((btn) => {
+      //             btn.classList.remove("bg-slate-900", "text-[#d5e880]", "border-slate-900");
+      //             btn.classList.add("bg-white", "text-slate-600", "border-[#e5e6dc]");
+      //         });
+      //         tab.classList.add("bg-slate-900", "text-[#d5e880]", "border-slate-900");
+      //         tab.classList.remove("bg-white", "text-slate-600", "border-[#e5e6dc]");
+
+      //         // Update Gallery Items
+      //         galleryItems.forEach((item) => {
+      //             if (item.classList.contains(season)) {
+      //                 item.classList.remove("hidden");
+      //                 setTimeout(() => item.classList.add("opacity-100"), 10);
+      //             } else {
+      //                 item.classList.add("hidden");
+      //                 item.classList.remove("opacity-100");
+      //             }
+      //         });
+      //     });
+      // });
+    });
+
+    //customer stores
+    // ✅ STRONG YOUTUBE FIX (IMPORTANT)
+    function extractYouTubeId(url) {
+      if (!url) return "";
+
+      const match = url.match(/(?:v=|youtu\.be\/|embed\/)([^&\n?#]+)/);
+      return match ? match[1] : "";
+    }
+
+    async function loadStories() {
+      try {
+        // const url = "https://glacier-treks-adventures-admin-back.vercel.app/api/customer-stories";
+        const endpoint =
+          API_CONFIG?.ENDPOINTS?.STORIES || "/api/customer-stories";
+        const url = API_CONFIG.getUrl(endpoint);
+
+        const response = await fetch(url);
+        const data = await response.json();
+
+        const container = document.getElementById("stories-container");
+        container.innerHTML = "";
+
+        data.forEach((item) => {
+          const videoId = extractYouTubeId(item.youtubeLink);
+
+          if (!videoId) return;
+
+          const html = `
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+                    <div class="aspect-video">
+                        <iframe class="w-full h-full"
+                            src="https://www.youtube.com/embed/${videoId}"
+                            frameborder="0"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                   
+                </div>
+            `;
+
+          container.insertAdjacentHTML("beforeend", html);
+        });
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    //blog
+
+    async function loadLimitedBlog(limit) {
+      try {
+        // const endpoint = API_CONFIG?.ENDPOINTS?.BLOGS || "/api/blogs";
+        const endpoint = "/api/blogs/recent/list?limit=" + limit;
+        const url = API_CONFIG.getUrl(endpoint);
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        // console.log("Limited Blogs:", data);
+        const limitedBlog = document.getElementById("limitedBlog");
+        limitedBlog.innerHTML = "";
+        // ✅ EMPTY CHECK
+        if (!Array.isArray(data) || data.length === 0) {
+          limitedBlog.innerHTML = `
+                        <div class="col-span-full text-center py-10">
+                            <p class="text-slate-500 text-lg plus-jakarta-sans">
+                                No Blogs Found 😢
+                            </p>
+                        </div>
+                    `;
+          return;
+        }
+
+        data.forEach((blog) => {
+          const createdAt = new Date(blog.createdAt);
+          const options = { year: "numeric", month: "short", day: "2-digit" };
+          const formattedDate = createdAt.toLocaleDateString(
+            "en-US",
+            options,
+          );
+          const words = blog.content.trim().split(/\s+/).length;
+          const readTimes = Math.ceil(words / 200);
+          // console.log("Read Time:", readTimes, "minutes");
+          const title = limitWords(blog.heading, 8);
+          const description = limitWords(blog.metaDescription, 15);
+          const card = `
+
+
+                       <article class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-[32px] aspect-[16/10] mb-6">
+                        <img src="${blog.thumbnail.url || "./images/blog1.webp"}" alt="Article 1"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="bg-white/90 backdrop-blur-md text-slate-900 text-[10px] font-bold px-4 py-2 rounded-full uppercase tracking-widest shadow-sm">${formattedDate || "N/A"}</span>
+                        </div>
+                    </div>
+                    <h4
+                        class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors gloock-regular leading-tight">
+                        ${title || "No Title"}</h4>
+                    <p class="text-slate-500 line-clamp-2 plus-jakarta-sans leading-relaxed mb-4">${description || ""}</p>
+                    <a href="/blog/${blog.slug}"
+                        class="text-slate-900 font-extrabold text-sm uppercase tracking-widest inline-flex items-center gap-2 group/link">
+                        Read Full Article
+                        <svg class="w-4 h-4 group-hover/link:translate-x-2 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </article>
+
+            `;
+
+          limitedBlog.innerHTML += card;
+        });
+      } catch (error) {
+        console.error("Error fetching About Us data:", error);
+      }
+    }
+
+    loadInclude("includes/header.html", "header").then(() => {
+      toggleBtn(); //function are defined in common.js
+      loadCategory(); //function are defined in common.js
+      loadAboutusToggle(); //function are defined in common.js
+      upcomingdropdown(); //function are defined in common.js
+      document
+        .getElementById("logout-btn")
+        .addEventListener("click", function () {
+          logout();
+        });
+    });
+    loadInclude("includes/footer.html", "footer").then(() => {
+      loadSettings(); // function are defined in footerdetails.js
+      footerCategoryList(); //function are defined in footerdetails.js
+      footerUpcomingDropdown(); //function are defined in footerdetails.js
+    });
+
+    const limit = 4; // Set the limit for the number of blogs to fetch
+    document.addEventListener("DOMContentLoaded", function () {
+      const params = new URLSearchParams(window.location.search);
+      const pathParts = window.location.pathname.split("/").filter(Boolean);
+      const slug = params.get("slug") || (pathParts.length === 1 && !pathParts[0].includes(".") ? pathParts[0] : null);
+      loadLimitedBlog(limit); //function are defined in blog.js
+      loadStories(); //function are defined in stories.js
+      if (slug) {
+        loadPackageDetails(slug); //function are defined in package.js
+      }
+    });
+  </script>
+
+  <!-- overview read less and readmore script -->
+  <script>
+    // const overviewText = document.getElementById("overviewText");
+    // const readMoreBtn = document.getElementById("readMoreBtn");
+
+    // const fullText = overviewText.textContent.trim();
+    // const words = fullText.split(/\s+/);
+    // const wordLimit = 180;
+
+    // let isExpanded = false;
+
+    // if (words.length > wordLimit) {
+    //     const shortText = words.slice(0, wordLimit).join(" ") + "...";
+
+    //     overviewText.textContent = shortText;
+    //     readMoreBtn.classList.remove("hidden");
+
+    //     readMoreBtn.addEventListener("click", () => {
+    //         isExpanded = !isExpanded;
+
+    //         overviewText.textContent = isExpanded ? fullText : shortText;
+    //         readMoreBtn.textContent = isExpanded ? "Read Less" : "Read More";
+    //     });
+    // }
+  </script>
+</body>
+
+</html>

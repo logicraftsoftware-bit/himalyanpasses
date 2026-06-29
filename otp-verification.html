@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&family=Gloock&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .plus-jakarta-sans {
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        .gloock-regular {
+            font-family: "Gloock", serif;
+        }
+    </style>
+</head>
+
+<body>
+
+<section class="relative min-h-screen overflow-hidden">
+
+    <img src="./images/sign-in-page.webp"
+        class="absolute inset-0 w-full h-full object-cover">
+
+    <div class="absolute inset-0 bg-slate-950/35 backdrop-blur-[2px]"></div>
+
+    <div class="relative z-10 min-h-screen flex items-center justify-center px-4 py-10">
+
+        <div class="w-full max-w-6xl rounded-[36px] border border-white/20 bg-white/10 backdrop-blur-2xl shadow-2xl overflow-hidden">
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 min-h-[700px]">
+
+                <!-- Left Side -->
+                <div class="relative p-6 md:p-10 flex items-center justify-center">
+
+                    <div class="w-full h-full rounded-[36px] bg-gradient-to-br from-white/20 via-white/10 to-white/5 border border-white/10 p-8 md:p-10 flex flex-col justify-between">
+
+                        <div class="text-center">
+                            <h3 class="text-white text-3xl gloock-regular mb-4">
+                                Verify OTP
+                            </h3>
+
+                            <p class="text-white/80 plus-jakarta-sans leading-7">
+                                We have sent a verification code to your email.
+                                Please enter the OTP below to continue.
+                            </p>
+                        </div>
+
+                        <div class="flex justify-center py-10">
+                            <img src="./images/signin-img.webp"
+                                class="w-full max-w-[350px] rounded-tl-[36px] rounded-br-[36px]">
+                        </div>
+
+                        <div class="text-center">
+                        
+                            <p class="text-white/70 plus-jakarta-sans">
+                                Didn't receive the OTP?
+                            </p>
+
+                            <a href="/forgetpass">
+
+                            <button id="resendOtp"
+                                class="mt-3 px-5 py-2 rounded-full bg-[#d5e880] text-slate-900 font-semibold">
+                                Resend OTP
+                            </button></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Side -->
+                <div class="relative p-6 md:p-10 lg:p-12 flex items-center">
+
+                    <div class="w-full max-w-md mx-auto">
+
+                        <div class="mb-8">
+                            <span class="inline-flex px-5 py-2 rounded-full bg-[#d5e880] text-slate-900 font-semibold">
+                                OTP Verification
+                            </span>
+                        </div>
+
+                        <h2 class="text-white text-4xl gloock-regular mb-4">
+                            Enter OTP
+                        </h2>
+
+                        <p class="text-white/80 plus-jakarta-sans mb-8">
+                            Please enter the OTP sent to your email address.
+                        </p>
+
+                        <form id="otpForm" class="flex flex-col gap-6">
+
+                            <div>
+                                <label class="block text-white mb-2">
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    readonly
+                                    class="w-full h-14 px-5 rounded-2xl bg-white/20 border border-white/10 text-white">
+                            </div>
+
+                            <div>
+                                <label class="block text-white mb-2">
+                                    OTP
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="otp"
+                                    maxlength="6"
+                                    placeholder="Enter 6 digit OTP"
+                                    class="w-full h-14 px-5 rounded-2xl bg-white/20 border border-white/10 text-white placeholder:text-white/70">
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="w-full bg-[#d5e880] text-slate-900 py-4 rounded-2xl font-semibold">
+                                Verify OTP →
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="config/apiConfig.js"></script>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+const email = params.get('email');
+
+document.getElementById('email').value = email || '';
+
+document.getElementById('otpForm').addEventListener('submit', async (e) => {
+
+    e.preventDefault();
+
+    const otp = document.getElementById('otp').value;
+
+    try {
+
+        const endpoint = "/api/auth/verify-otp";
+        const url = API_CONFIG.getUrl(endpoint);
+
+        const response = await fetch(url, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                email,
+                otp
+            })
+        });
+
+        const data = await response.json();
+
+        if(response.ok){
+
+            alert("OTP Verified Successfully");
+
+            window.location.href =
+                `reset-password.html?email=${encodeURIComponent(email)}&otp=${otp}`;
+
+        }else{
+
+            alert(data.message || "Invalid OTP");
+
+        }
+
+    } catch(error){
+
+        console.error(error);
+        alert("Something went wrong");
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>

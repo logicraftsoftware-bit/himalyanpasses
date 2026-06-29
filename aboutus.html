@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himalayan Passes | Trusted Trekking & Adventure Travel in Sikkim</title>
+    <meta name="description"
+        content="Discover the best trekking packages in Sikkim, Darjeeling, and North Bengal with Himalayan Passes. Explore Himalayan trails, camping tours, and guided mountain adventures.">
+    <meta name="keywords"
+        content="trekking packages in Sikkim, Himalayan treks, trekking in Darjeeling, North Bengal trekking, adventure tours, mountain trekking, guided treks, Himalayan Passes">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./style/common.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <section class="relative w-full min-h-[420px] md:min-h-[540px] overflow-hidden">
+        <!-- Background -->
+        <img src="./images/aboutus-banner.webp" alt="About Us Banner"
+            class="absolute inset-0 w-full h-full object-cover">
+
+        <!-- Overlays -->
+        <div class="absolute inset-0 bg-black/45"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950/80 via-slate-900/35 to-transparent"></div>
+        <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-slate-950/50 to-transparent"></div>
+
+        <!-- Header -->
+        <div id="header" class="relative z-30"></div>
+
+        <!-- Content -->
+        <div class="relative z-20 flex items-center min-h-[420px] md:min-h-[540px]">
+            <div class="max-w-7xl mx-auto w-full px-6 lg:px-10 pt-28 md:pt-32">
+                <div class="max-w-3xl">
+                    <!-- <span
+                        class="hidden lg:inline-block mb-4 px-4 py-2 rounded-full bg-[#d5e880]/15 border border-[#d5e880]/30 text-[#d5e880] text-xs sm:text-sm font-semibold tracking-[2px] uppercase plus-jakarta-sans">
+                        Himalayan Passes
+                    </span> -->
+
+                    <h1
+                        class="text-white text-3xl sm:text-4xl md:text-5xl leading-tight gloock-regular mb-5">
+                        About Us
+                    </h1>
+
+                    <p class="text-white/85 text-base sm:text-lg md:text-xl leading-8 plus-jakarta-sans mb-8 max-w-2xl">
+                        We create memorable trekking experiences with passion, safety, and deep knowledge of the
+                        Himalayas.
+                    </p>
+
+                    <div class="flex flex-wrap items-center gap-3 text-white/90 plus-jakarta-sans text-sm sm:text-base">
+                        <a href="/" class="hover:text-[#d5e880] transition duration-300">Home</a>
+                        <span class="text-white/40">/</span>
+                        <span class="text-[#d5e880] font-medium">About Us</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About us content -->
+    <section class="max-w-[85%] mx-auto mt-14 mb-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+            <!-- Left Image Slider -->
+            <div class="relative group">
+                <div id="aboutSliderContainerSection"
+                    class="relative overflow-hidden rounded-3xl shadow-2xl h-[420px] md:h-[700px]">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent z-10">
+                    </div>
+                    <div id="aboutDots" class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-3">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="flex flex-col gap-6 overflow-hidden">
+
+                <div class="w-full min-w-0">
+
+                    <p class="uppercase plus-jakarta-sans tracking-[3px] text-sm font-semibold text-[#6b7d22] mb-3">
+                        About Us
+                    </p>
+
+                    <h2 id="aboutHeading"
+                        class="gloock-regular text-3xl md:text-5xl leading-tight text-slate-900 mb-5 break-words">
+                    </h2>
+
+                    <div id="aboutContent" class="text-slate-700 leading-7 break-words"></div>
+
+                    <div id="moreContent" class="hidden text-slate-700 leading-7 break-words mt-4"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- why choose to us -->
+    <section class="max-w-[85%] mx-auto my-16 md:my-24">
+        <!-- Section Heading -->
+        <div class="max-w-3xl mx-auto text-center mb-10 md:mb-14">
+            <p
+                class="inline-block px-4 py-2 rounded-full bg-[#d5e880]/20 text-[#6b7d22] text-xs sm:text-sm font-semibold tracking-[2px] uppercase plus-jakarta-sans mb-4">
+                Why Choose Us
+            </p>
+            <h2 class="gloock-regular text-3xl md:text-5xl leading-tight text-slate-900 mb-4">
+                Why Travel With Himalayan Passes
+            </h2>
+            <p class="plus-jakarta-sans text-base md:text-lg leading-8 text-slate-600">
+                Embark on unforgettable adventures with confidence, comfort, and trusted support at every step.
+            </p>
+        </div>
+
+        <!-- Cards -->
+        <div id="highlightsContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        </div>
+    </section>
+
+    <!-- our vision and mission -->
+    <section class="py-16 md:py-24 bg-[#f8faf7]">
+        <div class="max-w-[85%] mx-auto">
+
+            <!-- Section Heading -->
+            <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+                <p
+                    class="inline-block px-4 py-2 rounded-full bg-[#d5e880]/20 text-[#6b7d22] text-xs sm:text-sm font-semibold tracking-[2px] uppercase plus-jakarta-sans mb-4">
+                    Our Purpose
+                </p>
+
+                <h2 class="gloock-regular text-3xl md:text-5xl leading-tight text-slate-900 mb-4">
+                    Our Mission & Vision
+                </h2>
+
+                <p class="plus-jakarta-sans text-base md:text-lg leading-8 text-slate-600">
+                    Driven by passion, responsibility, and a deep love for the Himalayas, we aim to create meaningful
+                    trekking experiences for every traveler.
+                </p>
+            </div>
+
+            <!-- Mission Vision Cards -->
+            <div id="missionVisionContainer" class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+            </div>
+
+            <!-- Bottom Highlight -->
+            <div
+                class="mt-10 md:mt-12 bg-white border border-[#e7eddc] rounded-2xl px-6 md:px-8 py-5 md:py-6 text-center shadow-sm">
+                <p class="plus-jakarta-sans text-base md:text-lg text-slate-700 leading-8">
+                    <span class="font-semibold text-slate-900">Himalayan Passes</span> was established in
+                    <span class="text-[#6b7d22] font-semibold">2012</span> with a vision to create safe, memorable, and
+                    community-focused trekking experiences in the Himalayas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="config/apiConfig.js"></script>
+    <script src="controllers/function.js"></script>
+    <script src="controllers/about-us.js"></script>
+    <script src="controllers/users.js"></script>
+    <script src="controllers/footerdetails.js"></script>
+    <script src="includes/common.js"></script>
+    <!-- footer section -->
+    <div id="footer"></div>
+
+    <script>
+
+
+        // Load includes
+        // Load Includes
+        loadInclude("includes/header.html", "header").then(() => {
+            toggleBtn(); //function are defined in common.js
+            loadCategory(); //function are defined in comoon.js
+            loadAboutusToggle(); //function are defined in common.js
+            upcomingdropdown(); //function are defined in common.js
+            document.getElementById("logout-btn").addEventListener("click", function () {
+                logout();
+            });
+
+        });
+        loadInclude("includes/footer.html", "footer").then(() => {
+            loadSettings(); // function are defined in footerdetails.js
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            loadAboutUsSection(); //function are defined in about-us.js
+        }); 
+    </script>
+</body>
+
+</html>

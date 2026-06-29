@@ -1,0 +1,54 @@
+.plus-jakarta-sans {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gloock-regular {
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#similarViewport::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  #similarViewport {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 2px;
+  }
+
+  #similarTrack {
+    width: max-content;
+    transform: none !important;
+  }
+
+  .similar-card {
+    scroll-snap-align: start;
+  }
+}
+
+@media (max-width: 639px) {
+  #similarTrack {
+    width: 100%;
+    gap: 0;
+  }
+
+  .similar-card {
+    width: 100% !important;
+    min-width: 100%;
+  }
+}

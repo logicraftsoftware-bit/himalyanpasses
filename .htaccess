@@ -1,0 +1,92 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# ==========================
+# OLD URL -> NEW URL Redirect
+# ==========================
+
+RewriteCond %{THE_REQUEST} \s/blog\.html\?slug=([^&\s]+) [NC]
+RewriteRule ^blog\.html$ /blog/%1? [R=301,L]
+
+RewriteCond %{QUERY_STRING} !(^|&)routed=1(&|$) [NC]
+RewriteCond %{THE_REQUEST} \s/categorice-blog(?:\.html)?\?slug=([^&\s]+) [NC]
+RewriteRule ^categorice-blog(?:\.html)?$ /category/%1? [R=301,L]
+
+RewriteCond %{QUERY_STRING} !(^|&)routed=1(&|$) [NC]
+RewriteCond %{THE_REQUEST} \s/(trek|single-tour|tour|package)\.html\?slug=([^&\s]+) [NC]
+RewriteRule ^(trek|single-tour|tour|package)\.html$ /%2? [R=301,L]
+
+RewriteCond %{QUERY_STRING} !(^|&)routed=1(&|$) [NC]
+RewriteCond %{THE_REQUEST} \s/package\.html\?slug=([^&\s]+) [NC]
+RewriteRule ^package\.html$ /%1? [R=301,L]
+
+RewriteRule ^package/([^/]+)/?$ /$1 [R=301,L]
+
+RewriteCond %{QUERY_STRING} !(^|&)routed=1(&|$) [NC]
+RewriteCond %{QUERY_STRING} (^|&)slug=([^&]+) [NC]
+RewriteRule ^(trek|single-tour|tour|package)/?$ /%2? [R=301,L]
+
+RewriteCond %{QUERY_STRING} !(^|&)routed=1(&|$) [NC]
+RewriteCond %{REQUEST_URI} !^/(includes|controllers)/ [NC]
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[?\s] [NC]
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+# ==========================
+# NEW URL -> HTML FILE
+# ==========================
+
+RewriteRule ^blog/([^/]+)/?$ blog.html?slug=$1 [L,QSA]
+RewriteRule ^category/([^/]+)/?$ categorice-blog.html?slug=$1 [L,QSA]
+RewriteRule ^package/([^/]+)/?$ package.html?slug=$1 [L,QSA]
+
+RewriteRule ^terms-condition/?$ termmndcondition.html [L,QSA]
+RewriteRule ^adventure-tour-list/?$ listing.html [L,QSA]
+RewriteRule ^(aboutus|accounts|article|blog|booking|categorice-blog|contact|forgetpass|invoice|listing|newpackage|otp-verification|package|privecy|refund|reset-password|seo|signin|single-tour|single-tour2506|stories|termmndcondition|thank-you|tour|tour2406|trek|whychoose)/?$ $1.html [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/.]+)/?$ route.html?slug=$1 [L,QSA]
+
+</IfModule>
+
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json application/xml image/svg+xml
+</IfModule>
+
+<IfModule mod_brotli.c>
+AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css text/javascript application/javascript application/json application/xml image/svg+xml
+</IfModule>
+
+AddType image/webp .webp
+AddType image/avif .avif
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/html "access plus 10 minutes"
+ExpiresByType text/css "access plus 1 year"
+ExpiresByType text/javascript "access plus 1 year"
+ExpiresByType application/javascript "access plus 1 year"
+ExpiresByType application/json "access plus 1 hour"
+ExpiresByType image/avif "access plus 1 year"
+ExpiresByType image/webp "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/svg+xml "access plus 1 year"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+Header unset ETag
+Header set X-Content-Type-Options "nosniff"
+Header set Referrer-Policy "strict-origin-when-cross-origin"
+<FilesMatch "\.(css|js|mjs|avif|webp|jpe?g|png|gif|svg|ico|woff2?)$">
+Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+<FilesMatch "\.(html)$">
+Header set Cache-Control "public, max-age=600, must-revalidate"
+</FilesMatch>
+</IfModule>
+
+FileETag None

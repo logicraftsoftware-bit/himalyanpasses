@@ -1,0 +1,37 @@
+.plus-jakarta-sans {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gloock-regular {
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#blogGrid article {
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+tr,
+td {
+  border: 1px solid !important;
+}
+.tag-item {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #f8faf7;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f5c53;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tag-item:hover {
+  background: #d5e880;
+  color: #0f5c53;
+  transform: translateY(-2px);
+}

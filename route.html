@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himalayan Passes</title>
+  <base href="/" />
+</head>
+<body>
+  <script src="/config/apiConfig.js"></script>
+  <script>
+    (async function () {
+      const pathSlug = window.location.pathname.split("/").filter(Boolean)[0];
+      const querySlug = new URLSearchParams(window.location.search).get("slug");
+      const slug = pathSlug || querySlug;
+
+      function loadTemplate(template) {
+        return fetch(`/${template}.html?slug=${encodeURIComponent(slug)}&routed=1`, {
+          credentials: "same-origin",
+        })
+          .then((response) => {
+            if (!response.ok) throw new Error(`Unable to load ${template}`);
+            return response.text();
+          })
+          .then((html) => {
+            const withBase = html.replace(/<head([^>]*)>/i, '<head$1><base href="/">');
+            document.open();
+            document.write(withBase);
+            document.close();
+          });
+      }
+
+      async function exists(endpoint) {
+        const response = await fetch(API_CONFIG.getUrl(endpoint), {
+          headers: { Accept: "application/json" },
+        });
+
+        if (!response.ok) return null;
+        return response.json();
+      }
+
+      if (!slug) {
+        window.location.replace("/");
+        return;
+      }
+
+      try {
+        const category = await exists(`/api/categories/${encodeURIComponent(slug)}`);
+        if (category) {
+          const type = (category.categoryType || category.type || "").toLowerCase();
+          sessionStorage.setItem(`route:data:${slug}`, JSON.stringify({
+            kind: type === "tour" ? "tour-category" : "trek-category",
+            data: category,
+          }));
+          await loadTemplate(type === "tour" ? "single-tour" : "trek");
+          return;
+        }
+
+        const packageData = await exists(`/api/packages/${encodeURIComponent(slug)}`);
+        if (packageData) {
+          const parentType = (
+            packageData.parentCategory?.categoryType ||
+            packageData.parentCategory?.type ||
+            packageData.categoryType ||
+            packageData.type ||
+            ""
+          ).toLowerCase();
+          sessionStorage.setItem(`route:data:${slug}`, JSON.stringify({
+            kind: parentType === "tour" ? "tour-package" : "package",
+            data: packageData,
+          }));
+          await loadTemplate(parentType === "tour" ? "tour" : "package");
+          return;
+        }
+
+        window.location.replace("/");
+      } catch (error) {
+        console.error("Route load failed:", error);
+        window.location.replace("/");
+      }
+    })();
+  </script>
+</body>
+</html>

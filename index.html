@@ -1,0 +1,1462 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himalayan Passed | Trusted Trekking & Adventure Travel in Sikkim</title>
+  <meta name="description"
+    content="Discover the best trekking packages in Sikkim, Darjeeling, and North Bengal with Glacier Treks & Adventure. Explore Himalayan trails, camping tours, and guided mountain adventures." />
+  <meta name="keywords"
+    content="trekking packages in Sikkim, Himalayan treks, trekking in Darjeeling, North Bengal trekking, adventure tours, mountain trekking, guided treks, Glacier Treks & Adventure" />
+  <link rel="preconnect" href="https://himalayanpassesbackend.logicraftsoftware.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin />
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon" sizes="16x16" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+
+  <script src="config/apiConfig.js" defer></script>
+  <script src="controllers/api.js?v=2" defer></script>
+  <script src="controllers/faq.js" defer></script>
+  <script src="controllers/footerdetails.js" defer></script>
+  <script src="controllers/stories.js" defer></script>
+  <script src="controllers/contact-us-front.js" defer></script>
+  <script src="controllers/function.js" defer></script>
+  <script src="controllers/blog.js" defer></script>
+  <script src="controllers/trek.js" defer></script>
+  <script src="controllers/users.js" defer></script>
+  <script src="./includes/common.js" defer></script>
+  <!-- link css -->
+  <link rel="stylesheet" href="style/home.css" />
+  <link rel="stylesheet" href="./style/common.css" />
+
+  <style>
+    .dropdown-content {
+      display: none;
+      padding-left: 20px;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px 0;
+      color: white;
+    }
+
+    .dropdown-btn {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 0;
+      color: white;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    #announcement a {
+      color: #0000EE;
+      text-decoration: underline;
+    }
+
+#announcement-scroll{
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+#announcement-scroll::-webkit-scrollbar{
+    display:none;
+}
+  </style>
+
+  <!-- style -->
+  <style>
+    /* Paragraph / body text */
+    #faq-container p,
+    #faq-container li,
+    #faq-container span,
+    #faq-container a,
+    #faq-container div {
+      font-family: "Plus Jakarta Sans", sans-serif !important;
+      font-size: 16px !important;
+      font-weight: 400 !important;
+      line-height: 1.8 !important;
+      color: #475569 !important;
+      margin-bottom: 16px !important;
+    }
+
+    /* h1 */
+    #faq-container h1 {
+      font-family: "Gloock", serif !important;
+      font-size: 36px !important;
+      font-weight: 700 !important;
+      line-height: 1.2 !important;
+      color: #0f172a !important;
+      margin: 5px 0 5px !important;
+    }
+
+    /* h2 */
+    #faq-container h2 {
+      font-family: "Gloock", serif !important;
+      font-size: 24px !important;
+      font-weight: 700 !important;
+      line-height: 1.3 !important;
+      color: #0f172a !important;
+      margin: 5px 0 5px !important;
+    }
+
+    /* h3 */
+    #faq-container h3 {
+      font-family: "Gloock", serif !important;
+      font-size: 24px !important;
+      font-weight: 600 !important;
+      line-height: 1.4 !important;
+      color: #0f172a !important;
+      margin: 5px 0 5px !important;
+    }
+
+    /* h4 */
+    #faq-container h4 {
+      font-family: "Gloock", serif !important;
+      font-size: 16px !important;
+      font-weight: 600 !important;
+      line-height: 1.4 !important;
+      color: #0f172a !important;
+      margin: 5px 0 5px !important;
+    }
+
+    /* h5 */
+    #faq-container h5 {
+      font-family: "Gloock", serif !important;
+      font-size: 13.28px !important;
+      font-weight: 500 !important;
+      line-height: 1.5 !important;
+      color: #0f172a !important;
+      margin: 5px 0 5px !important;
+    }
+
+    /* h6 */
+    #faq-container h6 {
+      font-family: "Gloock", serif !important;
+      font-size: 10.72px !important;
+      font-weight: 500 !important;
+      line-height: 1.5 !important;
+      color: #0f172a !important;
+      margin: 5px 0 4px !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="relative overflow-hidden h-[60vh] md:h-screen">
+    <!-- Background Slider -->
+    <div id="heroSlider" class="absolute inset-0">
+      <div id="slider-container" class="relative w-full h-full"></div>
+    </div>
+
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-black/45 z-[1]"></div>
+
+    <!-- Header -->
+    <div id="header" class="relative z-20"></div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 flex items-center justify-center h-full text-center px-4 sm:px-6">
+      <div class="max-w-7xl mx-auto w-full">
+        <div class="max-w-3xl mx-auto pt-20 md:pt-28">
+          <!-- Tagline -->
+          <p
+            class="inline-block mb-3 md:mb-4 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[#d5e880] text-[10px] sm:text-xs md:text-sm font-medium tracking-[2px] uppercase plus-jakarta-sans">
+            Adventure Starts Here
+          </p>
+
+          <!-- Heading -->
+          <h1 id="slider-heading"
+            class="text-white text-2xl sm:text-4xl md:text-6xl lg:text-7xl leading-snug sm:leading-tight mb-3 md:mb-6 gloock-regular">
+          </h1>
+
+          <!-- Paragraph -->
+          <p id="slider-subtype"
+            class="text-white/85 text-sm sm:text-base md:text-xl leading-6 sm:leading-7 md:leading-8 mb-5 md:mb-10 max-w-2xl mx-auto plus-jakarta-sans px-2 sm:px-0">
+          </p>
+
+          <!-- Buttons -->
+          <div class="flex flex-row justify-center items-center gap-3 md:gap-4 plus-jakarta-sans mt-[14vh] md:mt-0">
+            <a id="book-now-btn" href="#" target="_blank"
+              class="w-full sm:w-auto bg-[#d5e880] text-slate-900 px-5 py-3 md:px-8 md:py-4 rounded-l-full rounded-r-2xl font-semibold text-sm md:text-[16px] hover:bg-white hover:shadow-xl transition-all duration-300">
+              Book Now
+            </a>
+
+            <a id="our-destination-btn" href="#OurAffordablePackages"
+              class="w-full sm:w-auto border border-white/40 bg-white/10 backdrop-blur-md text-white px-5 py-3 md:px-8 md:py-4 rounded-l-2xl rounded-r-full font-semibold text-sm md:text-[16px] hover:bg-white hover:text-slate-900 transition-all duration-300">
+              Our Destination
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider Dots -->
+    <div class="hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 z-20 gap-3">
+      <button class="dot w-3 h-3 rounded-full bg-white/50"></button>
+      <button class="dot w-3 h-3 rounded-full bg-white/50"></button>
+      <button class="dot w-3 h-3 rounded-full bg-white/50"></button>
+    </div>
+  </div>
+
+  <!-- annousment sec -->
+  <!-- Fixed Announcement Bar -->
+  <section class="w-full z-40">
+    <div
+      class="border border-white/15 bg-[#0f1e25]/80 backdrop-blur-sm shadow-[0_8px_30px_rgba(0,0,0,0.25)] overflow-hidden">
+      <div class="flex items-center min-h-[48px] md:min-h-[56px]">
+        <!-- Label -->
+        <!-- <div class="shrink-0 pl-2 md:pl-3">
+          <span
+            class="inline-flex items-center gap-2 bg-[#d5e880] text-slate-900 text-[10px] md:text-xs font-bold uppercase tracking-[2px] px-3 md:px-4 py-2 rounded-full plus-jakarta-sans">
+         
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 md:w-4 md:h-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13 16h-1v-4h-1m1-4h.01M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
+            </svg>
+
+            Announcement
+          </span>
+        </div> -->
+
+        <!-- Marquee -->
+        <!-- <div class="relative overflow-hidden flex-1 ml-3 md:ml-4">
+          <div id="announcement"
+            class="flex items-center whitespace-nowrap  py-3 text-white/90 text-xs sm:text-sm md:text-base font-medium plus-jakarta-sans pr-12">
+            <p id="announcement-heading">Announcement </p>: &nbsp;
+            <p id="announcement-content"> -->
+        <!-- <strong><a href="https://www.trekthehimalayas.com">Trek the Himalayas</a>&nbsp;
+            </strong>is dedicated to protect any kind of information. -->
+        </p>
+        <!-- <p id="slider-announcement-1"
+              class="text-white/90 text-xs sm:text-sm md:text-base font-medium plus-jakarta-sans pr-12">first announcement</p> -->
+
+        <!-- <p id="slider-announcement-2"
+              class="text-white/90 text-xs sm:text-sm md:text-base font-medium plus-jakarta-sans pr-12">second announcement</p> -->
+        <!-- </div>
+        </div> -->
+
+<div id="announcement-wrapper" class="relative flex-1 ml-3 md:ml-4 overflow-hidden">
+    <div id="announcement-scroll" class="w-full overflow-hidden cursor-grab">
+        <div
+            id="announcement"
+            class="inline-flex items-center whitespace-nowrap min-w-max py-3 text-white/90 text-xs sm:text-sm md:text-base font-medium">
+            <span id="announcement-heading">Announcement :</span> : &nbsp;
+            <span id="announcement-content"></span>
+        </div>
+    </div>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!--guidence sec -->
+  <section class="hidden md:block max-w-[85%] mx-auto my-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div
+        class="group bg-white border border-[#d5e880] rounded-2xl p-6 flex flex-col gap-4 shadow-sm hover:bg-[#d5e880] hover:-translate-y-2 hover:rotate-[-2deg] hover:shadow-2xl transition-all duration-500">
+        <div
+          class="w-16 h-16 rounded-2xl bg-[#f7fbdf] group-hover:bg-white flex items-center justify-center transition-all duration-500">
+          <img src="./images/flip-icon1.png" alt="location"
+            class="w-8 h-8 object-contain group-hover:rotate-[12deg] transition-all duration-500" />
+        </div>
+        <h3 class="gloock-regular text-2xl md:text-3xl font-semibold text-slate-900">
+          Great Location
+        </h3>
+        <p class="plus-jakarta-sans text-base md:text-lg leading-7 text-slate-700">
+          One of the most compelling aspects of hiking is its accessibility
+          for travelers who want scenic and peaceful outdoor experiences.
+        </p>
+      </div>
+
+      <div
+        class="group bg-white border border-[#d5e880] rounded-2xl p-6 flex flex-col gap-4 shadow-sm hover:bg-[#d5e880] hover:-translate-y-2 hover:rotate-[2deg] hover:shadow-2xl transition-all duration-500">
+        <div
+          class="w-16 h-16 rounded-2xl bg-[#f7fbdf] group-hover:bg-white flex items-center justify-center transition-all duration-500">
+          <img src="./images/flip-icon2.png" alt="expert guide"
+            class="w-8 h-8 object-contain group-hover:rotate-[12deg] transition-all duration-500" />
+        </div>
+        <h3 class="gloock-regular text-2xl md:text-3xl font-semibold text-slate-900">
+          Expert Guide
+        </h3>
+        <p class="plus-jakarta-sans text-base md:text-lg leading-7 text-slate-700">
+          Our experienced trekking guides help you explore every trail safely
+          while sharing local knowledge and mountain expertise.
+        </p>
+      </div>
+
+      <div
+        class="group bg-white border border-[#d5e880] rounded-2xl p-6 flex flex-col gap-4 shadow-sm hover:bg-[#d5e880] hover:-translate-y-2 hover:rotate-[-2deg] hover:shadow-2xl transition-all duration-500">
+        <div
+          class="w-16 h-16 rounded-2xl bg-[#f7fbdf] group-hover:bg-white flex items-center justify-center transition-all duration-500">
+          <img src="./images/flip-icon3.png" alt="community engagement"
+            class="w-8 h-8 object-contain group-hover:rotate-[12deg] transition-all duration-500" />
+        </div>
+        <h3 class="gloock-regular text-2xl md:text-3xl font-semibold text-slate-900">
+          Community Engage
+        </h3>
+        <p class="plus-jakarta-sans text-base md:text-lg leading-7 text-slate-700">
+          We encourage meaningful connections with local culture, mountain
+          communities, and responsible travel experiences.
+        </p>
+      </div>
+
+      <div
+        class="group bg-white border border-[#d5e880] rounded-2xl p-6 flex flex-col gap-4 shadow-sm hover:bg-[#d5e880] hover:-translate-y-2 hover:rotate-[2deg] hover:shadow-2xl transition-all duration-500">
+        <div
+          class="w-16 h-16 rounded-2xl bg-[#f7fbdf] group-hover:bg-white flex items-center justify-center transition-all duration-500">
+          <img src="./images/flip-icon4.png" alt="safe adventure"
+            class="w-8 h-8 object-contain group-hover:rotate-[12deg] transition-all duration-500" />
+        </div>
+        <h3 class="gloock-regular text-2xl md:text-3xl font-semibold text-slate-900">
+          Safe Adventure
+        </h3>
+        <p class="plus-jakarta-sans text-base md:text-lg leading-7 text-slate-700">
+          Every journey is planned with safety, comfort, and support so you
+          can enjoy adventure with complete confidence.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- about us sec -->
+  <section class="max-w-[85%] mx-auto mt-4 md:mt-8 mb-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <!-- Left Image Slider (Dynamic) -->
+      <div class="relative group">
+        <div id="aboutSliderContainer" class="relative overflow-hidden rounded-3xl shadow-2xl h-[420px] md:h-[700px]">
+          <!-- Images will be injected here by JS -->
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="flex flex-col gap-6">
+        <div class="">
+          <p class="uppercase plus-jakarta-sans tracking-[3px] text-sm font-semibold text-[#6b7d22] mb-3">
+            About Us
+          </p>
+
+          <h2 id="aboutHeading" class="gloock-regular text-3xl md:text-5xl leading-tight text-slate-900 mb-5">
+            <!--  -->
+          </h2>
+
+          <p id="aboutContent" class="plus-jakarta-sans text-base md:text-lg leading-8 text-slate-600">
+            <!--  p-->
+          </p>
+
+          <div id="moreContent" class="hidden"></div>
+
+          <div class="mt-8">
+            <button id="readMoreBtn"
+              class="group inline-flex items-center gap-3 bg-[#d5e880] text-slate-900 px-6 py-3 md:px-8 md:py-4 rounded-l-full rounded-r-2xl font-semibold text-sm md:text-md border border-[#d5e880] shadow-md hover:bg-white hover:border-white hover:shadow-xl transition-all duration-300">
+              <span id="btnText">Read More</span>
+              <span id="btnArrow" class="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about us sec & expreice -->
+  <section class="hidden md:block relative mt-[10vh] py-16 md:py-24 overflow-hidden">
+    <!-- Background Image -->
+    <img src="./images/exprience-banner.webp" alt="experience-banner"
+      class="absolute inset-0 w-full h-full object-cover" />
+
+    <!-- Black Overlay -->
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    <!-- Content -->
+    <div class="max-w-[85%] mx-auto relative z-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div
+          class="flex items-center gap-4 rounded-2xl border border-white/20 bg-white/10 backdrop-blur-md px-5 py-6 shadow-lg hover:bg-white/15 hover:-translate-y-1 transition-all duration-300">
+          <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center shrink-0">
+            <img src="./images/counter-iocn.png" alt="years of experience"
+              class="counter-icon w-8 h-8 object-contain transition-transform duration-500 ease-in-out cursor-pointer hover:scale-110" />
+          </div>
+          <div class="flex flex-col gap-1">
+            <h4 class="gloock-regular text-3xl text-white">15+</h4>
+            <span class="text-white/90 text-base md:text-lg plus-jakarta-sans">Years of Experience</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="flex items-center gap-4 rounded-2xl border border-white/20 bg-white/10 backdrop-blur-md px-5 py-6 shadow-lg hover:bg-white/15 hover:-translate-y-1 transition-all duration-300">
+          <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center shrink-0">
+            <img src="./images/counter-iocn1.png" alt="active member"
+              class="counter-icon w-8 h-8 object-contain transition-transform duration-500 ease-in-out cursor-pointer" />
+          </div>
+          <div class="flex flex-col gap-1">
+            <h4 class="gloock-regular text-3xl text-white">26k+</h4>
+            <span class="text-white/90 text-base md:text-lg plus-jakarta-sans">Active Members</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="flex items-center gap-4 rounded-2xl border border-white/20 bg-white/10 backdrop-blur-md px-5 py-6 shadow-lg hover:bg-white/15 hover:-translate-y-1 transition-all duration-300">
+          <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center shrink-0">
+            <img src="./images/counter-iocn2.png" alt="expert guide"
+              class="counter-icon w-8 h-8 object-contain transition-transform duration-500 ease-in-out cursor-pointer" />
+          </div>
+          <div class="flex flex-col gap-1">
+            <h4 class="gloock-regular text-3xl text-white">100+</h4>
+            <span class="text-white/90 text-base md:text-lg plus-jakarta-sans">Expert Guides</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="flex items-center gap-4 rounded-2xl border border-white/20 bg-white/10 backdrop-blur-md px-5 py-6 shadow-lg hover:bg-white/15 hover:-translate-y-1 transition-all duration-300">
+          <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center shrink-0">
+            <img src="./images/counter-iocn3.png" alt="unique route"
+              class="counter-icon w-8 h-8 object-contain transition-transform duration-500 ease-in-out cursor-pointer" />
+          </div>
+          <div class="flex flex-col gap-1">
+            <h4 class="gloock-regular text-3xl text-white">25+</h4>
+            <span class="text-white/90 text-base md:text-lg plus-jakarta-sans">Unique Routes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- all pakages section like upcoming trek and trending trek -->
+  <section class="max-w-[85%] mx-auto mt-4 md:mt-8">
+    <!-- Heading -->
+    <div class="flex flex-col items-center text-center gap-4 mb-10">
+      <p class="plus-jakarta-sans uppercase tracking-[3px] text-sm font-semibold text-[#6b7d22]">
+        Our Destination
+      </p>
+
+      <h2 class="gloock-regular text-3xl md:text-5xl leading-tight text-slate-900 max-w-3xl">
+        Explore Untouched Wilderness On Every Trek
+      </h2>
+
+      <!-- Tab Buttons -->
+      <div class="flex items-center gap-3 mt-4 bg-[#f7f9ec] p-2 rounded-full shadow-sm border border-[#e8efc8]">
+        <button type="button" id="upcomingBtn"
+          class="px-6 py-3 rounded-l-full rounded-r-2xl font-semibold plus-jakarta-sans text-sm md:text-md text-slate-900 bg-[#d5e880] shadow-md transition-all duration-300">
+          Upcoming Trek
+        </button>
+
+        <button type="button" id="trendingBtn"
+          class="px-6 py-3 rounded-l-2xl rounded-r-full font-semibold plus-jakarta-sans text-sm md:text-md text-slate-700 bg-white transition-all duration-300 hover:bg-[#d5e880] hover:text-slate-900">
+          Trending Trek
+        </button>
+      </div>
+    </div>
+
+    <!-- Tab Content -->
+    <div>
+      <!-- Upcoming Trek -->
+      <div id="upcomingContent" class="block">
+        <div id="upcomingCard"
+          class="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 overflow-x-auto md:overflow-visible snap-x snap-mandatory scrollbar-hide pb-2 md:pb-0">
+          <!-- card 1 -->
+          <!-- <div
+              class="group relative shrink-0 snap-start w-[88%] sm:w-[70%] md:w-auto overflow-hidden rounded-[24px] min-h-[420px] shadow-xl"
+            >
+              <img
+                src="./images/about-us1.webp"
+                alt="Goechala Trek"
+                class="w-full h-full absolute inset-0 object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-transparent"
+              ></div>
+
+              <div class="relative z-10 flex flex-col justify-end h-full p-6">
+                <div>
+                  <h3 class="gloock-regular text-white text-3xl mb-2">
+                    Goechala Trek
+                  </h3>
+                  <div
+                    class="flex flex-col gap-2 text-white/95 plus-jakarta-sans text-lg mb-3"
+                  >
+                    <p class="flex items-center gap-2">
+                      <span class="text-xl">📍</span> West Sikkim
+                    </p>
+                    <p class="flex items-center gap-2">
+                      <span class="text-xl">🕒</span> 6 Days - 5 Nights
+                    </p>
+                    <p class="flex items-center gap-2">
+                      <span class="text-xl">⛰️</span> Altitude: 3,658 m / 12,000
+                      ft
+                    </p>
+                    <p class="flex items-center gap-2">
+                      <span class="text-xl">🌿</span> Best Season: Mar - May
+                    </p>
+                  </div>
+                  <div class="grid grid-cols-2 gap-3">
+                    <a
+                      href="#"
+                      class="inline-flex w-full items-center justify-center rounded-l-full rounded-r-2xl border border-slate-200 bg-white px-5 py-2 text-sm md:text-md font-semibold text-slate-800 shadow-sm transition-all duration-300 hover:border-[#d5e880] hover:bg-[#d5e880] hover:text-slate-900 plus-jakarta-sans"
+                    >
+                      View
+                    </a>
+                    <a
+                      href="#"
+                      class="inline-flex w-full items-center justify-center rounded-l-2xl rounded-r-full border border-[#d5e880] bg-[#d5e880] px-5 py-2 text-sm md:text-md font-semibold text-slate-900 shadow-sm transition-all duration-300 hover:bg-white plus-jakarta-sans"
+                    >
+                      Book
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+          <!-- card 2 -->
+          <!-- <div
+              class="group relative shrink-0 snap-start w-[88%] sm:w-[70%] md:w-auto overflow-hidden rounded-[24px] min-h-[420px] shadow-xl"
+            >
+              <img
+                src="./images/about-us1.webp"
+                alt="Goechala Trek"
+                class="w-full h-full absolute inset-0 object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-transparent"
+              ></div>
+
+              <div class="relative z-10 flex flex-col justify-end h-full p-6">
+                <div>
+                  <h3 class="gloock-regular text-white text-3xl mb-2">
+                    Goechala Trek
+                  </h3>
+                  <div
+                    class="flex flex-col gap-2 text-white/95 plus-jakarta-sans text-lg mb-3"
+                  >
+                    <p class="flex items-center gap-2">
+                      <span class="text-xl">📍</span> West Sikkim
+                    </p>
+                    <p class="flex items-center gap-2">
+                      <span class="text-xl">🕒</span> 6 Days - 5 Nights
+                    </p>
+                    <p class="flex items-center gap-2">
+                      <span class="text-xl">⛰️</span> Altitude: 3,658 m / 12,000
+                      ft
+                    </p>
+                    <p class="flex items-center gap-2">
+                      <span class="text-xl">🌿</span> Best Season: Mar - May
+                    </p>
+                  </div>
+                  <div class="grid grid-cols-2 gap-3">
+                    <a
+                      href="#"
+                      class="inline-flex w-full items-center justify-center rounded-l-full rounded-r-2xl border border-slate-200 bg-white px-5 py-3.5 font-semibold text-slate-800 shadow-sm transition-all duration-300 hover:border-[#d5e880] hover:bg-[#d5e880] hover:text-slate-900 plus-jakarta-sans"
+                    >
+                      View
+                    </a>
+                    <a
+                      href="#"
+                      class="inline-flex w-full items-center justify-center rounded-l-2xl rounded-r-full border border-[#d5e880] bg-[#d5e880] px-5 py-3.5 font-semibold text-slate-900 shadow-sm transition-all duration-300 hover:bg-white plus-jakarta-sans"
+                    >
+                      Book
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+        </div>
+      </div>
+
+      <!-- Trending Trek -->
+      <div id="trendingContent" class="hidden">
+        <div id="trendingCard"
+          class="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 overflow-x-auto md:overflow-visible snap-x snap-mandatory scrollbar-hide pb-2 md:pb-0">
+          <!-- card 1 -->
+          <!-- <div
+              class="group relative shrink-0 snap-start w-[88%] sm:w-[70%] md:w-auto overflow-hidden rounded-[24px] min-h-[420px] shadow-xl"
+            >
+              <img
+                src="./images/about-us1.webp"
+                alt="Goechala Trek"
+                class="w-full h-full absolute inset-0 object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-transparent"
+              ></div>
+
+              <div class="relative z-10 flex flex-col justify-end h-full p-6">
+                <div>
+                  <h3 class="gloock-regular text-white text-3xl mb-2">
+                    Goechala Trek
+                  </h3>
+                  <div
+                    class="flex flex-col gap-2 text-white/95 plus-jakarta-sans text-lg mb-3"
+                  >
+                    <p class="flex items-center gap-2">
+                      <span class="text-xl">📍</span> West Sikkim
+                    </p>
+                    <p class="flex items-center gap-2">
+                      <span class="text-xl">🕒</span> 6 Days - 5 Nights
+                    </p>
+                    <p class="flex items-center gap-2">
+                      <span class="text-xl">⛰️</span> Altitude: 3,658 m / 12,000
+                      ft
+                    </p>
+                    <p class="flex items-center gap-2">
+                      <span class="text-xl">🌿</span> Best Season: Mar - May
+                    </p>
+                  </div>
+                  <div class="grid grid-cols-2 gap-3">
+                    <a
+                      href="#"
+                      class="inline-flex w-full items-center justify-center rounded-l-full rounded-r-2xl border border-slate-200 bg-white px-5 py-3.5 font-semibold text-slate-800 shadow-sm transition-all duration-300 hover:border-[#d5e880] hover:bg-[#d5e880] hover:text-slate-900 plus-jakarta-sans"
+                    >
+                      View
+                    </a>
+                    <a
+                      href="#"
+                      class="inline-flex w-full items-center justify-center rounded-l-2xl rounded-r-full border border-[#d5e880] bg-[#d5e880] px-5 py-3.5 font-semibold text-slate-900 shadow-sm transition-all duration-300 hover:bg-white plus-jakarta-sans"
+                    >
+                      Book
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- how to book process -->
+  <section
+    class="relative h-[50vh] min-h-[400px] flex items-center bg-cover bg-center md:bg-fixed overflow-hidden mt-[5vh]"
+    style="background-image: url(&quot;./images/howtobook.webp&quot;)">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/65"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-[85%] mx-auto w-full text-center">
+      <p class="uppercase plus-jakarta-sans tracking-[3px] text-xs md:text-sm font-semibold text-[#d5e880] mb-2">
+        Process
+      </p>
+
+      <h4 class="gloock-regular text-2xl md:text-4xl text-white leading-tight mb-6">
+        Book a trek easily in just 3 simple steps
+      </h4>
+
+      <!-- Steps -->
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-center gap-4 md:gap-10">
+        <!-- Step -->
+        <div class="flex items-center gap-3 group">
+          <div
+            class="w-12 h-12 rounded-full bg-[#d5e880] text-slate-900 flex items-center justify-center font-bold shadow-md group-hover:scale-110 transition-all duration-300">
+            01
+          </div>
+          <span class="plus-jakarta-sans text-white/90 text-sm md:text-base">
+            Find Your Trek
+          </span>
+        </div>
+
+        <!-- Divider -->
+        <div class="hidden md:block w-10 h-[2px] bg-white/30"></div>
+
+        <!-- Step -->
+        <div class="flex items-center gap-3 group">
+          <div
+            class="w-12 h-12 rounded-full bg-[#d5e880] text-slate-900 flex items-center justify-center font-bold shadow-md group-hover:scale-110 transition-all duration-300">
+            02
+          </div>
+          <span class="plus-jakarta-sans text-white/90 text-sm md:text-base">
+            Fill Up the Form
+          </span>
+        </div>
+
+        <!-- Divider -->
+        <div class="hidden md:block w-10 h-[2px] bg-white/30"></div>
+
+        <!-- Step -->
+        <div class="flex items-center gap-3 group">
+          <div
+            class="w-12 h-12 rounded-full bg-[#d5e880] text-slate-900 flex items-center justify-center font-bold shadow-md group-hover:scale-110 transition-all duration-300">
+            03
+          </div>
+          <span class="plus-jakarta-sans text-white/90 text-sm md:text-base">
+            Get Ready for Adventure
+          </span>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="mt-8">
+        <a href="/contact"
+          class="inline-flex items-center gap-3 bg-[#d5e880] text-sm md:text-md text-slate-900 px-5 py-3 rounded-l-full rounded-r-2xl font-semibold plus-jakarta-sans shadow-lg hover:bg-white transition-all duration-300">
+          Contact Now →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!--our affortable packages -->
+  <section class="max-w-[85%] mx-auto mt-4 md:mt-8 mb-4 md:mb-8 py-6" id="OurAffordablePackages">
+    <!-- Heading -->
+    <div class="text-center mb-12">
+      <p class="uppercase tracking-[3px] text-sm font-semibold text-[#8aa43c] plus-jakarta-sans">
+        Pricing
+      </p>
+
+      <h2 class="gloock-regular text-3xl md:text-5xl text-slate-900 mt-2">
+        Our Affordable Packages
+      </h2>
+
+      <p class="text-slate-500 mt-4 max-w-2xl mx-auto plus-jakarta-sans">
+        Choose a budget-friendly trekking package with the best experience,
+        safety, and comfort.
+      </p>
+
+      <!-- Tabs -->
+      <div class="mt-8 overflow-x-auto scrollbar-hide">
+        <div id="homeTrekCategoryTabs" class="flex items-center gap-3 w-max mx-auto px-1">
+          <button type="button"
+            class="pricing-tab active-tab whitespace-nowrap text-sm md:text-md px-5 py-3 rounded-full border font-semibold"
+            data-tab="peak-ladakh">
+            Expedition Peak in Ladakh
+          </button>
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab Contents -->
+    <div class="relative">
+      <!-- arrow card -->
+      <!-- Left Arrow -->
+      <!-- Left Arrow -->
+      <button
+        class="scroll-left hidden lg:flex absolute left-2 md:left-0 top-1/2 -translate-y-1/2 z-20 bg-white/90 backdrop-blur-md shadow-lg rounded-full w-12 h-12 items-center justify-center border border-slate-200 hover:bg-[#d5e880] transition">
+        ❮
+      </button>
+
+      <!-- Right Arrow -->
+      <button
+        class="scroll-right hidden lg:flex absolute right-2 md:right-0 top-1/2 -translate-y-1/2 z-20 bg-white/90 backdrop-blur-md shadow-lg rounded-full w-12 h-12 items-center justify-center border border-slate-200 hover:bg-[#d5e880] transition">
+        ❯
+      </button>
+
+      <!-- Expedition Peak in Ladakh -->
+      <div id="peak-ladakh" class="pricing-content">
+        <div class="pricing-scroll flex gap-5 overflow-x-auto scroll-smooth scrollbar-hide pb-4">
+          <!-- Card 1-->
+          <div id="homeTrekCategoryContent"
+            class="w-[280px] sm:w-[320px] lg:w-[340px] flex-shrink-0 group h-full flex flex-col overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
+            <!-- <div class="relative overflow-hidden">
+                <img
+                  src="./images/affortable package.webp"
+                  alt="Nun Kun Ladakh"
+                  class="h-60 w-full object-cover transition duration-700 group-hover:scale-110"
+                />
+
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-slate-950/55 via-transparent to-transparent"
+                ></div>
+
+                <span
+                  class="absolute left-4 top-4 rounded-full bg-[#d5e880] px-3 py-1.5 text-xs font-semibold text-slate-900 shadow-md plus-jakarta-sans"
+                >
+                  Popular
+                </span>
+
+                <span
+                  class="absolute right-4 bottom-4 rounded-full bg-white/95 backdrop-blur-md border border-[#e7eddc] px-4 py-2 text-sm font-semibold text-slate-900 shadow-lg plus-jakarta-sans"
+                >
+                  ₹12,000
+                </span>
+              </div>
+
+              <div class="grid grid-cols-2 gap-3 p-0 md:p-4 pb-0">
+                <div
+                  class="flex items-center gap-3 rounded-2xl border border-slate-100 bg-slate-50 px-1 py-3 transition-all duration-300 hover:bg-white hover:shadow-sm"
+                >
+                  <div
+                    class="flex h-10 w-10 items-center justify-center rounded-xl bg-[#d5e880]/30 text-[#7f9732] shadow-sm"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <rect x="3" y="5" width="18" height="16" rx="3"></rect>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M16 3v4M8 3v4M3 10h18"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col">
+                    <span
+                      class="plus-jakarta-sans text-xs font-medium uppercase tracking-[1.5px] text-slate-500"
+                    >
+                      Duration
+                    </span>
+                    <span
+                      class="plus-jakarta-sans text-sm font-semibold text-slate-800"
+                    >
+                      25 Days
+                    </span>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-center gap-3 rounded-2xl border border-slate-100 bg-slate-50 px-4 py-3 transition-all duration-300 hover:bg-white hover:shadow-sm"
+                >
+                  <div
+                    class="flex h-10 w-10 items-center justify-center rounded-xl bg-[#d5e880]/30 text-[#7f9732] shadow-sm"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3 20h18M6 20l5.5-9 3 5 2-3 1.5 2.5"
+                      ></path>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M14 8l1.5-2 2 3"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col">
+                    <span
+                      class="plus-jakarta-sans text-xs font-medium uppercase tracking-[1.5px] text-slate-500"
+                    >
+                      Altitude
+                    </span>
+                    <span
+                      class="plus-jakarta-sans text-sm font-semibold text-slate-800"
+                    >
+                      1200 M
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-1 flex-col gap-5 px-2 py-2">
+                <div class="space-y-3">
+                  <h3
+                    class="gloock-regular min-h-[40px] text-2xl leading-tight text-slate-900"
+                  >
+                    Nun Kun Ladakh
+                  </h3>
+
+                  <p
+                    class="min-h-[84px] text-sm leading-7 text-slate-600 plus-jakarta-sans"
+                  >
+                    Nun Kun twin peaks in Ladakh, located in the Karakoram
+                    range, offer a thrilling high-altitude expedition
+                    experience.
+                  </p>
+                </div>
+
+                <div class="mt-auto grid grid-cols-2 gap-3">
+                  <a
+                    href="#"
+                    class="inline-flex items-center justify-center rounded-l-full rounded-r-2xl border border-slate-200 bg-white px-5 py-3 text-sm md:text-md font-semibold text-slate-800 shadow-sm transition-all duration-300 hover:border-[#d5e880] hover:bg-[#d5e880] hover:text-slate-900 hover:-translate-y-0.5 hover:shadow-md plus-jakarta-sans"
+                  >
+                    View
+                  </a>
+
+                  <a
+                    href="#"
+                    class="inline-flex items-center justify-center rounded-l-2xl rounded-r-full border border-[#d5e880] bg-[#d5e880] px-5 py-3 text-sm md:text-md font-semibold text-slate-900 shadow-sm transition-all duration-300 hover:bg-white hover:shadow-md plus-jakarta-sans"
+                  >
+                    Book
+                  </a>
+                </div>
+              </div> -->
+          </div>
+
+
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- google revirew -->
+  <section class="bg-[#f8faf7]">
+    <div class="max-w-[85%] mx-auto">
+      <div class="flex flex-col items-center text-center gap-4 mb-2 md:mb-4">
+        <p class="uppercase tracking-[3px] text-sm font-semibold text-[#8aa43c] plus-jakarta-sans">
+          Review
+        </p>
+
+        <h4 class="gloock-regular text-3xl md:text-5xl text-slate-900 leading-tight">
+          What Our Customers Say
+        </h4>
+
+        <p class="plus-jakarta-sans text-slate-500 max-w-2xl">
+          Hear from our happy trekkers who explored the mountains with us and
+          made unforgettable memories.
+        </p>
+      </div>
+
+      <!-- Review Widget -->
+      <div class="mt-1">
+        <script src="https://elfsightcdn.com/platform.js" async></script>
+        <div class="elfsight-app-c4ab3217-e3c6-4495-91d1-6730f00a4658" data-elfsight-app-lazy></div>
+      </div>
+    </div>
+  </section>
+
+  <!--  test-->
+  <section class="py-1">
+    <div class="max-w-[85%] mx-auto">
+      <!-- Heading -->
+      <div class="text-center mb-2 md:mb-4">
+        <p class="uppercase tracking-[3px] text-sm font-semibold text-[#8aa43c] plus-jakarta-sans text-center w-full">
+          Stories
+        </p>
+        <h4 class="gloock-regular text-3xl md:text-5xl text-slate-900 mt-2">
+          Our Customer Stories
+        </h4>
+        <p class="plus-jakarta-sans text-slate-500 mt-4 max-w-2xl mx-auto">
+          Watch real experiences shared by our trekkers and discover the
+          unforgettable moments they created with us.
+        </p>
+      </div>
+
+      <!-- Video Cards -->
+      <div id="stories-container"
+        class="flex md:grid md:grid-cols-4 gap-6 overflow-x-auto md:overflow-visible snap-x snap-mandatory scrollbar-hide pb-4 md:pb-0">
+        <!-- all carts will come here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificate Section -->
+  <section class="py-3 md:py-8 bg-[#f8faf7]">
+    <div class="max-w-[85%] mx-auto">
+      <!-- Heading -->
+      <div class="text-center mb-12">
+        <p class="uppercase tracking-[3px] text-sm font-semibold text-[#8aa43c] plus-jakarta-sans">
+          Certificates
+        </p>
+        <h4 class="gloock-regular text-3xl md:text-5xl text-slate-900 mt-2">
+          Certificates That Prove Our Customers’ Trust
+        </h4>
+        <p class="plus-jakarta-sans text-slate-500 mt-4 max-w-2xl mx-auto">
+          Our certificates and recognitions reflect our dedication to quality
+          service, safety, and customer satisfaction.
+        </p>
+      </div>
+
+      <!-- Slider -->
+      <div class="swiper certificateSlider">
+        <div class="swiper-wrapper" id="certificateWrapper">
+          <!-- Dynamic slides will come here -->
+        </div>
+
+        <!-- Controls -->
+        <div class="flex items-center justify-between mt-8">
+          <div class="certificate-pagination"></div>
+
+          <div class="flex items-center gap-3">
+            <button class="certificate-prev w-12 h-12 rounded-full bg-[#d5e880]">
+              ←
+            </button>
+            <button class="certificate-next w-12 h-12 rounded-full bg-[#d5e880]">
+              →
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="certificateLightbox" class="fixed inset-0 z-[999] hidden items-center justify-center bg-black/80 p-4">
+    <div class="relative max-w-5xl w-full flex items-center justify-center">
+      <button id="closeCertificateLightbox" type="button"
+        class="absolute -top-12 right-0 text-white text-4xl leading-none hover:text-[#d5e880] transition-all duration-300">
+        &times;
+      </button>
+
+      <img id="certificateLightboxImage" src alt
+        class="max-w-full max-h-[90vh] rounded-2xl shadow-2xl bg-white object-contain" />
+    </div>
+  </div>
+
+  <!-- blog and artical section -->
+  <!-- Article Cards -->
+  <section class="max-w-[85%] mx-auto mt-4 md:mt-8 py-3 md:py-6">
+    <!-- article -->
+    <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8">
+      <!-- Left Content -->
+      <div class="flex flex-col gap-3 max-w-2xl">
+        <p class="uppercase tracking-[3px] text-sm font-semibold text-[#8aa43c] plus-jakarta-sans">
+          News & Trends in Trekking
+        </p>
+
+        <h4 class="gloock-regular text-3xl md:text-5xl text-slate-900 leading-tight">
+          News, Tips & Destination Stories
+        </h4>
+      </div>
+
+      <!-- Right Content -->
+      <div class="flex flex-col gap-4 max-w-xl">
+        <span class="plus-jakarta-sans text-slate-500 leading-7 text-sm md:text-base">
+          Explore trekking articles, destination updates, travel guides,
+          expert trekking tips, and useful mountain adventure stories to help
+          travelers plan better journeys.
+        </span>
+
+        <a href="/article"
+          class="group inline-flex w-fit items-center gap-3 bg-[#d5e880] text-slate-900 px-5 py-3 rounded-l-full rounded-r-2xl text-sm md:text-md font-semibold plus-jakarta-sans shadow-md hover:bg-white hover:shadow-lg transition-all duration-300 border border-[#d5e880]">
+          <span>View All Articles</span>
+          <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+        </a>
+      </div>
+    </div>
+    <!--Own flex md:grid md:grid-cols-2 xl:grid-cols-4 gap-6 mt-10 overflow-x-auto md:overflow-visible snap-x snap-mandatory scrollbar-hide pb-6 md:pb-0 -->
+    <div id="limitedBlog"
+      class="flex md:grid md:grid-cols-4 gap-6 mt-10 overflow-x-auto md:overflow-visible snap-x snap-mandatory scrollbar-hide pb-4 md:pb-0">
+    </div>
+  </section>
+
+  <!-- faq section -->
+  <section class="py-20 bg-[#f8faf7]">
+    <div class="max-w-[85%] mx-auto flex flex-col gap-10">
+      <!-- Heading -->
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="uppercase tracking-[3px] text-sm font-semibold text-[#8aa43c] plus-jakarta-sans">
+          FAQ
+        </span>
+        <h4 class="gloock-regular text-3xl md:text-5xl text-slate-900 mt-2">
+          Frequently Asked Questions
+        </h4>
+      </div>
+
+      <!-- FAQ List -->
+      <div class="flex flex-col gap-4" id="faq-container">
+        <!-- Dynamic FAQs will come here -->
+      </div>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+  <script>
+    async function loadLimitedBlog(limit) {
+      try {
+        // const endpoint = API_CONFIG?.ENDPOINTS?.BLOGS || "/api/blogs";
+        const endpoint = "/api/blogs/recent/list?limit=" + limit;
+        const url = API_CONFIG.getUrl(endpoint);
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        const limitedBlog = document.getElementById("limitedBlog");
+        limitedBlog.innerHTML = "";
+        // ✅ EMPTY CHECK
+        if (!Array.isArray(data) || data.length === 0) {
+          limitedBlog.innerHTML = `
+                        <div class="col-span-full text-center py-10">
+                            <p class="text-slate-500 text-lg plus-jakarta-sans">
+                                No Blogs Found 😢
+                            </p>
+                        </div>
+                    `;
+          return;
+        }
+
+        data.forEach((blog) => {
+          const createdAt = new Date(blog.createdAt);
+          const options = { year: "numeric", month: "short", day: "2-digit" };
+          const formattedDate = createdAt.toLocaleDateString(
+            "en-US",
+            options,
+          );
+          const words = blog.content.trim().split(/\s+/).length;
+          const readTimes = Math.ceil(words / 200);
+          const title = limitWords(blog.heading, 8);
+          const description = limitWords(blog.metaDescription, 15);
+          const card = `
+                
+                  <article
+                class="w-full sm:min-w-[260px] md:min-w-0 flex-shrink-0 snap-center abcd blog-card  h-full bg-white border border-slate-200 rounded-[28px] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col">
+
+                <!-- Image -->
+                <div class="overflow-hidden">
+                    <img src="${blog.thumbnail.url || "./images/blog1.webp"}" alt="blog1"
+                        class="w-full h-60 object-cover group-hover:scale-105 transition duration-700">
+                </div>
+
+                <!-- Content -->
+                <div class="p-5 flex flex-col flex-1">
+
+                    <!-- Meta -->
+                    <div class="flex items-center gap-3 text-slate-500 text-sm plus-jakarta-sans mb-4">
+                        <span>${formattedDate || "N/A"}</span>
+                        <span>•</span>
+                        <span>${readTimes || "2 "} min</span>
+                    </div>
+
+                    <!-- Text Area Same Height -->
+                    <div class="flex flex-col flex-1">
+                        <h3 class="text-xl font-semibold text-slate-900 leading-snug plus-jakarta-sans min-h-[72px]">
+                            ${title || "No Title"}
+                        </h3>
+
+                        <p class="text-slate-600 plus-jakarta-sans leading-7 text-sm mt-3 min-h-[84px]">
+                           ${description || ""}
+                        </p>
+                    </div>
+
+                    <!-- Read More -->
+                    <div class="pt-4 mt-auto">
+                        <a href="/blog/${blog.slug}"
+                            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#d5e880] text-slate-900 text-sm font-semibold tracking-[1.5px] uppercase plus-jakarta-sans border border-[#d5e880] hover:bg-white hover:text-slate-900 hover:border-[#d5e880] transition-all duration-300 shadow-sm">
+                            <span>Read Article</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            `;
+
+          limitedBlog.innerHTML += card;
+        });
+      } catch (error) {
+        console.error("Error fetching About Us data:", error);
+      }
+    }
+  </script>
+  <script>
+    const limit = 8; // Set the limit for the number of blogs to fetch
+    const runWhenIdle = (callback) => {
+      if ("requestIdleCallback" in window) {
+        requestIdleCallback(callback, { timeout: 2500 });
+      } else {
+        setTimeout(callback, 1200);
+      }
+    };
+
+    document.addEventListener("DOMContentLoaded", function () {
+      // Load Includes
+      // loadInclude('includes/header.html', 'header'); //function are defined in function.js
+      loadInclude("includes/header.html", "header").then(() => {
+        toggleBtn(); //function are defined in common.js
+        loadCategory(); //function are defined in comoon.js
+        loadAboutusToggle(); //function are defined in common.js
+        upcomingdropdown(); //function are defined in common.js
+        //log out btn
+        document
+          .getElementById("logout-btn")
+          .addEventListener("click", function () {
+            logout(); //function are defined in users.js
+          });
+      });
+      // loadInclude('includes/footer.html', 'footer'); //function are defined in function.js
+      loadInclude("includes/footer.html", "footer").then(() => {
+        loadSettings(); // function are defined in footerdetails.js
+        footerCategoryList(); //function are defined in footerdetails.js
+        footerUpcomingDropdown(); //function are defined in footerdetails.js
+      });
+      initFaqToggle(); //function are defined in function.js
+      runWhenIdle(() => {
+        loadLimitedBlog(limit); //function are defined in blog.js
+        loadFaqs(); //function are defined in faq.js
+        loadAboutUs(); //function are defined in aboutus.js
+        loadStories(); //function are defined in stories.js
+        // loadSettings(); //function are defined in settings.js
+        loadTrekCategoryTab(); //function are define in trek.js
+        loadDifferentTrek(); //function are define in trek.js
+      });
+
+    });
+  </script>
+
+  <!-- slider script -->
+  <script>
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     const upcomingBtn = document.getElementById("upcomingBtn");
+    //     const trendingBtn = document.getElementById("trendingBtn");
+    //     const upcomingContent = document.getElementById("upcomingContent");
+    //     const trendingContent = document.getElementById("trendingContent");
+
+    //     upcomingBtn.addEventListener("click", function () {
+    //         upcomingContent.classList.remove("hidden");
+    //         trendingContent.classList.add("hidden");
+
+    //         upcomingBtn.classList.remove("bg-white", "text-slate-700");
+    //         upcomingBtn.classList.add("bg-[#d5e880]", "text-slate-900", "shadow-md");
+
+    //         trendingBtn.classList.remove("bg-[#d5e880]", "text-slate-900", "shadow-md");
+    //         trendingBtn.classList.add("bg-white", "text-slate-700");
+    //     });
+
+    //     trendingBtn.addEventListener("click", function () {
+    //         trendingContent.classList.remove("hidden");
+    //         upcomingContent.classList.add("hidden");
+
+    //         trendingBtn.classList.remove("bg-white", "text-slate-700");
+    //         trendingBtn.classList.add("bg-[#d5e880]", "text-slate-900", "shadow-md");
+
+    //         upcomingBtn.classList.remove("bg-[#d5e880]", "text-slate-900", "shadow-md");
+    //         upcomingBtn.classList.add("bg-white", "text-slate-700");
+    //     });
+    // });
+  </script>
+
+  <script>
+    //         // check if user is logged in and update header buttons
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     const loginBtn = document.getElementById("login-btn");
+    //     const accountBtn = document.getElementById("account-btn");
+
+    //     const isLoggedIn = localStorage.getItem("loggedIn");
+    //     // console.log("Login status:", isLoggedIn);
+
+    //     if (isLoggedIn === "true") {
+    //          console.log("Welcome back! You are logged in.");
+    //         alert("Welcome back! You are logged in.");
+    //         loginBtn.classList.add("hidden");
+    //         accountBtn.classList.remove("hidden");
+    //     } else {
+    //         console.log("You are not logged in. Please sign in to access your account.");
+    //         // alert("You are not logged in. Please sign in to access your account.");
+    //         loginBtn.classList.remove("hidden");
+    //         accountBtn.classList.add("hidden");
+    //     }
+    // });
+  </script>
+  <!-- new script -->
+  <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const tabs = document.querySelectorAll(".pricing-tab");
+            const contents = document.querySelectorAll(".pricing-content");
+
+            tabs.forEach(tab => {
+                tab.addEventListener("click", function (e) {
+                    e.preventDefault();
+
+                    const target = this.getAttribute("data-tab");
+
+                    /* active button remove */
+                    tabs.forEach(btn => {
+                        btn.classList.remove("active-tab");
+                    });
+
+                    /* active button add */
+                    this.classList.add("active-tab");
+
+                    /* hide all content */
+                    contents.forEach(box => {
+                        box.classList.add("hidden");
+                    });
+
+                    /* show selected content */
+                    const activeContent = document.getElementById(target);
+
+                    if (activeContent) {
+                        activeContent.classList.remove("hidden");
+                    }
+                });
+            });
+
+        });
+    </script> -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const pricingTabs = document.querySelectorAll(".pricing-tab");
+      const pricingContents = document.querySelectorAll(".pricing-content");
+
+      pricingTabs.forEach((tab) => {
+        tab.addEventListener("click", function () {
+          const target = this.dataset.tab;
+
+          // remove active color from all tabs
+          pricingTabs.forEach((btn) => {
+            btn.classList.remove("active-tab");
+          });
+
+          // add active color only clicked tab
+          this.classList.add("active-tab");
+
+          // hide all content
+          pricingContents.forEach((content) => {
+            content.classList.add("hidden");
+          });
+
+          // show selected content
+          document.getElementById(target).classList.remove("hidden");
+        });
+      });
+    });
+  </script>
+
+  <!-- arrow card script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const pricingSections = document.querySelectorAll(".pricing-content");
+
+      function updateArrows(section) {
+        const scrollBox = section.querySelector(".pricing-scroll");
+        const leftBtn = document.querySelector(".scroll-left");
+        const rightBtn = document.querySelector(".scroll-right");
+
+        if (!scrollBox) return;
+
+        const canScroll = scrollBox.scrollWidth > scrollBox.clientWidth + 10;
+
+        // hide both if no overflow
+        if (!canScroll) {
+          leftBtn.classList.add("hidden");
+          rightBtn.classList.add("hidden");
+          return;
+        }
+
+        // show right initially
+        leftBtn.classList.toggle("hidden", scrollBox.scrollLeft <= 10);
+
+        rightBtn.classList.toggle(
+          "hidden",
+          scrollBox.scrollLeft + scrollBox.clientWidth >=
+          scrollBox.scrollWidth - 10,
+        );
+      }
+
+      function initSlider(section) {
+        const scrollBox = section.querySelector(".pricing-scroll");
+        const leftBtn = document.querySelector(".scroll-left");
+        const rightBtn = document.querySelector(".scroll-right");
+
+        if (!scrollBox) return;
+
+        const card = scrollBox.querySelector("div");
+        const cardWidth = card.offsetWidth + 20;
+
+        leftBtn.onclick = () => {
+          scrollBox.scrollBy({
+            left: -cardWidth,
+            behavior: "smooth",
+          });
+        };
+
+        rightBtn.onclick = () => {
+          scrollBox.scrollBy({
+            left: cardWidth,
+            behavior: "smooth",
+          });
+        };
+
+        scrollBox.addEventListener("scroll", () => updateArrows(section));
+
+        window.addEventListener("resize", () => updateArrows(section));
+
+        updateArrows(section);
+      }
+
+      // init active tab only
+      pricingSections.forEach((section) => {
+        if (!section.classList.contains("hidden")) {
+          initSlider(section);
+        }
+      });
+
+      // if tabs change
+      const tabButtons = document.querySelectorAll("[data-tab]");
+      tabButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          setTimeout(() => {
+            const active = document.querySelector(
+              ".pricing-content:not(.hidden)",
+            );
+            initSlider(active);
+          }, 100);
+        });
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const slider = document.getElementById("announcement-scroll");
+      if (!slider) return;
+
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      // Desktop
+      slider.addEventListener("mousedown", (e) => {
+        isDown = true;
+        startX = e.pageX;
+        scrollLeft = slider.scrollLeft;
+      });
+
+      slider.addEventListener("mouseup", () => isDown = false);
+      slider.addEventListener("mouseleave", () => isDown = false);
+
+      slider.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+
+        e.preventDefault();
+
+        const walk = (e.pageX - startX) * 2;
+        slider.scrollLeft = scrollLeft - walk;
+      });
+
+      // Mobile Touch
+      slider.addEventListener("touchstart", (e) => {
+        startX = e.touches[0].pageX;
+        scrollLeft = slider.scrollLeft;
+      }, { passive: true });
+
+      slider.addEventListener("touchmove", (e) => {
+        const x = e.touches[0].pageX;
+        const walk = x - startX;
+        slider.scrollLeft = scrollLeft - walk;
+      }, { passive: true });
+    });
+  </script>
+
+  <!-- back top script -->
+
+</body>
+
+</html>

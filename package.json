@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "node node_modules/next/dist/bin/next dev",
-    "build": "node node_modules/next/dist/bin/next build",
+    "build:tailwind": "node node_modules/tailwindcss/lib/cli.js -i ./tailwind.input.css -o ./public/style/tailwind.css --minify",
+    "build": "npm run build:tailwind && node node_modules/next/dist/bin/next build",
     "start": "node node_modules/next/dist/bin/next start",
     "lint": "node node_modules/next/dist/bin/next lint"
   },
@@ -13,5 +14,7 @@
     "react": "19.2.7",
     "react-dom": "19.2.7"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
 }

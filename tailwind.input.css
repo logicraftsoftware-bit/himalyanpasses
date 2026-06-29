@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .prose {
+    color: #475569;
+    line-height: 1.8;
+  }
+
+  .prose :where(p, ul, ol, blockquote) {
+    margin-bottom: 1rem;
+  }
+
+  .prose :where(ul, ol) {
+    padding-left: 1.5rem;
+  }
+
+  .prose :where(h1, h2, h3, h4) {
+    color: #0f172a;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 1.5rem 0 0.75rem;
+  }
+
+  .prose h1 {
+    font-size: 2.25rem;
+  }
+
+  .prose h2,
+  .prose-lg h2 {
+    font-size: 1.875rem;
+  }
+
+  .prose h3,
+  .prose-lg h3 {
+    font-size: 1.5rem;
+  }
+
+  .prose a {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+}

@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -8,8 +8,8 @@
   <!-- <title>Glacier Treks & Adventure | Best Trekking Packages in Sikkim</title> -->
   <meta id="metaDescription" name="description" content="" />
   <meta id="metaKeywords" name="keywords" content="" />
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon" sizes="16x16" />
+  <link rel="stylesheet" href="/style/tailwind.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,7 +19,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet" />
-  <!-- <script src="https://cdn.tailwindcss.com?plugins=typography"></script> -->
   <link rel="stylesheet" href="/style/single-blog.css">
   <!-- <link rel="stylesheet" href="style/common.css"> -->
   <link rel="stylesheet" href="/style/common.css">
@@ -346,16 +345,16 @@
     document.addEventListener("DOMContentLoaded", function () {
       let slug = null;
 
-      // ✅ 1. Try new URL format (/singleblog.html/slug)
+      // âœ… 1. Try new URL format (/singleblog.html/slug)
       const pathParts = window.location.pathname.split("/");
       slug = pathParts[pathParts.length - 1];
 
-      // ❗ If only "singleblog.html" then ignore
+      // â— If only "singleblog.html" then ignore
       if (!slug || slug === "blog.html") {
         slug = null;
       }
 
-      // ✅ 2. Fallback (old ?slug=)
+      // âœ… 2. Fallback (old ?slug=)
       if (!slug) {
         const params = new URLSearchParams(window.location.search);
         slug = params.get("slug");

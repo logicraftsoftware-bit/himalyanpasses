@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -9,8 +9,8 @@
     content="Discover the best trekking packages in Sikkim, Darjeeling, and North Bengal with Glacier Treks & Adventure. Explore Himalayan trails, camping tours, and guided mountain adventures." />
   <meta name="keywords"
     content="trekking packages in Sikkim, Himalayan treks, trekking in Darjeeling, North Bengal trekking, adventure tours, mountain trekking, guided treks, Glacier Treks & Adventure" />
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon" sizes="16x16" />
+  <link rel="stylesheet" href="/style/tailwind.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -117,7 +117,7 @@
 
         <button onclick="filterCategory('all')"
           class="text-sm font-semibold text-[#0F5C53] border border-[#d5e880] px-4 py-1.5 rounded-full hover:bg-[#d5e880] transition">
-          All Categories →
+          All Categories â†’
         </button>
       </div>
 
@@ -189,12 +189,12 @@
         // console.log("Limited Blogs:", data);
         const recentBlog = document.getElementById("recentBlog");
         recentBlog.innerHTML = "";
-        // ✅ EMPTY CHECK
+        // âœ… EMPTY CHECK
         if (!Array.isArray(data) || data.length === 0) {
           recentBlog.innerHTML = `
                         <div class="col-span-full text-center py-10">
                             <p class="text-slate-500 text-lg plus-jakarta-sans">
-                                No Recent Blogs Found 😢
+                                No Recent Blogs Found ðŸ˜¢
                             </p>
                         </div>
                     `;
@@ -296,7 +296,7 @@
         });
     });
     loadInclude("includes/footer.html", "footer").then(() => {
-      loadSettings(); // 🔥 footer load howar por
+      loadSettings(); // ðŸ”¥ footer load howar por
        footerCategoryList(); //function are defined in footerdetails.js
       footerUpcomingDropdown(); //function are defined in footerdetails.js
     });
@@ -350,23 +350,23 @@
         return span;
       }
 
-      // 🔙 PREV BUTTON
+      // ðŸ”™ PREV BUTTON
       const prev = document.createElement("button");
-      prev.textContent = "←";
+      prev.textContent = "â†";
       prev.className = "w-11 h-11 rounded-full bg-white border";
       prev.disabled = currentPage === 1;
       prev.onclick = () => loadBlogs(currentPage - 1);
       pagination.appendChild(prev);
 
-      // 👉 First page
+      // ðŸ‘‰ First page
       pagination.appendChild(createBtn(1));
 
-      // 👉 Left dots
+      // ðŸ‘‰ Left dots
       if (currentPage > 3) {
         pagination.appendChild(createDots());
       }
 
-      // 👉 Middle pages
+      // ðŸ‘‰ Middle pages
       for (
         let i = Math.max(2, currentPage - 1);
         i <= Math.min(totalPages - 1, currentPage + 1);
@@ -375,19 +375,19 @@
         pagination.appendChild(createBtn(i));
       }
 
-      // 👉 Right dots
+      // ðŸ‘‰ Right dots
       if (currentPage < totalPages - 2) {
         pagination.appendChild(createDots());
       }
 
-      // 👉 Last page
+      // ðŸ‘‰ Last page
       if (totalPages > 1) {
         pagination.appendChild(createBtn(totalPages));
       }
 
-      // 🔜 NEXT BUTTON
+      // ðŸ”œ NEXT BUTTON
       const next = document.createElement("button");
-      next.textContent = "→";
+      next.textContent = "â†’";
       next.className = "w-11 h-11 rounded-full bg-white border";
       next.disabled = currentPage === totalPages;
       next.onclick = () => loadBlogs(currentPage + 1);

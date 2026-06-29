@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -9,8 +9,8 @@
     content="Discover the best trekking packages in Sikkim, Darjeeling, and North Bengal with Glacier Treks & Adventure. Explore Himalayan trails, camping tours, and guided mountain adventures." />
   <meta name="keywords"
     content="trekking packages in Sikkim, Himalayan treks, trekking in Darjeeling, North Bengal trekking, adventure tours, mountain trekking, guided treks, Glacier Treks & Adventure" />
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon" sizes="16x16" />
+  <link rel="stylesheet" href="/style/tailwind.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js"></script>
@@ -391,11 +391,11 @@
                                 </span>
 
                                 <span id="originalPriceINR" class="text-lg font-semibold text-red-500 line-through">
-                                    ₹10,799
+                                    â‚¹10,799
                                 </span>
 
                                 <span id="discountedPriceINR" class="text-xl md:text-2xl font-bold text-[#243146]">
-                                    ₹8,900
+                                    â‚¹8,900
                                 </span> -->
               </div>
 
@@ -1114,7 +1114,7 @@
     const payNowPercent = 0.2;
 
     function formatINR(amount) {
-      return "₹" + amount.toLocaleString("en-IN");
+      return "â‚¹" + amount.toLocaleString("en-IN");
     }
 
     function updateSummary() {
@@ -1372,7 +1372,7 @@
     });
 
     //customer stores
-    // ✅ STRONG YOUTUBE FIX (IMPORTANT)
+    // âœ… STRONG YOUTUBE FIX (IMPORTANT)
     function extractYouTubeId(url) {
       if (!url) return "";
 
@@ -1435,12 +1435,12 @@
         // console.log("Limited Blogs:", data);
         const limitedBlog = document.getElementById("limitedBlog");
         limitedBlog.innerHTML = "";
-        // ✅ EMPTY CHECK
+        // âœ… EMPTY CHECK
         if (!Array.isArray(data) || data.length === 0) {
           limitedBlog.innerHTML = `
                         <div class="col-span-full text-center py-10">
                             <p class="text-slate-500 text-lg plus-jakarta-sans">
-                                No Blogs Found 😢
+                                No Blogs Found ðŸ˜¢
                             </p>
                         </div>
                     `;

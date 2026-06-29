@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -9,8 +9,8 @@
     content="Discover the best trekking packages in Sikkim, Darjeeling, and North Bengal with Himalayan Passes. Explore Himalayan trails, camping tours, and guided mountain adventures." />
   <meta name="keywords"
     content="trekking packages in Sikkim, Himalayan treks, trekking in Darjeeling, North Bengal trekking, adventure tours, mountain trekking, guided treks, Himalayan Passes" />
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon" sizes="16x16" />
+  <link rel="stylesheet" href="/style/tailwind.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js"></script>
@@ -22,7 +22,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
   <link rel="stylesheet" href="/style/package.css" />
 
   <style>
@@ -604,7 +603,7 @@
         <!-- Left Arrow -->
         <button id="galleryPrev" onclick="prevGalleryPage()"
           class="hidden absolute left-2 md:left-0 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/90 shadow-lg border border-slate-200 hover:bg-[#d5e880] transition">
-          ❮
+          â®
         </button>
 
         <!-- Gallery -->
@@ -622,7 +621,7 @@
         <!-- Right Arrow -->
         <button id="galleryNext" onclick="nextGalleryPage()"
           class="absolute right-2 md:right-0 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/90 shadow-lg border border-slate-200 hover:bg-[#d5e880] transition">
-          ❯
+          â¯
         </button>
       </div>
     </div>
@@ -631,17 +630,17 @@
   <!-- Lightbox gallary-->
   <div id="lightbox" class="fixed inset-0 bg-black/90 hidden items-center justify-center z-50 p-4" style="display:none">
     <button onclick="closeLightbox()" class="absolute top-6 right-8 text-white text-4xl">
-      ×
+      Ã—
     </button>
 
     <button onclick="prevImage()" class="absolute left-6 text-white text-5xl">
-      ‹
+      â€¹
     </button>
 
     <img id="lightboxImage" class="max-w-[90%] max-h-[85vh] rounded-2xl" />
 
     <button onclick="nextImage()" class="absolute right-6 text-white text-5xl">
-      ›
+      â€º
     </button>
   </div>
 
@@ -1134,7 +1133,7 @@
     class="fixed inset-0 bg-black/50 hidden items-start md:items-center justify-center z-50 p-4 pt-[20vh] md:pt-4">
     <div class="bg-white rounded-2xl p-6 w-full max-w-md max-h-[90vh] relative overflow-y-auto">
       <button onclick="closeChargeModal()" class="absolute top-3 right-4 text-2xl text-slate-700">
-        ×
+        Ã—
       </button>
 
       <h3 class="text-xl font-bold mb-4 pr-6 plus-jakarta-sans">
@@ -1142,10 +1141,10 @@
       </h3>
 
       <div id="chargeModalContent" class="space-y-3 text-slate-700 plus-jakarta-sans">
-        <!-- <p>₹500 Permit Fee</p>
-          <p>₹1,000 Transport Fee</p>
-          <p>₹800 Camping Charge</p>
-          <p>₹600 Food Charge</p> -->
+        <!-- <p>â‚¹500 Permit Fee</p>
+          <p>â‚¹1,000 Transport Fee</p>
+          <p>â‚¹800 Camping Charge</p>
+          <p>â‚¹600 Food Charge</p> -->
       </div>
     </div>
   </div>
@@ -1286,7 +1285,7 @@
   </script>
 
   <script>
-    // ✅ STRONG YOUTUBE FIX (IMPORTANT)
+    // âœ… STRONG YOUTUBE FIX (IMPORTANT)
     function extractYouTubeId(url) {
       if (!url) return "";
 
@@ -1347,12 +1346,12 @@
         // console.log("Limited Blogs:", data);
         const limitedBlog = document.getElementById("limitedBlog");
         limitedBlog.innerHTML = "";
-        // ✅ EMPTY CHECK
+        // âœ… EMPTY CHECK
         if (!Array.isArray(data) || data.length === 0) {
           limitedBlog.innerHTML = `
                         <div class="col-span-full text-center py-10">
                             <p class="text-slate-500 text-lg plus-jakarta-sans">
-                                No Blogs Found 😢
+                                No Blogs Found ðŸ˜¢
                             </p>
                         </div>
                     `;
@@ -1571,7 +1570,7 @@
     <div class="bg-white w-full max-w-lg max-h-[90vh] rounded-2xl p-6 relative overflow-y-auto">
       <!-- Close Button -->
       <button onclick="closeScholarshipModal()" class="absolute top-3 right-4 text-2xl text-slate-700">
-        ×
+        Ã—
       </button>
 
       <!-- Heading -->

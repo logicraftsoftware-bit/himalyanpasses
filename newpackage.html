@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,8 +9,8 @@
         content="Discover the best trekking packages in Sikkim, Darjeeling, and North Bengal with Himalayan Passes. Explore Himalayan trails, camping tours, and guided mountain adventures.">
     <meta name="keywords"
         content="trekking packages in Sikkim, Himalayan treks, trekking in Darjeeling, North Bengal trekking, adventure tours, mountain trekking, guided treks, Himalayan Passes">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon" sizes="16x16">
+  <link rel="stylesheet" href="/style/tailwind.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js"></script>
@@ -265,7 +265,7 @@
                                 </svg>
                             </div>
                             <p class="text-[11px] md:text-xs text-slate-500 uppercase tracking-[0.18em]">Suitable</p>
-                            <p class="text-sm md:text-[15px] font-semibold text-slate-900 mt-1">15–20</p>
+                            <p class="text-sm md:text-[15px] font-semibold text-slate-900 mt-1">15â€“20</p>
                         </div>
 
                         <!-- ITEM -->
@@ -356,7 +356,7 @@
                                 </div>
                                 <p class="text-sm md:text-[15px] font-medium text-slate-600">Additional Charges</p>
                             </div>
-                            <p class="text-sm md:text-[15px] font-semibold text-slate-900">₹1100</p>
+                            <p class="text-sm md:text-[15px] font-semibold text-slate-900">â‚¹1100</p>
                         </div>
 
                         <!-- Baggage -->
@@ -762,7 +762,7 @@
                         <div id="overview"
                             class="space-y-6 text-slate-600 plus-jakarta-sans leading-7 md:leading-8 text-base md:text-lg">
                             <p>
-                                Everest Base Camp Trek is one of the world’s most iconic Himalayan adventures, taking
+                                Everest Base Camp Trek is one of the worldâ€™s most iconic Himalayan adventures, taking
                                 you through scenic mountain trails, Sherpa villages, suspension bridges, and stunning
                                 landscapes.
                             </p>
@@ -849,19 +849,19 @@
                     <div class="inclusions-content hidden px-1 md:px-6 py-2">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <p class="flex items-center gap-3 p-1 md:p-4 plus-jakarta-sans text-slate-700">
-                                <span class="text-[#cddc67]">✔</span> Licensed trekking guide
+                                <span class="text-[#cddc67]">âœ”</span> Licensed trekking guide
                             </p>
 
                             <p class="flex items-center gap-3 p-1 md:p-4 plus-jakarta-sans text-slate-700">
-                                <span class="text-[#cddc67]">✔</span> Required permits and paperwork
+                                <span class="text-[#cddc67]">âœ”</span> Required permits and paperwork
                             </p>
 
                             <p class="flex items-center gap-3 p-1 md:p-4 plus-jakarta-sans text-slate-700">
-                                <span class="text-[#cddc67]">✔</span> Airport pick-up and drop
+                                <span class="text-[#cddc67]">âœ”</span> Airport pick-up and drop
                             </p>
 
                             <p class="flex items-center gap-3 p-1 md:p-4 plus-jakarta-sans text-slate-700">
-                                <span class="text-[#cddc67]">✔</span> Accommodation as per itinerary
+                                <span class="text-[#cddc67]">âœ”</span> Accommodation as per itinerary
                             </p>
                         </div>
                     </div>
@@ -1550,7 +1550,7 @@
 
                     let pageLink = "";
 
-                    // ✅ page decide based on type
+                    // âœ… page decide based on type
                     if (item.categoryType === "Trek") {
                         pageLink = "/trek";
                     }
@@ -1571,7 +1571,7 @@
                                 `;
 
 
-                    // ✅ condition per category
+                    // âœ… condition per category
                     if (item.categoryType === "Trek") {
                         trekkingDropdown.innerHTML += link;
                     }
@@ -1700,7 +1700,7 @@
     </script>
 
     <script>
-        // ✅ STRONG YOUTUBE FIX (IMPORTANT)
+        // âœ… STRONG YOUTUBE FIX (IMPORTANT)
         function extractYouTubeId(url) {
             if (!url) return "";
 
@@ -1761,12 +1761,12 @@
                 // console.log("Limited Blogs:", data);
                 const limitedBlog = document.getElementById("limitedBlog");
                 limitedBlog.innerHTML = "";
-                // ✅ EMPTY CHECK
+                // âœ… EMPTY CHECK
                 if (!Array.isArray(data) || data.length === 0) {
                     limitedBlog.innerHTML = `
                         <div class="col-span-full text-center py-10">
                             <p class="text-slate-500 text-lg plus-jakarta-sans">
-                                No Blogs Found 😢
+                                No Blogs Found ðŸ˜¢
                             </p>
                         </div>
                     `;

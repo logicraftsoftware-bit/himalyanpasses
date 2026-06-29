@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 
 <html lang="en">
   <head>
@@ -19,7 +19,6 @@
       content="trekking packages in Sikkim, Himalayan treks, trekking in Darjeeling, North Bengal trekking, adventure tours, mountain trekking, guided treks, Glacier Treks & Adventure"
     />
 
-    <script src="https://cdn.tailwindcss.com"></script>
 
     <link
       rel="icon"
@@ -112,6 +111,7 @@
         padding-top: 0;
       }
     </style>
+  <link rel="stylesheet" href="/style/tailwind.css" />
   </head>
 
   <body>
@@ -188,7 +188,7 @@
             onclick="filterCategory('all')"
             class="text-sm font-semibold text-[#0F5C53] border border-[#d5e880] px-4 py-1.5 rounded-full hover:bg-[#d5e880] transition"
           >
-            All Categories →
+            All Categories â†’
           </button>
         </div>
 
@@ -315,7 +315,7 @@
       });
 
       loadInclude("includes/footer.html", "footer").then(() => {
-        loadSettings(); // 🔥 footer load howar por
+        loadSettings(); // ðŸ”¥ footer load howar por
       });
 
       document.addEventListener("DOMContentLoaded", function () {
@@ -358,11 +358,11 @@
           return span;
         }
 
-        // 🔙 PREV BUTTON
+        // ðŸ”™ PREV BUTTON
 
         const prev = document.createElement("button");
 
-        prev.textContent = "←";
+        prev.textContent = "â†";
 
         prev.className = "w-11 h-11 rounded-full bg-white border";
 
@@ -372,17 +372,17 @@
 
         pagination.appendChild(prev);
 
-        // 👉 First page
+        // ðŸ‘‰ First page
 
         pagination.appendChild(createBtn(1));
 
-        // 👉 Left dots
+        // ðŸ‘‰ Left dots
 
         if (currentPage > 3) {
           pagination.appendChild(createDots());
         }
 
-        // 👉 Middle pages
+        // ðŸ‘‰ Middle pages
 
         for (
           let i = Math.max(2, currentPage - 1);
@@ -392,23 +392,23 @@
           pagination.appendChild(createBtn(i));
         }
 
-        // 👉 Right dots
+        // ðŸ‘‰ Right dots
 
         if (currentPage < totalPages - 2) {
           pagination.appendChild(createDots());
         }
 
-        // 👉 Last page
+        // ðŸ‘‰ Last page
 
         if (totalPages > 1) {
           pagination.appendChild(createBtn(totalPages));
         }
 
-        // 🔜 NEXT BUTTON
+        // ðŸ”œ NEXT BUTTON
 
         const next = document.createElement("button");
 
-        next.textContent = "→";
+        next.textContent = "â†’";
 
         next.className = "w-11 h-11 rounded-full bg-white border";
 

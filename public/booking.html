@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,8 +9,8 @@
         content="Discover the best trekking packages in Sikkim, Darjeeling, and North Bengal with Glacier Treks & Adventure. Explore Himalayan trails, camping tours, and guided mountain adventures.">
     <meta name="keywords"
         content="trekking packages in Sikkim, Himalayan treks, trekking in Darjeeling, North Bengal trekking, adventure tours, mountain trekking, guided treks, Glacier Treks & Adventure">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon" sizes="16x16">
+  <link rel="stylesheet" href="/style/tailwind.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js"></script>
@@ -350,11 +350,11 @@
                                 </div>
                                 <div class="flex justify-between text-sm">
                                     <span class="text-slate-400">Add-ons</span>
-                                    <span class="font-bold text-green-400" id="summaryAddOns">₹0</span>
+                                    <span class="font-bold text-green-400" id="summaryAddOns">â‚¹0</span>
                                 </div>
                                 <div class="flex justify-between text-sm">
                                     <span class="text-slate-400">GST 5%</span>
-                                    <span class="font-bold" id="summaryGst">₹975</span>
+                                    <span class="font-bold" id="summaryGst">â‚¹975</span>
                                 </div>
                             </div>
 
@@ -364,12 +364,12 @@
                                 <div>
                                     <span class="text-xs text-slate-400 block uppercase tracking-tighter">Total
                                         Amount</span>
-                                    <span class="text-3xl font-bold text-[#d5e880]" id="summaryTotal">₹20,475</span>
+                                    <span class="text-3xl font-bold text-[#d5e880]" id="summaryTotal">â‚¹20,475</span>
                                 </div>
                                 <div class="text-right">
                                     <!--<span id="packageOriginalPrice"
-                                         class="text-[10px] text-slate-500 line-through">₹23,475</span> -->
-                                    <!-- <span class="block text-[10px] text-green-400 font-bold">You Saved ₹3,000</span> -->
+                                         class="text-[10px] text-slate-500 line-through">â‚¹23,475</span> -->
+                                    <!-- <span class="block text-[10px] text-green-400 font-bold">You Saved â‚¹3,000</span> -->
                                 </div>
                             </div>
                         </div>
@@ -405,8 +405,8 @@
                 document.getElementById("summaryDates").innerText = `${formattedFromDate} - ${formattedToDate}`;
             }
             document.getElementById("orderSummeryTitle").innerText = params.get("name") || "Unknown Package";
-            document.getElementById("summaryPricePer").innerText = '₹' + price;
-            // document.getElementById("packageOriginalPrice").innerText = '₹' + params.get("originalPrice") || '₹0';
+            document.getElementById("summaryPricePer").innerText = 'â‚¹' + price;
+            // document.getElementById("packageOriginalPrice").innerText = 'â‚¹' + params.get("originalPrice") || 'â‚¹0';
             const name = params.get("name") || "Unknown Package";
             submitBookingData(id, price, name, fromDate, toDate);
             const packageTitle = document.getElementById('packageTitle');
@@ -446,7 +446,7 @@
                 }
             }
 
-            // 🔥 event add
+            // ðŸ”¥ event add
             fromInput.addEventListener("change", updateSummaryDates);
             toInput.addEventListener("change", updateSummaryDates);
 
@@ -523,17 +523,17 @@
 
             document.getElementById('summaryCount').innerText = count;
             document.getElementById('summaryCountX').innerText = count;
-            document.getElementById('summarySubtotal').innerText = '₹' + subtotal.toLocaleString();
-            document.getElementById('summaryAddOns').innerText = '₹' + addOnTotal.toLocaleString();
-            document.getElementById('summaryGst').innerText = '₹' + gst.toLocaleString();
-            document.getElementById('summaryTotal').innerText = '₹' + total.toLocaleString();
+            document.getElementById('summarySubtotal').innerText = 'â‚¹' + subtotal.toLocaleString();
+            document.getElementById('summaryAddOns').innerText = 'â‚¹' + addOnTotal.toLocaleString();
+            document.getElementById('summaryGst').innerText = 'â‚¹' + gst.toLocaleString();
+            document.getElementById('summaryTotal').innerText = 'â‚¹' + total.toLocaleString();
         }
         //====================================================================================
         let participants = [];
 
         function addParticipant() {
 
-            // 🔥 current input save 
+            // ðŸ”¥ current input save 
             syncParticipantsData();
 
             const user = JSON.parse(localStorage.getItem("user")) || {};
@@ -554,7 +554,7 @@
             renderParticipants();
         }
         function removeParticipant(id) {
-            // 🔥 current input save 
+            // ðŸ”¥ current input save 
             syncParticipantsData();
 
             participants = participants.filter(p => p.id !== id);
@@ -659,7 +659,7 @@
         // function generateParticipantForms() {
         //     const count = parseInt(document.getElementById('participantCount').value) || 1;
         //     const container = document.getElementById('participantsContainer');
-        //       // 🔥 login user data
+        //       // ðŸ”¥ login user data
         //     const user = JSON.parse(localStorage.getItem("user")) || {};
 
         //     let userPhone = user.mobile || "";
@@ -671,7 +671,7 @@
 
         //     for (let i = 1; i <= count; i++) {
 
-        //         // 🔥 only Participant 1 auto fill
+        //         // ðŸ”¥ only Participant 1 auto fill
         //         const participantName = i === 1 ? (user.fullName || "") : "";
         //         const participantEmail = i === 1 ? (user.email || "") : "";
         //         const participantPhone = i === 1 ? userPhone : "";
@@ -738,7 +738,7 @@
 
         function nextStep(step) {
 
-            // 🔥 STEP 1 VALIDATION
+            // ðŸ”¥ STEP 1 VALIDATION
             if (step === 2) {
                 const fullName = document.getElementById("fullName").value.trim();
                 const email = document.getElementById("email").value.trim();
@@ -753,7 +753,7 @@
                     return Swal.fire({
                         icon: "warning",
                         title: "Personal Info Incomplete",
-                        text: "Please fill all required fields ❌",
+                        text: "Please fill all required fields âŒ",
                     });
                 }
 
@@ -774,7 +774,7 @@
                 }
             }
 
-            // 🔥 STEP 2 VALIDATION
+            // ðŸ”¥ STEP 2 VALIDATION
             if (step === 3) {
                 const blocks = document.querySelectorAll(".participant-block");
                 let hasError = false;
@@ -793,12 +793,12 @@
                     return Swal.fire({
                         icon: "warning",
                         title: "Participant Details Incomplete",
-                        text: "Fill all participant details ❌",
+                        text: "Fill all participant details âŒ",
                     });
                 }
             }
 
-            // 🔥 STEP 3 VALIDATION (optional)
+            // ðŸ”¥ STEP 3 VALIDATION (optional)
             if (step === 4) {
 
                 // Example: at least 1 addon (optional rule)
@@ -806,11 +806,11 @@
                 //   return Swal.fire({
                 //     icon: "info",
                 //     title: "No Add-ons Selected",
-                //     text: "You can continue without addons 👍",
+                //     text: "You can continue without addons ðŸ‘",
                 //   });
                 // }
             }
-            // ✅ NOW Update Progress Nav (Correct Place)
+            // âœ… NOW Update Progress Nav (Correct Place)
             document.querySelectorAll('.step-item').forEach((nav, idx) => {
                 const navNum = idx + 1;
 
@@ -840,7 +840,7 @@
                 }
             });
 
-            // ✅ UI switch (your existing code)
+            // âœ… UI switch (your existing code)
             document.querySelectorAll('.booking-step').forEach(s => {
                 s.classList.add('hidden');
                 s.classList.remove('opacity-100');
@@ -850,7 +850,7 @@
             currentStep.classList.remove('hidden');
             setTimeout(() => currentStep.classList.add('opacity-100'), 50);
 
-            // 🔥 extra logic
+            // ðŸ”¥ extra logic
             // if (step === 2) generateParticipantForms();
             // if (step === 2) {
 
@@ -913,7 +913,7 @@
                         <div class="flex-1">
                             <div class="flex items-center gap-3 mb-2">
                                 <span class="text-slate-900 font-bold">${addOn.name}</span>
-                                <span class="px-3 py-1 rounded-full bg-[#d5e880]/15 text-[#243146] text-xs font-semibold">₹${addOn.priceINR} / $${addOn.priceUSD}</span>
+                                <span class="px-3 py-1 rounded-full bg-[#d5e880]/15 text-[#243146] text-xs font-semibold">â‚¹${addOn.priceINR} / $${addOn.priceUSD}</span>
                             </div>
                         </div>
                         <input type="checkbox" id="${addOn._id}" data-name="${addOn.name}" data-price="${addOn.priceINR}"  class="addon-checkbox w-5 h-5 accent-[#d5e880]" onchange="updateSummary()">

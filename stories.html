@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Customer Stories</title>
 
     <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/style/tailwind.css" />
 </head>
 <body class="bg-gray-100">
 
@@ -33,7 +33,7 @@
 
 <script>
 
-// ✅ YOUR API
+// âœ… YOUR API
 const API_URL = "https://glacier-treks-adventures-admin-back.vercel.app/api/customer-stories";
 
 
@@ -42,7 +42,7 @@ async function loadStories() {
     const container = document.getElementById('stories-container');
 
     try {
-        console.log("📡 Fetching:", API_URL);
+        console.log("ðŸ“¡ Fetching:", API_URL);
 
         const response = await fetch(API_URL);
 
@@ -52,18 +52,18 @@ async function loadStories() {
         const text = await response.text();
         console.log("RAW RESPONSE:", text);
 
-        // ❌ If backend returns HTML → show error
+        // âŒ If backend returns HTML â†’ show error
         if (text.trim().startsWith("<")) {
             container.innerHTML = `
                 <p class="text-red-500 text-center col-span-2">
-                    ❌ API is returning HTML (Backend Issue)
+                    âŒ API is returning HTML (Backend Issue)
                 </p>
             `;
             return;
         }
 
         const data = JSON.parse(text);
-        console.log("✅ DATA:", data);
+        console.log("âœ… DATA:", data);
 
         container.innerHTML = '';
 
@@ -76,7 +76,7 @@ async function loadStories() {
 
             console.log("ITEM:", item);
 
-            // ❗ REMOVED FILTER (IMPORTANT)
+            // â— REMOVED FILTER (IMPORTANT)
             // if (!item.isActive || !item.approved) return;
 
             const videoId = extractYouTubeId(item.youtubeLink);
@@ -107,7 +107,7 @@ async function loadStories() {
         });
 
     } catch (error) {
-        console.error("❌ ERROR:", error);
+        console.error("âŒ ERROR:", error);
 
         container.innerHTML = `
             <p class="text-red-500 text-center col-span-2">

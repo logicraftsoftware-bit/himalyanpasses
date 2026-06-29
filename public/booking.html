@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glacier Treks & Adventure | Best Trekking Packages in Sikkim</title>
+    <meta name="description"
+        content="Discover the best trekking packages in Sikkim, Darjeeling, and North Bengal with Glacier Treks & Adventure. Explore Himalayan trails, camping tours, and guided mountain adventures.">
+    <meta name="keywords"
+        content="trekking packages in Sikkim, Himalayan treks, trekking in Darjeeling, North Bengal trekking, adventure tours, mountain trekking, guided treks, Glacier Treks & Adventure">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <head>
+        <script>
+            if (!localStorage.getItem("token")) {
+                localStorage.setItem("redirectAfterLogin", window.location.href);
+                window.location.href = "/signin";
+            }
+        </script>
+
+        <!-- rest of head -->
+    </head>
+</head>
+
+<body class="bg-[#f8faf7] font-['Plus_Jakarta_Sans']">
+    <!-- header section -->
+    <div id="header"></div>
+
+
+    <!-- Top banner Section -->
+    <section class="relative w-full min-h-[460px] md:min-h-[600px] overflow-hidden pb-4 md:0">
+        <!-- Background -->
+        <img src="./images/account-banner.webp" alt="Everest Base Camp Trek Banner"
+            class="absolute inset-0 w-full h-full object-cover">
+
+        <!-- Overlays -->
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-900/45 to-transparent"></div>
+        <div class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-slate-950/70 to-transparent"></div>
+
+        <!-- Header -->
+        <div id="header" class="relative z-30"></div>
+
+        <!-- Content -->
+        <div class="relative z-20 flex items-center justify-center text-center min-h-[460px] md:min-h-[600px]">
+            <div class="max-w-7xl mx-auto w-full px-6 lg:px-10 pt-28 md:pt-32">
+                <div class="max-w-4xl mx-auto">
+
+                    <!-- Badge -->
+                    <span
+                        class="hidden lg:inline-block mb-5 px-4 py-2 rounded-full bg-[#d5e880]/15 border border-[#d5e880]/30 text-[#d5e880] text-xs sm:text-sm font-semibold tracking-[2px] uppercase plus-jakarta-sans">
+                        Glacier Treks And Adventure
+                    </span>
+
+                    <!-- Title -->
+                    <h1 class="text-white text-3xl sm:text-4xl md:text-5xl leading-tight gloock-regular mb-6">
+                        Book Now
+                    </h1>
+
+                    <!-- Description -->
+                    <p
+                        class="text-white/85 text-base sm:text-lg md:text-xl leading-8 plus-jakarta-sans mb-8 max-w-3xl mx-auto">
+                        Experience the journey of a lifetime with our Everest Base Camp Trek package, featuring stunning
+                        Himalayan landscapes, authentic Sherpa culture, scenic mountain trails, and unforgettable
+                        adventure
+                        moments in the heart of Nepal.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <main class="py-20">
+        <div class="max-w-[85%] mx-auto">
+            <h1
+                class="gloock-regular text-4xl text-slate-900 mb-12 text-center md:text-left underline decoration-[#d5e880] decoration-4 underline-offset-8">
+                Booking Details For <span id="packageTitle" class="text-[#243146]">Goechala Trek</span></h1>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+
+                <!-- Left: Booking Form -->
+                <div class="lg:col-span-8">
+
+                    <!-- Progress Bar -->
+                    <div
+                        class="flex items-center justify-between mb-12 bg-white p-6 rounded-[24px] shadow-sm border border-slate-100">
+                        <div class="step-item flex items-center gap-3 active-step" id="step1-nav">
+                            <span
+                                class="w-10 h-10 rounded-full bg-[#d5e880] text-slate-900 font-bold flex items-center justify-center border-2 border-[#d5e880]">1</span>
+                            <span class="font-bold text-slate-900 hidden md:block">Personal Info</span>
+                        </div>
+                        <div class="h-[2px] flex-1 bg-slate-100 mx-4"></div>
+                        <div class="step-item flex items-center gap-3 opacity-40 transition-all duration-300"
+                            id="step2-nav">
+                            <span
+                                class="w-10 h-10 rounded-full bg-white text-slate-400 font-bold flex items-center justify-center border-2 border-slate-200">2</span>
+                            <span class="font-bold text-slate-500 hidden md:block">Participants Info</span>
+                        </div>
+                        <div class="h-[2px] flex-1 bg-slate-100 mx-4"></div>
+                        <div class="step-item flex items-center gap-3 opacity-40 transition-all duration-300"
+                            id="step3-nav">
+                            <span
+                                class="w-10 h-10 rounded-full bg-white text-slate-400 font-bold flex items-center justify-center border-2 border-slate-200">3</span>
+                            <span class="font-bold text-slate-500 hidden md:block">Add-ons</span>
+                        </div>
+                        <div class="h-[2px] flex-1 bg-slate-100 mx-4"></div>
+                        <div class="step-item flex items-center gap-3 opacity-40 transition-all duration-300"
+                            id="step4-nav">
+                            <span
+                                class="w-10 h-10 rounded-full bg-white text-slate-400 font-bold flex items-center justify-center border-2 border-slate-200">4</span>
+                            <span class="font-bold text-slate-500 hidden md:block">Payment</span>
+                        </div>
+                    </div>
+
+                    <!-- Step 1: Personal Info -->
+                    <div id="step1" class="booking-step transition-all duration-500">
+                        <div class="bg-white p-10 rounded-[32px] shadow-sm border border-slate-100">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold text-slate-700 uppercase tracking-wider">Full Name
+                                        *</label>
+                                    <input type="text" id="fullName"
+                                        class="w-full px-6 py-4 rounded-xl border border-slate-200 focus:border-[#d5e880] focus:ring-4 focus:ring-[#d5e880]/10 transition-all outline-none"
+                                        placeholder="Trek In Sikkim">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold text-slate-700 uppercase tracking-wider">Email
+                                        Address *</label>
+                                    <input type="email" id="email" readonly
+                                        class="w-full px-6 py-4 rounded-xl border border-slate-200 focus:border-[#d5e880] focus:ring-4 focus:ring-[#d5e880]/10 transition-all outline-none"
+                                        placeholder="example@gmail.com">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold text-slate-700 uppercase tracking-wider">Contact
+                                        Number *</label>
+                                    <div class="flex gap-2">
+                                        <div
+                                            class="w-1/4 bg-slate-50 rounded-xl border border-slate-200 flex items-center justify-center text-slate-500 font-bold">
+                                            +91</div>
+                                        <input type="tel" id="phone"
+                                            class="w-3/4 px-6 py-4 rounded-xl border border-slate-200 focus:border-[#d5e880] focus:ring-4 focus:ring-[#d5e880]/10 transition-all outline-none"
+                                            placeholder="7407249200">
+                                    </div>
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold text-slate-700 uppercase tracking-wider">Choose
+                                        Group Type *</label>
+                                    <select id="group-type"
+                                        class="w-full px-6 py-4 rounded-xl border border-slate-200 focus:border-[#d5e880] focus:ring-4 focus:ring-[#d5e880]/10 transition-all outline-none bg-white">
+                                        <option value="" disabled selected>Select Group Type</option>
+                                        <option value="Private Group">Private Group</option>
+                                        <option value="Fixed Departure">Fixed Departure</option>
+                                        <option value="Custom Group">Custom Group</option>
+                                    </select>
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold text-slate-700 uppercase tracking-wider">From Date
+                                        *</label>
+                                    <input type="date" id="from-date"
+                                        class="w-full px-6 py-4 rounded-xl border border-slate-200 focus:border-[#d5e880] focus:ring-4 focus:ring-[#d5e880]/10 transition-all outline-none">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold text-slate-700 uppercase tracking-wider">To Date
+                                        *</label>
+                                    <input type="date" id="to-date"
+                                        class="w-full px-6 py-4 rounded-xl border border-slate-200 focus:border-[#d5e880] focus:ring-4 focus:ring-[#d5e880]/10 transition-all outline-none">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold text-slate-700 uppercase tracking-wider">Your
+                                        Address</label>
+                                    <input type="text" id="address"
+                                        class="w-full px-6 py-4 rounded-xl border border-slate-200 focus:border-[#d5e880] focus:ring-4 focus:ring-[#d5e880]/10 transition-all outline-none"
+                                        placeholder="Enter your full address here">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold text-slate-700 uppercase tracking-wider">Number Of
+                                        People *</label>
+                                    <input type="number" id="participantCount" value="1" min="1"
+                                        class="w-full px-6 py-4 rounded-xl border border-slate-200 focus:border-[#d5e880] focus:ring-4 focus:ring-[#d5e880]/10 transition-all outline-none"
+                                        placeholder="1">
+                                </div>
+                            </div>
+                            <button onclick="nextStep(2)"
+                                class="mt-10 bg-[#243146] text-[#d5e880] px-10 py-4 rounded-xl font-bold hover:bg-slate-900 transition-all shadow-lg hover:shadow-xl uppercase tracking-widest text-sm">Save
+                                & Continue</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Participants Info -->
+                    <div id="step2" class="booking-step hidden opacity-0 transition-all duration-500">
+                        <div
+                            class="bg-white p-4 sm:p-6 md:p-10 rounded-2xl md:rounded-[32px] shadow-sm border border-slate-100">
+
+                            <!-- Header -->
+                            <div
+                                class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 md:mb-8">
+                                <h3 class="text-xl sm:text-2xl font-bold text-slate-900">
+                                    Participants Information
+                                </h3>
+
+                                <button type="button" onclick="addParticipant()"
+                                    class="w-full sm:w-auto bg-[#243146] text-[#d5e880] px-4 sm:px-5 py-3 rounded-xl font-bold hover:bg-slate-900 transition-all text-sm sm:text-base">
+                                    + Add New Participant
+                                </button>
+                            </div>
+
+                            <!-- Participants -->
+                            <div id="participantsContainer" class="space-y-8 md:space-y-12">
+                                <!-- Generated via JS -->
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="flex flex-col sm:flex-row gap-4 mt-8 md:mt-12">
+                                <button onclick="nextStep(1)"
+                                    class="w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 rounded-xl font-bold border-2 border-slate-200 text-slate-500 hover:bg-slate-50 transition-all uppercase tracking-widest text-xs sm:text-sm">
+                                    Back
+                                </button>
+
+                                <button onclick="nextStep(3)"
+                                    class="w-full sm:w-auto bg-[#243146] text-[#d5e880] px-6 sm:px-10 py-3 sm:py-4 rounded-xl font-bold hover:bg-slate-900 transition-all shadow-lg uppercase tracking-widest text-xs sm:text-sm">
+                                    Continue to Add-ons
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Add-ons -->
+                    <div id="step3" class="booking-step hidden opacity-0 transition-all duration-500">
+                        <div
+                            class="bg-white p-4 sm:p-6 md:p-10 rounded-2xl md:rounded-[32px] shadow-sm border border-slate-100">
+                            <div class="space-y-6 md:space-y-8">
+                                <div class="flex flex-col gap-1">
+                                    <h3 class="text-xl sm:text-2xl font-bold text-slate-900">
+                                        Choose Your Additional Services
+                                    </h3>
+                                    <p class="text-slate-500 text-xs sm:text-sm max-w-2xl">
+                                        Select any extra service you need and the cost
+                                        will be added to your main trek price automatically.
+                                    </p>
+                                </div>
+
+                                <div id="addOnsContainer" class="space-y-4"></div>
+                            </div>
+
+                            <div class="flex flex-col sm:flex-row gap-4 mt-8 md:mt-12">
+                                <button onclick="nextStep(2)"
+                                    class="w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 rounded-xl font-bold border-2 border-slate-200 text-slate-500 hover:bg-slate-50 transition-all uppercase tracking-widest text-xs sm:text-sm">
+                                    Back
+                                </button>
+
+                                <button onclick="nextStep(4)"
+                                    class="w-full sm:w-auto bg-[#243146] text-[#d5e880] px-6 sm:px-10 py-3 sm:py-4 rounded-xl font-bold hover:bg-slate-900 transition-all shadow-lg uppercase tracking-widest text-xs sm:text-sm">
+                                    Confirm & Pay
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Payment -->
+                    <div id="step4" class="booking-step hidden opacity-0 transition-all duration-500">
+                        <div
+                            class="bg-white p-6 sm:p-10 md:p-16 rounded-2xl md:rounded-[32px] shadow-sm border border-slate-100 flex flex-col items-center justify-center text-center">
+
+                            <div
+                                class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-[#d5e880]/20 text-[#243146] rounded-full flex items-center justify-center mb-6 md:mb-8">
+                                <svg class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <h3 class="gloock-regular text-2xl sm:text-3xl md:text-4xl text-slate-900 mb-3 md:mb-4">
+                                Secure Your Expedition
+                            </h3>
+
+                            <p
+                                class="text-slate-500 max-w-md mb-8 md:mb-12 plus-jakarta-sans text-base sm:text-lg px-2">
+                                Your booking details are
+                                verified. Click below to proceed to the secure payment gateway.
+                            </p>
+
+                            <button
+                                class="w-full sm:w-auto bg-[#243146] text-[#d5e880] px-8 sm:px-12 md:px-16 py-4 sm:py-5 md:py-6 rounded-full font-bold text-base sm:text-lg md:text-xl hover:bg-slate-900 transition-all shadow-2xl hover:scale-105 active:scale-95 uppercase tracking-widest flex items-center justify-center gap-3 sm:gap-4">
+                                Pay Now
+                                <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right: Order Summary Sidebar -->
+                <div class="lg:col-span-4 sticky top-10">
+                    <div class="bg-[#243146] text-white p-8 rounded-[32px] shadow-2xl overflow-hidden relative">
+                        <!-- Decorative circle -->
+                        <div class="absolute -top-10 -right-10 w-40 h-40 bg-white/5 rounded-full"></div>
+
+                        <h2 class="gloock-regular text-2xl mb-8 flex items-center gap-3">
+                            <span class="w-2 h-8 bg-[#d5e880] rounded-full"></span>
+                            Order Summary
+                        </h2>
+
+                        <div id="orderSummery" class="space-y-6">
+                            <div>
+                                <h4 id="orderSummeryTitle" class="font-bold text-xl text-[#d5e880]"></h4>
+                                <p class="text-slate-400 text-sm mt-1 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                    <span id="summaryDates">Dates Not Selected</span>
+                                </p>
+                            </div>
+
+                            <hr class="border-white/10">
+
+                            <div class="space-y-4">
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-slate-400">No. of participants</span>
+                                    <span class="font-bold" id="summaryCount">1</span>
+                                </div>
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-slate-400">Price (<span id="summaryPricePer"></span> x
+                                        <span id="summaryCountX"></span>)</span>
+                                    <span class="font-bold" id="summarySubtotal"></span>
+                                </div>
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-slate-400">Add-ons</span>
+                                    <span class="font-bold text-green-400" id="summaryAddOns">₹0</span>
+                                </div>
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-slate-400">GST 5%</span>
+                                    <span class="font-bold" id="summaryGst">₹975</span>
+                                </div>
+                            </div>
+
+                            <hr class="border-white/10">
+
+                            <div class="flex justify-between items-end pt-2">
+                                <div>
+                                    <span class="text-xs text-slate-400 block uppercase tracking-tighter">Total
+                                        Amount</span>
+                                    <span class="text-3xl font-bold text-[#d5e880]" id="summaryTotal">₹20,475</span>
+                                </div>
+                                <div class="text-right">
+                                    <!--<span id="packageOriginalPrice"
+                                         class="text-[10px] text-slate-500 line-through">₹23,475</span> -->
+                                    <!-- <span class="block text-[10px] text-green-400 font-bold">You Saved ₹3,000</span> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- footer section -->
+    <div id="footer"></div>
+    <script src="config/apiConfig.js"></script>
+    <script src="controllers/function.js"></script>
+    <script src="controllers/booking.js"></script>
+    <script src="/includes/common.js"></script>
+    <script src="/controllers/users.js"></script>
+    <script src="controllers/footerdetails.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const params = new URLSearchParams(window.location.search);
+            const price = params.get("price") || "00000";
+            const id = params.get("id") || "unknown-id";
+
+
+            let fromDate = "";
+            let toDate = "";
+            if (params.get("fromDate") && params.get("toDate")) {
+                fromDate = params.get("fromDate").split("T")[0];
+                toDate = params.get("toDate").split("T")[0];
+                const formattedFromDate = new Date(params.get("fromDate")).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+                const formattedToDate = new Date(params.get("toDate")).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+                document.getElementById("summaryDates").innerText = `${formattedFromDate} - ${formattedToDate}`;
+            }
+            document.getElementById("orderSummeryTitle").innerText = params.get("name") || "Unknown Package";
+            document.getElementById("summaryPricePer").innerText = '₹' + price;
+            // document.getElementById("packageOriginalPrice").innerText = '₹' + params.get("originalPrice") || '₹0';
+            const name = params.get("name") || "Unknown Package";
+            submitBookingData(id, price, name, fromDate, toDate);
+            const packageTitle = document.getElementById('packageTitle');
+            packageTitle.innerText = '';
+            packageTitle.innerText = name;
+
+
+
+
+
+            // show date from and to input in summary section when user select the date from input field in step 1 and also update the date in summary section when user change the date from input field in step 1
+            const fromInput = document.getElementById("from-date");
+            const toInput = document.getElementById("to-date");
+
+            function updateSummaryDates() {
+                const fromDate = fromInput.value;
+                const toDate = toInput.value;
+
+                if (fromDate && toDate) {
+                    const formattedFrom = new Date(fromDate).toLocaleDateString("en-GB", {
+                        day: "2-digit",
+                        month: "short",
+                        year: "numeric"
+                    });
+
+                    const formattedTo = new Date(toDate).toLocaleDateString("en-GB", {
+                        day: "2-digit",
+                        month: "short",
+                        year: "numeric"
+                    });
+
+                    document.getElementById("summaryDates").innerText =
+                        `${formattedFrom} - ${formattedTo}`;
+                } else {
+                    document.getElementById("summaryDates").innerText =
+                        "Dates Not Selected";
+                }
+            }
+
+            // 🔥 event add
+            fromInput.addEventListener("change", updateSummaryDates);
+            toInput.addEventListener("change", updateSummaryDates);
+
+        });
+    </script>
+    <script>
+        // check if user is logged in get the status from localStorage 
+        document.addEventListener("DOMContentLoaded", function () {
+            const email = document.getElementById("email");
+            const fullname = document.getElementById("fullName");
+            const phone = document.getElementById("phone");
+
+            const user = JSON.parse(localStorage.getItem("user")) || {};
+            if (user) {
+                document.getElementById("email").value = user.email || "";
+                document.getElementById("fullName").value = user.fullName || "";
+                let mobile = user.mobile || "";
+                // +91 or + remove korbe
+                mobile = mobile.replace(/^\+91|\+/g, "");
+
+                // allow only 10 digit
+                mobile = mobile.slice(-10);
+                document.getElementById("phone").value = mobile;
+            }
+
+        });
+    </script>
+
+    <script>
+        const basePrice = parseInt(new URLSearchParams(window.location.search).get("price")) || 0;
+        const gstRate = 0.05;
+        // const addOns = [
+        //     { id: 'addon1', label: 'Goechala Private Trip Cost Per head for International Hikers', rupee: 0, dollar: 1120 },
+        //     { id: 'addon2', label: 'Pick up drop from airport by on sharing per head', rupee: 3200, dollar: 50 },
+        //     { id: 'addon3', label: 'Bag Offloading Charge', rupee: 4500, dollar: 0 },
+        //     { id: 'addon4', label: 'Single Tent Occupancy', rupee: 4500, dollar: 50 },
+        //     { id: 'addon5', label: 'International hiker permit fee', rupee: 5000, dollar: 57 },
+        //     { id: 'addon6', label: 'Private cab pick from airport and drop to airport', rupee: 14000, dollar: 160 },
+        //     { id: 'addon7', label: 'Goechala Private Trip Cost Per head for Indian Hikers', rupee: 40000, dollar: 0 }
+        // ];
+        function syncParticipantsData() {
+
+            const blocks = document.querySelectorAll(".participant-block");
+
+            blocks.forEach((block, index) => {
+
+                participants[index].name =
+                    block.querySelector("#participantName").value;
+
+                participants[index].email =
+                    block.querySelector("#participantEmail").value;
+
+                participants[index].phone =
+                    block.querySelector("#participantPhone").value;
+            });
+        }
+        function updateSummary() {
+            // const count = document.getElementById('participantCount').value || 1;
+            const count = parseInt(document.getElementById('participantCount').value) || 1;
+            const subtotal = count * basePrice;
+            // const addOnTotal = addOns.reduce((sum, item) => {
+            //     const checkbox = document.getElementById(item.id);
+            //     return sum + (checkbox && checkbox.checked ? item.rupee : 0);
+            // }, 0);
+            const addOnTotal = Array.from(document.querySelectorAll('.addon-checkbox:checked'))
+                .reduce((sum, checkbox) => {
+                    return sum + Number(checkbox.dataset.price || 0);
+                }, 0);
+
+            const totalBeforeGst = subtotal + addOnTotal;
+            // const gst = Math.round(totalBeforeGst * gstRate);
+            const gst = Math.ceil(totalBeforeGst * gstRate);
+            const total = totalBeforeGst + gst;
+
+            document.getElementById('summaryCount').innerText = count;
+            document.getElementById('summaryCountX').innerText = count;
+            document.getElementById('summarySubtotal').innerText = '₹' + subtotal.toLocaleString();
+            document.getElementById('summaryAddOns').innerText = '₹' + addOnTotal.toLocaleString();
+            document.getElementById('summaryGst').innerText = '₹' + gst.toLocaleString();
+            document.getElementById('summaryTotal').innerText = '₹' + total.toLocaleString();
+        }
+        //====================================================================================
+        let participants = [];
+
+        function addParticipant() {
+
+            // 🔥 current input save 
+            syncParticipantsData();
+
+            const user = JSON.parse(localStorage.getItem("user")) || {};
+
+            let userPhone = user.mobile || "";
+            userPhone = userPhone.replace(/^\+91|\+/g, "");
+            userPhone = userPhone.slice(-10);
+
+            const participantNumber = participants.length + 1;
+
+            participants.push({
+                id: Date.now(),
+                name: participantNumber === 1 ? (user.fullName || "") : "",
+                email: participantNumber === 1 ? (user.email || "") : "",
+                phone: participantNumber === 1 ? userPhone : ""
+            });
+
+            renderParticipants();
+        }
+        function removeParticipant(id) {
+            // 🔥 current input save 
+            syncParticipantsData();
+
+            participants = participants.filter(p => p.id !== id);
+
+            renderParticipants();
+        }
+        function renderParticipants() {
+
+            const container = document.getElementById('participantsContainer');
+
+            container.innerHTML = '';
+
+            participants.forEach((participant, index) => {
+
+                container.innerHTML += `
+        
+        <div class="participant-block bg-slate-50 p-8 rounded-2xl border border-slate-100 transition-all hover:border-[#d5e880]">
+
+            <div class="flex justify-between items-center mb-6">
+
+                <h4 class="font-bold text-slate-900 uppercase tracking-widest text-[#243146]">
+                    Participant ${index + 1}
+                </h4>
+
+                ${index !== 0
+                        ?
+                        `
+                    <button
+                        type="button"
+                        onclick="removeParticipant(${participant.id})"
+                        class="text-red-400 hover:text-red-600"
+                    >
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                            </path>
+                        </svg>
+                    </button>
+                    `
+                        :
+                        ""
+                    }
+
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <div class="space-y-2">
+                    <label class="text-xs font-bold text-slate-500 uppercase">
+                        Participant Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="participantName"
+                        value="${participant.name}"
+                        class="w-full px-5 py-3 rounded-xl border border-slate-200 outline-none focus:border-[#d5e880] transition-colors bg-white"
+                        placeholder="Name"
+                    >
+                </div>
+
+                <div class="space-y-2">
+                    <label class="text-xs font-bold text-slate-500 uppercase">
+                        Participant Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="participantEmail"
+                        value="${participant.email}"
+                        class="w-full px-5 py-3 rounded-xl border border-slate-200 outline-none focus:border-[#d5e880] transition-colors bg-white"
+                        placeholder="Email"
+                    >
+                </div>
+
+                <div class="space-y-2 md:col-span-2">
+                    <label class="text-xs font-bold text-slate-500 uppercase">
+                        Contact Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="participantPhone"
+                        value="${participant.phone}"
+                        maxlength="10"
+                        class="w-full px-5 py-3 rounded-xl border border-slate-200 outline-none focus:border-[#d5e880] transition-colors bg-white"
+                        placeholder="9876543210"
+                    >
+                </div>
+
+            </div>
+
+        </div>
+        `;
+            });
+
+            document.getElementById("participantCount").value = participants.length;
+
+            updateSummary();
+        }
+        //=============================================
+        // function generateParticipantForms() {
+        //     const count = parseInt(document.getElementById('participantCount').value) || 1;
+        //     const container = document.getElementById('participantsContainer');
+        //       // 🔥 login user data
+        //     const user = JSON.parse(localStorage.getItem("user")) || {};
+
+        //     let userPhone = user.mobile || "";
+
+        //     // +91 remove
+        //     userPhone = userPhone.replace(/^\+91|\+/g, "");
+        //     userPhone = userPhone.slice(-10);
+        //     container.innerHTML = '';
+
+        //     for (let i = 1; i <= count; i++) {
+
+        //         // 🔥 only Participant 1 auto fill
+        //         const participantName = i === 1 ? (user.fullName || "") : "";
+        //         const participantEmail = i === 1 ? (user.email || "") : "";
+        //         const participantPhone = i === 1 ? userPhone : "";
+
+        //         container.innerHTML += `
+        //             <div class="participant-block bg-slate-50 p-8 rounded-2xl border border-slate-100 transition-all hover:border-[#d5e880]">
+        //                 <div class="flex justify-between items-center mb-6">
+        //                     <h4 class="font-bold text-slate-900 uppercase tracking-widest text-[#243146]">Participant ${i}</h4>
+        //                     <button class="text-red-400 hover:text-red-600">
+        //                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+        //                     </button>
+        //                 </div>
+        //                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        //                     <div class="space-y-2">
+        //                         <label class="text-xs font-bold text-slate-500 uppercase">Participant Full Name</label>
+        //                         <input type="text" id="participantName"  value="${participantName}" class="w-full px-5 py-3 rounded-xl border border-slate-200 outline-none focus:border-[#d5e880] transition-colors bg-white" placeholder="Name">
+        //                     </div>
+        //                     <div class="space-y-2">
+        //                         <label class="text-xs font-bold text-slate-500 uppercase">Participant Email</label>
+        //                         <input type="email" id="participantEmail"  value="${participantEmail}" class="w-full px-5 py-3 rounded-xl border border-slate-200 outline-none focus:border-[#d5e880] transition-colors bg-white" placeholder="Email">
+        //                     </div>
+        //                     <div class="space-y-2 md:col-span-2">
+        //                         <label class="text-xs font-bold text-slate-500 uppercase">Contact Number</label>
+        //                         <input type="tel" id="participantPhone"  value="${participantPhone}" maxlength="10" class="w-full px-5 py-3 rounded-xl border border-slate-200 outline-none focus:border-[#d5e880] transition-colors bg-white" placeholder="9876543210">
+        //                     </div>
+        //                 </div>
+        //             </div>
+        //         `;
+        //     }
+        // }
+
+        // function nextStep(step) {
+        //     // Update UI
+        //     document.querySelectorAll('.booking-step').forEach(s => {
+        //         s.classList.add('hidden');
+        //         s.classList.remove('opacity-100');
+        //     });
+
+        //     const currentStep = document.getElementById('step' + step);
+        //     currentStep.classList.remove('hidden');
+        //     setTimeout(() => currentStep.classList.add('opacity-100'), 50);
+
+        //     // Update Progress Nav
+        //     document.querySelectorAll('.step-item').forEach((nav, idx) => {
+        //         const navNum = idx + 1;
+        //         if (navNum === step) {
+        //             nav.classList.add('active-step', 'opacity-100');
+        //             nav.querySelector('span:first-child').className = "w-10 h-10 rounded-full bg-[#d5e880] text-slate-900 font-bold flex items-center justify-center border-2 border-[#d5e880]";
+        //             nav.querySelector('span:last-child').className = "font-bold text-slate-900 hidden md:block";
+        //         } else if (navNum < step) {
+        //             nav.classList.add('opacity-100');
+        //             nav.querySelector('span:first-child').className = "w-10 h-10 rounded-full bg-[#243146] text-[#d5e880] font-bold flex items-center justify-center border-2 border-[#243146]";
+        //         } else {
+        //             nav.classList.add('opacity-40');
+        //             nav.classList.remove('opacity-100');
+        //         }
+        //     });
+
+        //     if (step === 2) generateParticipantForms();
+        //     if (step === 3) generateAddOns();
+        //     updateSummary();
+        //     window.scrollTo({ top: 100, behavior: 'smooth' });
+        // }
+
+        function nextStep(step) {
+
+            // 🔥 STEP 1 VALIDATION
+            if (step === 2) {
+                const fullName = document.getElementById("fullName").value.trim();
+                const email = document.getElementById("email").value.trim();
+                const phone = document.getElementById("phone").value.trim();
+                const groupType = document.getElementById("group-type").value;
+                const count = document.getElementById("participantCount").value;
+                const fromDate = document.getElementById("from-date").value;
+                const toDate = document.getElementById("to-date").value;
+                const address = document.getElementById("address").value.trim();
+
+                if (!fullName || !email || !phone || !groupType || !count || !fromDate || !toDate || !address) {
+                    return Swal.fire({
+                        icon: "warning",
+                        title: "Personal Info Incomplete",
+                        text: "Please fill all required fields ❌",
+                    });
+                }
+
+                if (!/^[6-9]\d{9}$/.test(phone)) {
+                    return Swal.fire({
+                        icon: "error",
+                        title: "Invalid Phone Number",
+                        text: "Enter valid 10 digit Indian number (without +91)",
+                    });
+                }
+
+                if (new Date(fromDate) > new Date(toDate)) {
+                    return Swal.fire({
+                        icon: "error",
+                        title: "Invalid Date",
+                        text: "From date cannot be greater than To date",
+                    });
+                }
+            }
+
+            // 🔥 STEP 2 VALIDATION
+            if (step === 3) {
+                const blocks = document.querySelectorAll(".participant-block");
+                let hasError = false;
+
+                blocks.forEach((block) => {
+                    const name = block.querySelector("#participantName").value.trim();
+                    const email = block.querySelector("#participantEmail").value.trim();
+                    const phone = block.querySelector("#participantPhone").value.trim();
+
+                    if (!name || !email || !phone) {
+                        hasError = true;
+                    }
+                });
+
+                if (hasError) {
+                    return Swal.fire({
+                        icon: "warning",
+                        title: "Participant Details Incomplete",
+                        text: "Fill all participant details ❌",
+                    });
+                }
+            }
+
+            // 🔥 STEP 3 VALIDATION (optional)
+            if (step === 4) {
+
+                // Example: at least 1 addon (optional rule)
+                // if (document.querySelectorAll(".addon-checkbox:checked").length === 0) {
+                //   return Swal.fire({
+                //     icon: "info",
+                //     title: "No Add-ons Selected",
+                //     text: "You can continue without addons 👍",
+                //   });
+                // }
+            }
+            // ✅ NOW Update Progress Nav (Correct Place)
+            document.querySelectorAll('.step-item').forEach((nav, idx) => {
+                const navNum = idx + 1;
+
+                if (navNum === step) {
+                    nav.classList.add('active-step', 'opacity-100');
+                    nav.classList.remove('opacity-40');
+
+                    nav.querySelector('span:first-child').className =
+                        "w-10 h-10 rounded-full bg-[#d5e880] text-slate-900 font-bold flex items-center justify-center border-2 border-[#d5e880]";
+
+                    nav.querySelector('span:last-child').className =
+                        "font-bold text-slate-900 hidden md:block";
+
+                } else if (navNum < step) {
+                    nav.classList.add('opacity-100');
+                    nav.classList.remove('opacity-40');
+
+                    nav.querySelector('span:first-child').className =
+                        "w-10 h-10 rounded-full bg-[#243146] text-[#d5e880] font-bold flex items-center justify-center border-2 border-[#243146]";
+
+                } else {
+                    nav.classList.add('opacity-40');
+                    nav.classList.remove('opacity-100');
+
+                    nav.querySelector('span:first-child').className =
+                        "w-10 h-10 rounded-full bg-white text-slate-500 font-bold flex items-center justify-center border-2 border-slate-300";
+                }
+            });
+
+            // ✅ UI switch (your existing code)
+            document.querySelectorAll('.booking-step').forEach(s => {
+                s.classList.add('hidden');
+                s.classList.remove('opacity-100');
+            });
+
+            const currentStep = document.getElementById('step' + step);
+            currentStep.classList.remove('hidden');
+            setTimeout(() => currentStep.classList.add('opacity-100'), 50);
+
+            // 🔥 extra logic
+            // if (step === 2) generateParticipantForms();
+            // if (step === 2) {
+
+            //     if (participants.length === 0) {
+            //         addParticipant();
+            //     }
+
+            //     renderParticipants();
+            // }
+            if (step === 2) {
+
+                const totalParticipants =
+                    parseInt(document.getElementById("participantCount").value) || 1;
+
+                syncParticipantsData();
+
+                // add participants
+                while (participants.length < totalParticipants) {
+                    addParticipant();
+                }
+
+                // remove extra participants
+                while (participants.length > totalParticipants) {
+                    participants.pop();
+                }
+
+                renderParticipants();
+            }
+
+            if (step === 3) generateAddOns();
+
+            updateSummary();
+            window.scrollTo({ top: 100, behavior: 'smooth' });
+        }
+
+
+
+
+
+
+        async function generateAddOns() {
+            const container = document.getElementById('addOnsContainer');
+            if (!container) return;
+            container.innerHTML = '';
+            const endpoint = "/api/additionals";
+            const url = API_CONFIG.getUrl(endpoint);
+
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error(
+                    `HTTP error! status: ${response.status}`,
+                );
+            }
+            const additionals = await response.json();
+
+
+            additionals.forEach(addOn => {
+                container.innerHTML += `
+                    <label for="${addOn._id}" class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-5 rounded-3xl border border-slate-200 hover:border-[#d5e880] transition-all bg-slate-50">
+                        <div class="flex-1">
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="text-slate-900 font-bold">${addOn.name}</span>
+                                <span class="px-3 py-1 rounded-full bg-[#d5e880]/15 text-[#243146] text-xs font-semibold">₹${addOn.priceINR} / $${addOn.priceUSD}</span>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="${addOn._id}" data-name="${addOn.name}" data-price="${addOn.priceINR}"  class="addon-checkbox w-5 h-5 accent-[#d5e880]" onchange="updateSummary()">
+                    </label>
+                `;
+            });
+        }
+
+        document.getElementById('participantCount').addEventListener('input', updateSummary);
+        updateSummary();
+
+        loadInclude("includes/header.html", "header").then(() => {
+            toggleBtn(); //function are defined in common.js
+            loadCategory(); //function are defined in common.js
+            loadAboutusToggle(); //function are defined in common.js
+            upcomingdropdown(); //function are defined in common.js
+            document.getElementById("logout-btn").addEventListener("click", function () {
+                logout();
+            });
+        });
+
+        loadInclude("includes/footer.html", "footer").then(() => {
+            loadSettings(); // function are defined in footerdetails.js
+            footerCategoryList(); //function are defined in footerdetails.js
+            footerUpcomingDropdown(); //function are defined in footerdetails.js
+        });
+        // function loadInclude(file, elementId) {
+        //     fetch(file)
+        //         .then(response => response.text())
+        //         .then(data => {
+        //             document.getElementById(elementId).innerHTML = data;
+        //         })
+        //         .catch(error => console.error(`Error loading ${file}:`, error));
+        // }
+    </script>
+</body>
+
+
+</html>

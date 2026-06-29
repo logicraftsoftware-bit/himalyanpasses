@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Himalayan Passes Invoice</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #ececec;
+            font-family: Arial, sans-serif;
+        }
+
+        /* A5 SIZE */
+        .invoice-container {
+            width: 148mm;
+            min-height: 210mm;
+            background: #ffffff;
+            margin: auto;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        /* HEADER */
+        .header {
+            background: linear-gradient(135deg, #f7f7f7, #ececec);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* LEFT DESIGN */
+        .left-design {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 70px;
+            height: 70px;
+        }
+
+        .left-design div {
+            width: 35px;
+            height: 35px;
+            float: left;
+        }
+
+        .left1 {
+            background: #67b63c;
+            border-radius: 0 0 35px 0;
+        }
+
+        .left2 {
+            background: #ddd;
+        }
+
+        .left3 {
+            background: #ddd;
+        }
+
+        .left4 {
+            background: #67b63c;
+            border-radius: 35px 0 0 0;
+        }
+
+        /* RIGHT DESIGN */
+        .right-design {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 70px;
+            height: 70px;
+        }
+
+        .right-design div {
+            width: 35px;
+            height: 35px;
+            float: left;
+        }
+
+        .right1 {
+            background: #0e5aa7;
+        }
+
+        .right2 {
+            background: #ddd;
+            border-radius: 0 0 0 35px;
+        }
+
+        .right3 {
+            background: #ddd;
+            border-radius: 0 35px 0 0;
+        }
+
+        .right4 {
+            background: #0e5aa7;
+        }
+
+        /* LOGO */
+        .logo {
+            width: 150px;
+            margin-bottom: 12px;
+        }
+
+        /* MODERN CONTACT */
+        .contact-wrapper {
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .contact-box {
+            background: #fff;
+            border-radius: 12px;
+            padding: 10px 14px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-box.address {
+            width: 90%;
+        }
+
+        .contact-box.small {
+            width: 40%;
+        }
+
+        .contact-box.email {
+            width: 90%;
+        }
+
+        .contact-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            color: #fff;
+            text-align: center;
+            line-height: 38px;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .address-icon {
+            background: linear-gradient(135deg, #0d6efd, #0a58ca);
+        }
+
+        .phone-icon {
+            background: linear-gradient(135deg, #28a745, #1e7e34);
+        }
+
+        .whatsapp-icon {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+        }
+
+        .email-icon {
+            background: linear-gradient(135deg, #ff4d4d, #d90429);
+        }
+
+        .contact-text {
+            text-align: left;
+            font-size: 11px;
+            line-height: 18px;
+            color: #333;
+        }
+
+        .contact-title {
+            font-size: 12px;
+            color: #111;
+            font-weight: bold;
+        }
+
+        /* BODY */
+        .body-section {
+            padding: 30px;
+        }
+
+        /* TITLE */
+        .invoice-title {
+            text-align: center;
+            font-size: 28px;
+            color: #111;
+            margin-bottom: 35px;
+        }
+
+        /* DETAILS */
+        .left-box {
+            width: 48%;
+            float: left;
+        }
+
+        .right-box {
+            width: 48%;
+            float: right;
+        }
+
+        .heading {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: #111;
+        }
+
+        .text {
+            font-size: 13px;
+            margin: 6px 0;
+            line-height: 22px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        /* TABLE */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            font-size: 12px;
+        }
+
+        table th {
+            background: #f1f1f1;
+            padding: 12px;
+            border: 1px solid #d9d9d9;
+            color: #111;
+        }
+
+        table td {
+            padding: 12px;
+            border: 1px solid #d9d9d9;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .total-bg {
+            background: #fafafa;
+        }
+
+        /* PAYMENT */
+        .payment {
+            margin-top: 30px;
+        }
+
+        /* TERMS */
+        .terms {
+            margin-top: 30px;
+        }
+
+        .terms p {
+            font-size: 11px;
+            line-height: 22px;
+            color: #555;
+        }
+
+        .footer-note {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 11px;
+            color: #888;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="invoice-container">
+
+        <!-- HEADER -->
+        <div class="header">
+
+            <!-- LEFT DESIGN -->
+            <div class="left-design">
+                <div class="left1"></div>
+                <div class="left2"></div>
+                <div class="left3"></div>
+                <div class="left4"></div>
+            </div>
+
+            <!-- RIGHT DESIGN -->
+            <div class="right-design">
+                <div class="right1"></div>
+                <div class="right2"></div>
+                <div class="right3"></div>
+                <div class="right4"></div>
+            </div>
+
+            <!-- LOGO -->
+            <img src="/images/final_logo-small.webp?v=2" onerror="this.onerror=null;this.src='/images/final_logo.webp?v=2';" width="80" height="80" class="logo">
+
+            <!-- CONTACT -->
+            <div class="contact-wrapper">
+
+                <!-- ADDRESS -->
+                <div class="contact-box address">
+
+                    <div class="contact-icon address-icon">
+                        📍
+                    </div>
+
+                    <div class="contact-text">
+                        <div class="contact-title">
+                            Address
+                        </div>
+                        <span id="address"></span>
+                    </div>
+
+                </div>
+
+                <!-- PHONE -->
+                <div class="contact-box small">
+
+                    <div class="contact-icon phone-icon">
+                        ☎
+                    </div>
+
+                    <div class="contact-text">
+                        <div class="contact-title">
+                            Call Us
+                        </div>
+
+                        <span id="phone"></span>
+                    </div>
+
+                </div>
+
+                <!-- WHATSAPP -->
+                <div class="contact-box small">
+
+                    <div class="contact-icon email-icon">
+                        ✉
+                    </div>
+
+                    <div class="contact-text">
+                        <div class="contact-title">
+                            Email
+                        </div>
+
+                        <span id="email"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- BODY -->
+        <div class="body-section">
+
+            <!-- TITLE -->
+            <h1 class="invoice-title">
+                Travel Invoice
+            </h1>
+
+            <!-- LEFT -->
+            <div class="left-box">
+
+                <h3 class="heading">
+                    Invoice Details
+                </h3>
+
+                <p class="text">
+                    <strong>Invoice No:</strong> <span id="invoice-number"></span>
+                </p>
+
+                <p class="text">
+                    <strong>Date:</strong> <span id="invoice-date"></span>
+                </p>
+
+            </div>
+
+            <!-- RIGHT -->
+            <div class="right-box">
+
+                <h3 class="heading">
+                    Billed To
+                </h3>
+
+                <p class="text">
+                    <strong>Name:</strong> <span id="client-name"></span>
+                </p>
+
+                <p class="text">
+                    <strong>Phone:</strong> <span id="client-phone"></span>
+
+                <p class="text">
+                    <strong>Email:</strong> <span id="client-email"></span>
+                </p>
+
+            </div>
+
+            <div class="clear"></div>
+
+            <!-- TABLE -->
+            <table>
+
+                <tr>
+                    <th>Package Name</th>
+                    <th>Person</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+
+                <tr>
+
+                    <td class="center" id="packageName"></td>
+
+                    <td class="center" id="numberOfPeople"></td>
+
+                    <td class="center" id="price"></td>
+
+                    <td class="center" id="total"></td>
+
+                </tr>
+
+                <tr class="total-bg">
+
+                    <td colspan="3" class="right">
+                        <strong>Subtotal</strong>
+                    </td>
+
+                    <td class="center" id="subtotal">
+
+                    </td>
+
+                </tr>
+
+
+                <tr class="total-bg">
+
+                    <td colspan="3" class="right">
+                        <strong id="taxLabel">Tax (5%)</strong>
+                    </td>
+
+                    <td class="center"><span id="gst"></span>
+
+                    </td>
+
+                </tr>
+
+                <tr class="total-bg">
+
+                    <td colspan="3" class="right">
+                        <strong>Total</strong>
+                    </td>
+
+                    <td class="center">
+                        <strong id="totalAmount"></strong>
+                    </td>
+
+                </tr>
+
+            </table>
+
+            <!-- TERMS -->
+            <div class="terms">
+
+                <h3 class="heading">
+                    Terms & Conditions
+                </h3>
+
+                <p>
+                    Full payment is due within 7 days of invoice date.
+                    Cancellation charges may apply according to the tour policy.
+                </p>
+
+                <p>
+                    For any queries contact:
+                    <strong id="bottom_email">kiran.yuksom@gmail.com</strong>
+                </p>
+
+            </div>
+
+            <!-- FOOTER -->
+            <div class="footer-note">
+                Thank You For Choosing Himalayan Passes
+            </div>
+
+        </div>
+
+    </div>
+    <script src="/config/apiConfig.js"></script>
+    <script src="/controllers/invoice.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const bookingId = urlParams.get("bookingId") || "N/A"; // default to some package if slug missing
+        document.addEventListener("DOMContentLoaded", function () {
+            populateSiteDetails();
+            populateInvoiceDetails(bookingId);
+        });
+    </script>
+
+</body>
+
+</html>

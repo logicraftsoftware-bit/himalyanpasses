@@ -1,0 +1,423 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+
+    <title>Glacier Treks & Adventure | Best Trekking Packages in Sikkim</title>
+
+    <meta
+      name="description"
+      content="Discover the best trekking packages in Sikkim, Darjeeling, and North Bengal with Glacier Treks & Adventure. Explore Himalayan trails, camping tours, and guided mountain adventures."
+    />
+
+    <meta
+      name="keywords"
+      content="trekking packages in Sikkim, Himalayan treks, trekking in Darjeeling, North Bengal trekking, adventure tours, mountain trekking, guided treks, Glacier Treks & Adventure"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="icon"
+      href="./favicon/favicon.ico"
+      type="image/x-icon"
+      sizes="16x16"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloock&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+      .plus-jakarta-sans {
+        font-family: "Plus Jakarta Sans", sans-serif;
+
+        font-optical-sizing: auto;
+
+        font-weight: 400;
+
+        font-style: normal;
+      }
+
+      .gloock-regular {
+        font-family: "Gloock", serif;
+
+        font-weight: 400;
+
+        font-style: normal;
+      }
+
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+
+      .category-card {
+        padding: 12px 18px;
+
+        background: white;
+
+        border: 1px solid #e5e7eb;
+
+        font-weight: 600;
+
+        cursor: pointer;
+
+        transition: all 0.3s ease;
+
+        white-space: nowrap;
+      }
+
+      .category-card:hover {
+        background: #d5e880;
+
+        border-color: #d5e880;
+      }
+
+      .category-card.active {
+        background: #0f5c53;
+
+        color: white;
+
+        border-color: #0f5c53;
+      }
+
+      section.py-16.md\:py-24.bg-\[\#f8faf7\] {
+        padding-top: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- header -->
+
+    <!-- header -->
+
+    <section
+      class="relative w-full min-h-[420px] md:min-h-[540px] overflow-hidden"
+    >
+      <!-- Background -->
+
+      <img
+        src="./images/blog-banner.webp"
+        width="1920"
+        height="720"
+        alt="Blog Banner"
+        fetchpriority="high"
+        decoding="async"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+
+      <!-- Overlays -->
+
+      <div class="absolute inset-0 bg-black/50"></div>
+
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-900/40 to-transparent"
+      ></div>
+
+      <div
+        class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-slate-950/60 to-transparent"
+      ></div>
+
+      <!-- Header -->
+
+      <div id="header" class="relative z-30"></div>
+
+      <!-- Content -->
+
+      <div
+        class="relative z-20 flex items-center min-h-[420px] md:min-h-[540px]"
+      >
+        <div class="max-w-7xl mx-auto w-full px-6 lg:px-10 pt-28 md:pt-32">
+          <div class="max-w-3xl">
+            <span
+              class="hidden lg:inline-block mb-4 px-4 py-2 rounded-full bg-[#d5e880]/15 border border-[#d5e880]/30 text-[#d5e880] text-xs sm:text-sm font-semibold tracking-[2px] uppercase plus-jakarta-sans"
+            >
+              Glacier Treks And Adventure
+            </span>
+
+            <h1
+              class="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight gloock-regular mb-5"
+            >
+              Sikim package Blog
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category -->
+
+    <!-- CATEGORY SECTION -->
+
+    <section class="bg-[#f8faf7] py-8">
+      <div class="max-w-7xl mx-auto px-4">
+        <!-- Title + All Button -->
+
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-2xl font-bold text-[#0F5C53]">Explore Categories</h2>
+
+          <button
+            onclick="filterCategory('all')"
+            class="text-sm font-semibold text-[#0F5C53] border border-[#d5e880] px-4 py-1.5 rounded-full hover:bg-[#d5e880] transition"
+          >
+            All Categories →
+          </button>
+        </div>
+
+        <!-- Category Scroll -->
+
+        <div
+          id="allCategory"
+          class="flex gap-4 overflow-x-auto no-scrollbar pb-2"
+        >
+          <!-- CATEGORY ITEM -->
+
+          <!-- <div onclick="filterCategory('trekking')" class="category-card active">Trekking
+
+        </div>
+
+
+
+        <div onclick="filterCategory('camping')" class="category-card"> Camping
+
+        </div>
+
+
+
+        <div onclick="filterCategory('adventure')" class="category-card">Adventure
+
+        </div>
+
+
+
+        <div onclick="filterCategory('himalayan')" class="category-card"> Himalayan
+
+        </div>
+
+
+
+        <div onclick="filterCategory('weekend')" class="category-card"> Weekend Trips
+
+        </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-[#f8faf7]">
+      <div class="max-w-[85%] mx-auto">
+        <div class="flex flex-col gap-3">
+          <!--mobile device 6 blog show after pagination start like 1,2,3 active page hightlight -->
+
+          <!--Desktop de 12 blog show after paginaation start-->
+
+          <!-- <div id="blogGrid" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-5"> -->
+
+          <!-- Card  -->
+
+          <!-- </div> -->
+          <div
+            id="blogGrid"
+            class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-5 justify-items-center md:justify-items-stretch"
+          >
+            <!-- Card -->
+          </div>
+
+          <!-- Pagination -->
+
+          <div
+            id="pagination"
+            class="mt-10 flex flex-wrap items-center justify-center gap-3"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+
+    <div id="footer"></div>
+
+    <script src="config/apiConfig.js"></script>
+
+    <script src="controllers/function.js"></script>
+
+    <script src="controllers/footerdetails.js"></script>
+
+    <script src="./includes/common.js"></script>
+
+    <script src="/controllers/users.js"></script>
+
+    <script src="/controllers/blog.js"></script>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const pathParts = window.location.pathname.split("/").filter(Boolean);
+      const slug =
+        params.get("slug") ||
+        (pathParts[0] === "category" ? pathParts[1] : null);
+      const currentSlug = slug;
+
+      setTimeout(() => {
+        const allCards = document.querySelectorAll(".category-card");
+
+        allCards.forEach((card) => {
+          if (card.dataset.slug === currentSlug) {
+            card.classList.add("active");
+          }
+        });
+      }, 0);
+
+      // Load Includes
+
+      loadInclude("includes/header.html", "header").then(() => {
+        toggleBtn(); //function are defined in common.js
+
+        loadCategory(); //function are defined in comoon.js
+
+        upcomingdropdown(); //function are defined in common.js
+
+        //log out btn
+
+        document
+
+          .getElementById("logout-btn")
+
+          .addEventListener("click", function () {
+            logout(); //function are defined in users.js
+          });
+      });
+
+      loadInclude("includes/footer.html", "footer").then(() => {
+        loadSettings(); // 🔥 footer load howar por
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        loadCategoriesBlogs(slug);
+
+        loadBlogCategories();
+      });
+    </script>
+
+    <script>
+      //for paginatiion
+
+      function renderPagination(totalPages, currentPage) {
+        const pagination = document.getElementById("pagination");
+
+        pagination.innerHTML = "";
+
+        function createBtn(i) {
+          const btn = document.createElement("button");
+
+          btn.textContent = i;
+
+          btn.className =
+            i === currentPage
+              ? "w-11 h-11 rounded-full bg-[#d5e880]"
+              : "w-11 h-11 rounded-full bg-white border";
+
+          btn.addEventListener("click", () => loadBlogs(i));
+
+          return btn;
+        }
+
+        function createDots() {
+          const span = document.createElement("span");
+
+          span.textContent = "...";
+
+          span.className = "px-2 text-slate-500";
+
+          return span;
+        }
+
+        // 🔙 PREV BUTTON
+
+        const prev = document.createElement("button");
+
+        prev.textContent = "←";
+
+        prev.className = "w-11 h-11 rounded-full bg-white border";
+
+        prev.disabled = currentPage === 1;
+
+        prev.onclick = () => loadBlogs(currentPage - 1);
+
+        pagination.appendChild(prev);
+
+        // 👉 First page
+
+        pagination.appendChild(createBtn(1));
+
+        // 👉 Left dots
+
+        if (currentPage > 3) {
+          pagination.appendChild(createDots());
+        }
+
+        // 👉 Middle pages
+
+        for (
+          let i = Math.max(2, currentPage - 1);
+          i <= Math.min(totalPages - 1, currentPage + 1);
+          i++
+        ) {
+          pagination.appendChild(createBtn(i));
+        }
+
+        // 👉 Right dots
+
+        if (currentPage < totalPages - 2) {
+          pagination.appendChild(createDots());
+        }
+
+        // 👉 Last page
+
+        if (totalPages > 1) {
+          pagination.appendChild(createBtn(totalPages));
+        }
+
+        // 🔜 NEXT BUTTON
+
+        const next = document.createElement("button");
+
+        next.textContent = "→";
+
+        next.className = "w-11 h-11 rounded-full bg-white border";
+
+        next.disabled = currentPage === totalPages;
+
+        next.onclick = () => loadBlogs(currentPage + 1);
+
+        pagination.appendChild(next);
+      }
+    </script>
+  </body>
+</html>

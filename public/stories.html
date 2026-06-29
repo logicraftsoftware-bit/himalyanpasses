@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Stories</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+<section class="py-20">
+    <div class="max-w-[85%] mx-auto">
+
+        <!-- Heading -->
+        <div class="text-center mb-12">
+            <p class="uppercase tracking-[3px] text-sm font-semibold text-[#8aa43c]">
+                Stories
+            </p>
+            <h4 class="text-3xl md:text-5xl text-slate-900 mt-2">
+                Our Customer Stories
+            </h4>
+            <p class="text-slate-500 mt-4 max-w-2xl mx-auto">
+                Watch real experiences shared by our trekkers.
+            </p>
+        </div>
+
+        <!-- Stories -->
+        <div id="stories-container" class="grid grid-cols-1 md:grid-cols-2 gap-8"></div>
+
+    </div>
+</section>
+
+<script>
+
+// ✅ YOUR API
+const API_URL = "https://glacier-treks-adventures-admin-back.vercel.app/api/customer-stories";
+
+
+// ================= LOAD STORIES =================
+async function loadStories() {
+    const container = document.getElementById('stories-container');
+
+    try {
+        console.log("📡 Fetching:", API_URL);
+
+        const response = await fetch(API_URL);
+
+        console.log("STATUS:", response.status);
+        console.log("TYPE:", response.headers.get("content-type"));
+
+        const text = await response.text();
+        console.log("RAW RESPONSE:", text);
+
+        // ❌ If backend returns HTML → show error
+        if (text.trim().startsWith("<")) {
+            container.innerHTML = `
+                <p class="text-red-500 text-center col-span-2">
+                    ❌ API is returning HTML (Backend Issue)
+                </p>
+            `;
+            return;
+        }
+
+        const data = JSON.parse(text);
+        console.log("✅ DATA:", data);
+
+        container.innerHTML = '';
+
+        if (!Array.isArray(data) || data.length === 0) {
+            container.innerHTML = "<p>No stories available</p>";
+            return;
+        }
+
+        data.forEach(item => {
+
+            console.log("ITEM:", item);
+
+            // ❗ REMOVED FILTER (IMPORTANT)
+            // if (!item.isActive || !item.approved) return;
+
+            const videoId = extractYouTubeId(item.youtubeLink);
+            console.log("VIDEO ID:", videoId);
+
+            if (!videoId) return;
+
+            const html = `
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+                    
+                    <div class="aspect-video">
+                        <iframe 
+                            class="w-full h-full"
+                            src="https://www.youtube.com/embed/${videoId}"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold">${item.title || ''}</h3>
+                        <p class="text-gray-600 mt-2">${item.description || ''}</p>
+                    </div>
+
+                </div>
+            `;
+
+            container.insertAdjacentHTML('beforeend', html);
+        });
+
+    } catch (error) {
+        console.error("❌ ERROR:", error);
+
+        container.innerHTML = `
+            <p class="text-red-500 text-center col-span-2">
+                Failed to load stories
+            </p>
+        `;
+    }
+}
+
+
+// ================= YOUTUBE FIX =================
+function extractYouTubeId(url) {
+    if (!url) return "";
+
+    const regExp = /(?:youtube\.com\/.*v=|youtu\.be\/)([^&]+)/;
+    const match = url.match(regExp);
+
+    return match ? match[1] : "";
+}
+
+
+// ================= INIT =================
+loadStories();
+
+</script>
+
+</body>
+</html>

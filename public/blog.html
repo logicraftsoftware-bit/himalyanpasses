@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="metaTitle"></title>
+  <!-- <title>Glacier Treks & Adventure | Best Trekking Packages in Sikkim</title> -->
+  <meta id="metaDescription" name="description" content="" />
+  <meta id="metaKeywords" name="keywords" content="" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon" sizes="16x16" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet" />
+  <!-- <script src="https://cdn.tailwindcss.com?plugins=typography"></script> -->
+  <link rel="stylesheet" href="/style/single-blog.css">
+  <!-- <link rel="stylesheet" href="style/common.css"> -->
+  <link rel="stylesheet" href="/style/common.css">
+
+  <style>
+    .plus-jakarta-sans {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .gloock-regular {
+      font-family: "Gloock", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+
+  <style>
+    @media (max-width: 768px) {
+
+      /* body text */
+      #blogGrid p,
+      #blogGrid li,
+      #blogGrid span,
+      #blogGrid a,
+      #blogGrid div {
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+      }
+
+      /* h1 */
+      #blogGrid h1 {
+        font-size: 28px !important;
+        line-height: 1.2 !important;
+      }
+
+      /* h2 */
+      #blogGrid h2 {
+        font-size: 22px !important;
+        line-height: 1.3 !important;
+      }
+
+      /* h3 */
+      #blogGrid h3 {
+        font-size: 18px !important;
+        line-height: 1.4 !important;
+      }
+
+      /* h4 */
+      #blogGrid h4 {
+        font-size: 16px !important;
+        line-height: 1.4 !important;
+      }
+
+      /* h5 */
+      #blogGrid h5 {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+      }
+
+      /* h6 */
+      #blogGrid h6 {
+        font-size: 12px !important;
+        line-height: 1.5 !important;
+      }
+    }
+
+    /* body text only */
+    #blogGrid p,
+    #blogGrid li,
+    #blogGrid span,
+    #blogGrid a,
+    #blogGrid div {
+      font-size: 16px !important;
+      font-family: "Plus Jakarta Sans", sans-serif !important;
+      font-weight: 400 !important;
+      line-height: 1.8 !important;
+      color: #334155 !important;
+      margin-bottom: 16px !important;
+    }
+
+    /* h1 = 36px */
+    #blogGrid h1 {
+      font-size: 36px !important;
+      font-weight: 700 !important;
+      line-height: 1.2 !important;
+      font-family: "Gloock", serif !important;
+      color: #000 !important;
+      margin-bottom: 16px !important;
+    }
+
+    /* h2 = 24px */
+    #blogGrid h2 {
+      font-size: 24px !important;
+      font-weight: 700 !important;
+      line-height: 1.3 !important;
+      font-family: "Gloock", serif !important;
+      color: #000 !important;
+      margin-bottom: 14px !important;
+    }
+
+    /* h3 = 18.72px */
+    #blogGrid h3 {
+      font-size: 18.72px !important;
+      font-weight: 600 !important;
+      line-height: 1.4 !important;
+      font-family: "Gloock", serif !important;
+      color: #000 !important;
+      margin-bottom: 12px !important;
+    }
+
+    /* h4 = 16px */
+    #blogGrid h4 {
+      font-size: 16px !important;
+      font-weight: 600 !important;
+      line-height: 1.4 !important;
+      font-family: "Gloock", serif !important;
+      color: #000 !important;
+      margin-bottom: 10px !important;
+    }
+
+    /* h5 = 13.28px */
+    #blogGrid h5 {
+      font-size: 13.28px !important;
+      font-weight: 600 !important;
+      line-height: 1.5 !important;
+      font-family: "Gloock", serif !important;
+      color: #000 !important;
+      margin-bottom: 8px !important;
+    }
+
+    /* h6 = 10.72px */
+    #blogGrid h6 {
+      font-size: 10.72px !important;
+      font-weight: 600 !important;
+      line-height: 1.5 !important;
+      font-family: "Gloock", serif !important;
+      color: #000 !important;
+      margin-bottom: 6px !important;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- header -->
+  <section class="relative w-full min-h-[420px] md:min-h-[540px] overflow-hidden">
+    <!-- Background -->
+    <img src="/images/blog-banner.webp" width="1920" height="720" alt="Blog Banner" fetchpriority="high" decoding="async" class="absolute inset-0 w-full h-full object-cover" />
+
+    <!-- Overlays -->
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-900/40 to-transparent"></div>
+    <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-slate-950/60 to-transparent"></div>
+
+    <!-- Header -->
+    <div id="header" class="relative z-30"></div>
+
+    <!-- Content -->
+    <div class="relative z-20 flex items-center justify-center text-center min-h-[420px] md:min-h-[540px]">
+      <div class="max-w-7xl mx-auto w-full px-6 lg:px-10 pt-28 md:pt-32">
+        <div class="max-w-3xl mx-auto">
+          <!-- Badge -->
+          
+
+          <!-- Title -->
+          <h1 class="text-white text-xl md:text-3xl leading-tight gloock-regular mb-6">
+            How to Do Independent Trekking in Nepal After the Solo Ban
+          </h1>
+
+          <!-- Description -->
+          <!-- <p
+              class="text-white/85 text-base sm:text-lg md:text-xl leading-8 plus-jakarta-sans mb-8 max-w-2xl mx-auto"
+            >
+              Explore trekking stories, travel tips, destination guides, and
+              adventure insights from Glacier Treks And Adventure to help you
+              plan your next unforgettable journey.
+            </p> -->
+
+          <!-- Breadcrumb -->
+          <!-- <div
+              class="flex flex-wrap justify-center items-center gap-3 text-white/90 plus-jakarta-sans text-sm sm:text-base"
+            >
+              <a
+                href="/"
+                class="hover:text-[#d5e880] transition duration-300"
+                >Home</a
+              >
+              <span class="text-white/40">/</span>
+              <span class="text-[#d5e880] font-medium">Blog</span>
+            </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section -->
+
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-[85%] mx-auto">
+      <div class="grid grid-cols-1 xl:grid-cols-12 gap-10">
+        <div id="blogGrid" class="xl:col-span-8 space-y-8">
+          <!-- Blog content will be loaded here dynamically -->
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="xl:col-span-4">
+          <div class="sticky top-24 flex flex-col gap-6">
+            <!-- Author Card -->
+            <!-- <div class="bg-[#f8faf7] border border-[#e7eddc] rounded-[28px] p-6 shadow-sm">
+                            <h3 class="gloock-regular text-2xl text-slate-900 mb-5">
+                                About Author
+                            </h3>
+
+                            <div class="flex items-center gap-4 mb-4">
+                                <img src="./images/profile.webp" alt="Author"
+                                    class="w-16 h-16 rounded-full object-cover border border-slate-200">
+                                <div>
+                                    <h4 class="text-slate-900 text-lg font-semibold plus-jakarta-sans">Swarup Mahata
+                                    </h4>
+                                    <p class="text-slate-500 text-sm plus-jakarta-sans">Travel Writer</p>
+                                </div>
+                            </div>
+
+                            <p class="plus-jakarta-sans text-slate-600 leading-7 text-sm">
+                                Passionate about mountain travel, trekking culture, and practical adventure guidance for
+                                first-time and experienced explorers.
+                            </p>
+                        </div> -->
+
+            <!-- Recent Posts -->
+            <div class="bg-white border border-slate-200 rounded-[28px] p-6 shadow-sm">
+              <h3 class="gloock-regular text-2xl text-slate-900 mb-5">
+                Recent Posts
+              </h3>
+
+              <div id="recentblog" class="flex flex-col gap-5"></div>
+            </div>
+            <div
+              class="flex flex-col md:flex-row md:items-center md:justify-between gap-5 pt-8 pl-8 border-t border-slate-200">
+              <div id="socialLink" class="flex items-center gap-3">
+                <!-- <span
+                    class="plus-jakarta-sans text-sm font-semibold text-slate-900"
+                    >Share:</span
+                  >
+
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full bg-slate-100 text-slate-700 flex items-center justify-center hover:bg-[#d5e880] hover:text-slate-900 transition duration-300"
+                  >
+                    f
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full bg-slate-100 text-slate-700 flex items-center justify-center hover:bg-[#d5e880] hover:text-slate-900 transition duration-300"
+                  >
+                    x
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full bg-slate-100 text-slate-700 flex items-center justify-center hover:bg-[#d5e880] hover:text-slate-900 transition duration-300"
+                  >
+                    in
+                  </a> -->
+              </div>
+            </div>
+
+            <!-- Category Box -->
+            <div class="bg-white border border-slate-200 rounded-[28px] p-6 shadow-sm">
+              <h3 class="gloock-regular text-2xl text-slate-900 mb-5">
+                Blog Category
+              </h3>
+
+              <div id="blogCategory" class="flex flex-col gap-3 plus-jakarta-sans">
+                <a href="#"
+                  class="flex items-center justify-between px-4 py-3 rounded-2xl bg-slate-50 hover:bg-[#d5e880]/20 transition">
+                  <span class="text-slate-700">Travel Guide</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <div id="footer"></div>
+  <script src="/includes/script.js"></script>
+  <script src="/config/apiConfig.js"></script>
+  <script src="/controllers/function.js"></script>
+  <script src="/controllers/single-blog.js"></script>
+    <script src="/controllers/users.js"></script>
+   <script src="/controllers/footerdetails.js"></script>
+     <script src="/includes/common.js"></script>
+
+
+  <!-- for pagination  -->
+
+  <!-- script added heere -->
+  <script>
+    // Load Includes
+        
+        loadInclude("/includes/header.html", "header").then(() => {
+      toggleBtn(); //function are defined in common.js
+      loadCategory(); //function are defined in comoon.js
+      loadAboutusToggle(); //function are defined in common.js
+      upcomingdropdown(); //function are defined in common.js
+      //log out btn
+      document
+        .getElementById("logout-btn")
+        .addEventListener("click", function () {
+          logout(); //function are defined in users.js
+        });
+    });
+    // loadInclude('includes/footer.html', 'footer'); //function are defined in function.js
+    loadInclude("/includes/footer.html", "footer").then(() => {
+      loadSettings(); // function are defined in footerdetails.js
+       footerCategoryList(); //function are defined in footerdetails.js
+      footerUpcomingDropdown(); //function are defined in footerdetails.js
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      let slug = null;
+
+      // ✅ 1. Try new URL format (/singleblog.html/slug)
+      const pathParts = window.location.pathname.split("/");
+      slug = pathParts[pathParts.length - 1];
+
+      // ❗ If only "singleblog.html" then ignore
+      if (!slug || slug === "blog.html") {
+        slug = null;
+      }
+
+      // ✅ 2. Fallback (old ?slug=)
+      if (!slug) {
+        const params = new URLSearchParams(window.location.search);
+        slug = params.get("slug");
+      }
+
+      if (slug) {
+        console.log("Slug:", slug);
+        loadBlogDetails(slug);
+      } else {
+        console.error("No blog Slug provided in URL.");
+      }
+
+      loadRecentBlogs();
+    });
+
+    //  document.addEventListener("DOMContentLoaded", function () {
+    //      const params = new URLSearchParams(window.location.search);
+    //      const slug = params.get("slug");
+    //       if (slug) {
+
+    //     loadBlogDetails(slug);
+    // } else {
+    //     console.error("No blog Slug provided in URL.");
+    // }
+    //     loadRecentBlogs();
+    // });
+  </script>
+
+  <script>
+    const tripTabs = document.querySelectorAll(".trip-tab");
+    const tripContents = document.querySelectorAll(".trip-content");
+
+    tripTabs.forEach((tab) => {
+      tab.addEventListener("click", function () {
+        const target = this.getAttribute("data-tab");
+
+        tripContents.forEach((content) => content.classList.add("hidden"));
+
+        tripTabs.forEach((btn) => {
+          btn.classList.remove(
+            "bg-[#d5e880]",
+            "text-slate-900",
+            "border-[#d5e880]",
+            "shadow-sm",
+          );
+          btn.classList.add("bg-white", "text-slate-700", "border-slate-200");
+        });
+
+        document.getElementById(target).classList.remove("hidden");
+
+        this.classList.remove(
+          "bg-white",
+          "text-slate-700",
+          "border-slate-200",
+        );
+        this.classList.add(
+          "bg-[#d5e880]",
+          "text-slate-900",
+          "border-[#d5e880]",
+          "shadow-sm",
+        );
+      });
+    });
+
+    const mainTripImage = document.getElementById("mainTripImage");
+    const thumbButtons = document.querySelectorAll(".thumb-btn");
+
+    thumbButtons.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        const newImage = this.getAttribute("data-image");
+        mainTripImage.src = newImage;
+
+        thumbButtons.forEach((item) => {
+          item.classList.remove("border-[#d5e880]");
+          item.classList.add("border-transparent");
+        });
+
+        this.classList.remove("border-transparent");
+        this.classList.add("border-[#d5e880]");
+      });
+    });
+  </script>
+</body>
+<!-- Author -->
+<!-- <div class="flex items-center gap-4 pb-8 mb-8 border-b border-slate-200">
+                        <img src="./images/profile.webp" alt="Author"
+                            class="w-14 h-14 rounded-full object-cover border border-slate-200 shadow-sm">
+                        <div>
+                            <h4 class="text-slate-900 text-base font-semibold plus-jakarta-sans">Swarup Mahata</h4>
+                            <p class="text-slate-500 text-sm plus-jakarta-sans">Travel Writer & Trekking Enthusiast</p>
+                        </div>
+                    </div> -->
+
+<!-- <div class="flex flex-wrap items-center gap-3">
+                            <span class="plus-jakarta-sans text-sm font-semibold text-slate-900">Tags:</span>
+
+                            <a href="#"
+                                class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm plus-jakarta-sans hover:bg-[#d5e880] hover:text-slate-900 transition duration-300">
+                                Trekking
+                            </a>
+
+                            <a href="#"
+                                class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm plus-jakarta-sans hover:bg-[#d5e880] hover:text-slate-900 transition duration-300">
+                                Nepal
+                            </a>
+
+                            <a href="#"
+                                class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm plus-jakarta-sans hover:bg-[#d5e880] hover:text-slate-900 transition duration-300">
+                                Travel Guide
+                            </a>
+                        </div> -->
+
+</html>

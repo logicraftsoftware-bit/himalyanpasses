@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himalayan Passes | Trusted Trekking & Adventure Travel in Sikkim</title>
+    <meta name="description"
+        content="Discover the best trekking packages in Sikkim, Darjeeling, and North Bengal with Himalayan Passes. Explore Himalayan trails, camping tours, and guided mountain adventures.">
+    <meta name="keywords"
+        content="trekking packages in Sikkim, Himalayan treks, trekking in Darjeeling, North Bengal trekking, adventure tours, mountain trekking, guided treks, Himalayan Passes">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+
+    <style>
+        .plus-jakarta-sans {
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .gloock-regular {
+            font-family: "Gloock", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        html,
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        #refundContent {
+            word-break: normal;
+            overflow-wrap: anywhere;
+            color: #334155;
+            line-height: 1.8;
+            margin: 0;
+            width: 100%;
+            max-width: 100%;
+            padding: 32px 0;
+        }
+
+        #refundContent * {
+            max-width: 100%;
+            white-space: normal !important;
+            overflow-wrap: anywhere;
+            word-break: break-word;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="relative w-full min-h-[420px] md:min-h-[540px] overflow-hidden">
+        <!-- Background -->
+        <img src="./images/refund-banner.webp" alt="Refund Policy Banner"
+            class="absolute inset-0 w-full h-full object-cover">
+
+        <!-- Overlays -->
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-900/40 to-transparent"></div>
+        <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-slate-950/60 to-transparent"></div>
+
+        <!-- Header -->
+        <div id="header" class="relative z-30"></div>
+
+        <!-- Content -->
+        <div class="relative z-20 flex items-center min-h-[420px] md:min-h-[540px]">
+            <div class="max-w-7xl mx-auto w-full px-6 lg:px-10 pt-28 md:pt-32">
+                <div class="max-w-3xl">
+                    <!-- <span
+                        class="inline-block mb-4 px-4 py-2 rounded-full bg-[#d5e880]/15 border border-[#d5e880]/30 text-[#d5e880] text-xs sm:text-sm font-semibold tracking-[2px] uppercase plus-jakarta-sans">
+                        Himalayan Passes
+                    </span> -->
+
+                    <h1
+                        class="text-white text-3xl sm:text-4xl md:text-5xl leading-tight gloock-regular mb-5">
+                        Refund Policy
+                    </h1>
+
+                    <p class="text-white/85 text-base sm:text-lg md:text-xl leading-8 plus-jakarta-sans mb-8 max-w-2xl">
+                        Please review our refund policy to understand cancellation terms, refund eligibility,
+                        booking adjustments, and the process followed by Himalayan Passes.
+                    </p>
+
+                    <!-- Breadcrumb -->
+                    <div class="flex flex-wrap items-center gap-3 text-white/90 plus-jakarta-sans text-sm sm:text-base">
+                        <a href="/" class="hover:text-[#d5e880] transition duration-300">Home</a>
+                        <span class="text-white/40">/</span>
+                        <span class="text-[#d5e880] font-medium">Refund Policy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- content -->
+    <section>
+        <div class="w-full px-4 sm:px-6 lg:px-8">
+            <div id="refundContent" class="prose max-w-none"></div>
+        </div>
+    </section>
+
+
+
+    <script src="config/apiConfig.js"></script>
+    <script src="controllers/refund.js"></script>
+    <script src="controllers/function.js"></script>
+    <script src="controllers/users.js"></script>
+    <script src="./includes/common.js"></script>
+    <script src="controllers/footerdetails.js"></script>
+    <!-- footer section -->
+    <div id="footer"></div>
+
+
+    <script>
+        // Load Includes
+
+        loadInclude("includes/header.html", "header").then(() => {
+            toggleBtn(); //function are defined in common.js
+            loadCategory(); //function are defined in comoon.js
+            loadAboutusToggle(); //function are defined in common.js
+            upcomingdropdown(); //function are defined in common.js
+            //log out btn
+            document
+                .getElementById("logout-btn")
+                .addEventListener("click", function () {
+                    logout(); //function are defined in users.js
+                });
+        });
+        // loadInclude('includes/footer.html', 'footer'); //function are defined in function.js
+        loadInclude("includes/footer.html", "footer").then(() => {
+            loadSettings(); // function are defined in footerdetails.js
+            footerCategoryList(); //function are defined in footerdetails.js
+            footerUpcomingDropdown(); //function are defined in footerdetails.js
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            loadRefundPolicy();
+        });
+    </script>
+</body>
+
+</html>

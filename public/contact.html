@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Himalayan Passes | Trusted Trekking & Adventure Travel in Sikkim</title>
+    <meta
+      name="description"
+      content="Discover the best trekking packages in Sikkim, Darjeeling, and North Bengal with Himalayan Passes. Explore Himalayan trails, camping tours, and guided mountain adventures."
+    />
+    <meta
+      name="keywords"
+      content="trekking packages in Sikkim, Himalayan treks, trekking in Darjeeling, North Bengal trekking, adventure tours, mountain trekking, guided treks, Himalayan Passes"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="icon"
+      href="./favicon/favicon.ico"
+      type="image/x-icon"
+      sizes="16x16"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloock&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./style/common.css">
+  </head>
+
+  <body>
+    <!-- header -->
+    <section
+      class="relative w-full min-h-[420px] md:min-h-[540px] overflow-hidden"
+    >
+      <!-- Background -->
+      <img
+        src="./images/contactus-banner.webp"
+        alt="Contact Us Banner"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+
+      <!-- Overlays -->
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-900/40 to-transparent"
+      ></div>
+      <div
+        class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-slate-950/60 to-transparent"
+      ></div>
+
+      <!-- Header -->
+      <div id="header" class="relative z-30"></div>
+
+      <!-- Content -->
+      <div
+        class="relative z-20 flex items-center min-h-[420px] md:min-h-[540px]"
+      >
+        <div class="max-w-7xl mx-auto w-full px-6 lg:px-10 pt-28 md:pt-32">
+          <div class="max-w-3xl">
+           
+
+            <h1
+              class="text-white text-3xl sm:text-4xl md:text-5xl leading-tight gloock-regular mb-5"
+            >
+              Contact Us
+            </h1>
+
+            <p
+              class="text-white/85 text-base sm:text-lg md:text-xl leading-8 plus-jakarta-sans mb-8 max-w-2xl"
+            >
+              Get in touch with Himalayan Passes for trekking
+              inquiries, tour planning, bookings, and expert guidance for your
+              next Himalayan journey.
+            </p>
+
+            <!-- Breadcrumb -->
+            <div
+              class="flex flex-wrap items-center gap-3 text-white/90 plus-jakarta-sans text-sm sm:text-base"
+            >
+              <a
+                href="/"
+                class="hover:text-[#d5e880] transition duration-300"
+                >Home</a
+              >
+              <span class="text-white/40">/</span>
+              <span class="text-[#d5e880] font-medium">Contact Us</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact us -->
+    <section class="py-16 md:py-24 bg-white">
+      <div class="max-w-[85%] mx-auto">
+        <!-- Top Heading -->
+        <div class="flex flex-col items-center text-center gap-3 mb-12">
+          <h3 class="gloock-regular text-3xl md:text-5xl text-slate-900">
+            Contact Us Today
+          </h3>
+          <p
+            class="plus-jakarta-sans text-slate-600 text-base md:text-lg leading-8 max-w-3xl"
+          >
+            Curabitur porta quis facilisis per donec mattis nunc hendrerit
+            malesuada parturient ac. Eu lacus natoque morbi ipsum tempor semper
+            vulputate.
+          </p>
+        </div>
+
+        <!-- Main Grid -->
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-start"
+        >
+          <!-- Left Form -->
+          <div class="bg-white rounded-3xl">
+            <form
+              class="grid grid-cols-1 md:grid-cols-2 gap-6"
+              id="contactForm"
+            >
+              <!-- Name -->
+              <div>
+                <label
+                  class="block gloock-regular text-xl md:text-2xl text-slate-900 mb-3"
+                >
+                  Your Name<span class="text-slate-500">*</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  name="fullName"
+                  class="w-full h-14 px-5 rounded-2xl border border-slate-200 bg-white text-slate-700 plus-jakarta-sans outline-none focus:border-[#d5e880] focus:ring-2 focus:ring-[#d5e880]/20 transition"
+                />
+              </div>
+
+              <!-- Phone -->
+              <div>
+                <label
+                  class="block gloock-regular text-xl md:text-2xl text-slate-900 mb-3"
+                >
+                  Phone Number<span class="text-slate-500">*</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="Phone Number"
+                  name="phone"
+                  class="w-full h-14 px-5 rounded-2xl border border-slate-200 bg-white text-slate-700 plus-jakarta-sans outline-none focus:border-[#d5e880] focus:ring-2 focus:ring-[#d5e880]/20 transition"
+                />
+              </div>
+
+              <!-- Email -->
+              <div class="md:col-span-2">
+                <label
+                  class="block gloock-regular text-xl md:text-2xl text-slate-900 mb-3"
+                >
+                  Email ID<span class="text-slate-500">*</span>
+                </label>
+                <input
+                  type="email"
+                  placeholder="Mail Address"
+                  name="email"
+                  class="w-full h-14 px-5 rounded-2xl border border-slate-200 bg-white text-slate-700 plus-jakarta-sans outline-none focus:border-[#d5e880] focus:ring-2 focus:ring-[#d5e880]/20 transition"
+                />
+              </div>
+
+              <!-- Message -->
+              <div class="md:col-span-2">
+                <label
+                  class="block gloock-regular text-xl md:text-2xl text-slate-900 mb-3"
+                >
+                  Message<span class="text-slate-500">*</span>
+                </label>
+                <textarea
+                  rows="6"
+                  placeholder="Write your message here..."
+                  name="message"
+                  class="w-full px-5 py-4 rounded-2xl border border-slate-200 bg-white text-slate-700 plus-jakarta-sans outline-none resize-none focus:border-[#d5e880] focus:ring-2 focus:ring-[#d5e880]/20 transition"
+                ></textarea>
+              </div>
+
+              <!-- Submit -->
+              <div class="md:col-span-2 pt-2">
+                <button
+                  type="submit"
+                  class="w-full bg-[#d5e880] text-slate-900 py-4 rounded-l-2xl rounded-r-full font-semibold plus-jakarta-sans text-lg border border-[#d5e880] hover:bg-white hover:border-[#d5e880] hover:shadow-lg transition-all duration-300"
+                >
+                  Submit Now
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Right Contact Info -->
+          <div class="lg:pl-8 lg:border-l lg:border-slate-200">
+            <p
+              class="plus-jakarta-sans uppercase tracking-[3px] text-sm font-semibold text-[#6b7d22] mb-4"
+            >
+              Reach Out
+            </p>
+
+            <h3
+              class="gloock-regular text-3xl sm:text-4xl md:text-5xl leading-tight text-slate-900 mb-6"
+            >
+              We’d Love To Hear
+            </h3>
+
+            <p
+              class="plus-jakarta-sans text-slate-600 text-base md:text-lg leading-8 mb-10 max-w-xl"
+            >
+              Gravida sed sem aliquam venenatis; habitant accumsan natoque
+              suspendisse metus ut. Mus lacinia commodo et etiam nascetur.
+            </p>
+
+            <div class="flex flex-col gap-8">
+              <!-- Office -->
+              <div class="flex items-start gap-5">
+                <div
+                  class="w-16 h-16 rounded-xl bg-[#d5e880] flex items-center justify-center shrink-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-8 h-8 text-slate-900"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4
+                    class="gloock-regular text-2xl md:text-2xl text-slate-900 mb-2"
+                  >
+                    Address
+                  </h4>
+                  <p
+                    id="address"
+                    class="plus-jakarta-sans text-slate-600 text-lg leading-8"
+                  >
+                    <!-- Yuksom Bazar Main Road Near Hotel Yangri Gang, West Sikkim, Pin no - 737113 -->
+                  </p>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="flex items-start gap-5">
+                <div
+                  class="w-16 h-16 rounded-xl bg-[#d5e880] flex items-center justify-center shrink-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-8 h-8 text-slate-900"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 5a2 2 0 012-2h3.28a2 2 0 011.9 1.37l.82 2.46a2 2 0 01-.45 2.11l-1.27 1.27a16.04 16.04 0 006.57 6.57l1.27-1.27a2 2 0 012.11-.45l2.46.82A2 2 0 0121 15.72V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4
+                    class="gloock-regular text-2xl md:text-2xl text-slate-900 mb-2"
+                  >
+                    Phone
+                  </h4>
+                  <p
+                    id="phone"
+                    class="plus-jakarta-sans text-slate-600 text-lg leading-8"
+                  >
+                    <!-- +91 74072 48200 -->
+                  </p>
+                </div>
+              </div>
+
+              <!-- whatapps -->
+              <div class="flex items-start gap-5">
+                <div
+                  class="w-16 h-16 rounded-xl bg-[#d5e880] flex items-center justify-center shrink-0"
+                >
+                  <!-- WhatsApp SVG -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 32 32"
+                    class="w-8 h-8 fill-slate-900"
+                  >
+                    <path
+                      d="M16.004 3.2c-7.07 0-12.8 5.73-12.8 12.8 0 2.25.59 4.45 1.7 6.38L3.2 28.8l6.58-1.67a12.75 12.75 0 0 0 6.22 1.6h.01c7.07 0 12.8-5.73 12.8-12.8S23.074 3.2 16.004 3.2zm0 23.27c-1.9 0-3.77-.51-5.41-1.47l-.39-.23-3.9.99 1.04-3.8-.25-.39a10.6 10.6 0 1 1 8.91 4.9zm5.87-7.93c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.52-.16-.74.16-.22.32-.85 1.05-1.04 1.26-.19.21-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.6-.95-.84-1.6-1.88-1.79-2.2-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.11-.21.05-.41-.03-.57-.08-.16-.74-1.79-1.01-2.45-.26-.63-.53-.54-.74-.55h-.63c-.21 0-.55.08-.83.38-.28.3-1.09 1.06-1.09 2.58 0 1.52 1.12 2.99 1.28 3.2.16.21 2.2 3.36 5.33 4.7.74.32 1.32.51 1.77.65.74.23 1.41.2 1.94.12.59-.09 1.9-.78 2.17-1.53.27-.75.27-1.4.19-1.53-.08-.13-.29-.21-.61-.38z"
+                    />
+                  </svg>
+                </div>
+
+                <div>
+                  <h4
+                    class="gloock-regular text-2xl md:text-2xl text-slate-900 mb-2"
+                  >
+                    WhatsApp
+                  </h4>
+                  <p
+                    id="whatsapp"
+                    class="plus-jakarta-sans text-slate-600 text-lg leading-8"
+                  >
+                    <!-- +91 74072 48200 -->
+                  </p>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="flex items-start gap-5">
+                <div
+                  class="w-16 h-16 rounded-xl bg-[#d5e880] flex items-center justify-center shrink-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-8 h-8 text-slate-900"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8m-18 8h18a2 2 0 002-2V8a2 2 0 00-2-2H3a2 2 0 00-2 2v6a2 2 0 002 2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4
+                    class="gloock-regular text-2xl md:text-2xl text-slate-900 mb-2"
+                  >
+                    Email
+                  </h4>
+                  <p
+                    id="email"
+                    class="plus-jakarta-sans text-slate-600 text-lg leading-8"
+                  >
+                    <!-- kiran.yuksom@gmail.com -->
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-[#f8faf7]">
+      <div class="max-w-[85%] mx-auto">
+        <div class="max-w-3xl mx-auto text-center mb-10 md:mb-14">
+          <p
+            class="inline-block px-4 py-2 rounded-full bg-[#d5e880]/20 text-[#6b7d22] text-xs sm:text-sm font-semibold tracking-[2px] uppercase plus-jakarta-sans mb-4"
+          >
+            Map Location
+          </p>
+
+          <h2
+            class="gloock-regular text-3xl md:text-5xl leading-tight text-slate-900 mb-4"
+          >
+            Find Us Easily
+          </h2>
+
+          <p
+            class="plus-jakarta-sans text-base md:text-lg leading-8 text-slate-600"
+          >
+            Discover our office location and connect with us for your next
+            trekking adventure.
+          </p>
+        </div>
+
+        <div
+          class="w-full relative rounded-[30px] overflow-hidden border border-[#e7eddc] shadow-sm hover:shadow-2xl transition-all duration-500"
+        >
+          <div
+            id="gMap"
+            class="w-full h-[420px] md:h-[520px] [&_iframe]:w-full [&_iframe]:h-full [&_iframe]:border-0"
+          >
+        </div>
+
+          <!-- Floating Card -->
+          <div
+            class="hidden md:block absolute left-4 right-4 bottom-4 md:left-8 md:bottom-8 md:max-w-md bg-white/95 backdrop-blur-md rounded-2xl border border-[#e7eddc] shadow-xl p-5 md:p-6"
+          >
+            <div class="flex items-start gap-4">
+              <div
+                class="w-14 h-14 rounded-2xl bg-[#d5e880] flex items-center justify-center shrink-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-7 h-7 text-slate-900"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+              </div>
+
+              <div>
+                <h3 class="gloock-regular text-2xl text-slate-900 mb-2">
+                  Glacier Treks & Adventure
+                </h3>
+                <p
+                  class="plus-jakarta-sans text-slate-600 leading-7 text-sm md:text-base mb-4"
+                >
+                  Yuksom Bazar Main Road Near Hotel Yangri Gang, West Sikkim,
+                  Pin no - 737113
+                </p>
+
+                <a
+                  href="https://maps.google.com"
+                  target="_blank"
+                  class="inline-flex items-center gap-2 bg-[#d5e880] text-slate-900 px-5 py-3 rounded-l-full rounded-r-2xl font-semibold plus-jakarta-sans border border-[#d5e880] hover:bg-white hover:border-[#d5e880] transition-all duration-300"
+                >
+                  <span>Get Directions</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <div id="footer"></div>
+    <script src="config/apiConfig.js"></script>
+    <script src="controllers/function.js"></script>
+    <script src="controllers/contact.js"></script>
+    <script src="controllers/users.js"></script>
+    <script src="/includes/common.js"></script>
+    <script src="controllers/footerdetails.js"></script>
+
+    <!-- script added heere -->
+    <script>
+      // Load Includes
+      loadInclude("includes/header.html", "header").then(() => {
+        toggleBtn(); //function are defined in common.js
+        loadCategory(); //function are defined in common.js
+        loadAboutusToggle(); //function are defined in common.js
+        upcomingdropdown(); //function are defined in common.js
+        document
+          .getElementById("logout-btn")
+          .addEventListener("click", function () {
+            logout();
+          });
+      });
+
+      loadInclude("includes/footer.html", "footer").then(() => {
+        loadSettings(); // function are defined in footerdetails.js
+        footerCategoryList(); //function are defined in footerdetails.js
+        footerUpcomingDropdown(); //function are defined in footerdetails.js
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        loadContactInfo();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+.plus-jakarta-sans {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gloock-regular {
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#tourIncludeViewport::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #tourIncludeViewport {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 2px;
+  }
+
+  #tourIncludeTrack {
+    width: max-content;
+  }
+
+  .tour-include-card {
+    scroll-snap-align: start;
+  }
+}
+
+.main-tabs::-webkit-scrollbar,
+.inner-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.tab-btn {
+  background: white;
+  color: #243146;
+}
+
+/* Active State */
+.tab-btn.active {
+  background: #d5e880;
+  color: #243146;
+  box-shadow: 0 8px 20px rgba(213, 232, 128, 0.35);
+}
+
+/* Hover */
+.tab-btn:hover {
+  background: rgba(213, 232, 128, 0.4);
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.itinerary-btn {
+  background: white;
+  color: #243146;
+}
+
+.itinerary-btn.active {
+  background: #d5e880;
+  color: #243146;
+  box-shadow: 0 8px 20px rgba(213, 232, 128, 0.35);
+}
+
+.itinerary-btn:hover {
+  background: rgba(213, 232, 128, 0.4);
+}
+
+.detail-tab {
+  background: #fff;
+  color: #243146;
+}
+
+.detail-tab.active {
+  background: #d5e880;
+  color: #243146;
+  box-shadow: 0 8px 20px rgba(213, 232, 128, 0.35);
+}
+
+.detail-tab:hover {
+  background: rgba(213, 232, 128, 0.4);
+}
+
+.info-tab {
+  background: #fff;
+  color: #243146;
+}
+
+.info-tab.active {
+  background: #d5e880;
+  color: #243146;
+  box-shadow: 0 8px 20px rgba(213, 232, 128, 0.35);
+}
+
+.info-tab:hover {
+  background: rgba(213, 232, 128, 0.4);
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

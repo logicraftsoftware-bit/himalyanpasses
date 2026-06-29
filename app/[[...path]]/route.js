@@ -4,7 +4,8 @@ import path from "node:path";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const rootDir = process.cwd();
+const projectRoot = process.cwd();
+const publicRoot = path.join(projectRoot, "public");
 
 const cleanPageRoutes = new Map([
   ["aboutus", "aboutus.html"],
@@ -66,9 +67,20 @@ const publicAssetDirs = new Set([
 
 function safePath(relativePath) {
   const normalized = path.normalize(relativePath).replace(/^(\.\.(\\|\/|$))+/, "");
-  const fullPath = path.join(rootDir, normalized);
+  const fullPath = path.join(publicRoot, normalized);
 
-  if (!fullPath.startsWith(rootDir)) {
+  if (!fullPath.startsWith(publicRoot)) {
+    return null;
+  }
+
+  return fullPath;
+}
+
+function legacySafePath(relativePath) {
+  const normalized = path.normalize(relativePath).replace(/^(\.\.(\\|\/|$))+/, "");
+  const fullPath = path.join(projectRoot, normalized);
+
+  if (!fullPath.startsWith(projectRoot)) {
     return null;
   }
 
@@ -99,20 +111,32 @@ function withBaseTag(html) {
   return html.replace(/<head([^>]*)>/i, '<head$1><base href="/">');
 }
 
-async function fileExists(relativePath) {
-  const fullPath = safePath(relativePath);
-  if (!fullPath) return false;
+async function resolveFilePath(relativePath) {
+  const candidates = [
+    safePath(relativePath),
+    legacySafePath(relativePath)
+  ].filter(Boolean);
 
-  try {
-    const fileStat = await stat(fullPath);
-    return fileStat.isFile();
-  } catch {
-    return false;
+  for (const fullPath of candidates) {
+    try {
+      const fileStat = await stat(fullPath);
+      if (fileStat.isFile()) {
+        return fullPath;
+      }
+    } catch {
+      // Try the next safe location.
+    }
   }
+
+  return null;
+}
+
+async function fileExists(relativePath) {
+  return Boolean(await resolveFilePath(relativePath));
 }
 
 async function serveFile(relativePath) {
-  const fullPath = safePath(relativePath);
+  const fullPath = await resolveFilePath(relativePath);
   if (!fullPath) {
     return new Response("Not found", { status: 404 });
   }

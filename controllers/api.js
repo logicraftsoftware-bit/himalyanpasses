@@ -4,6 +4,68 @@
   let current = 0;
   let interval = null;
   let certificateSwiper = null;
+  let swiperAssetsPromise = null;
+
+  function loadScriptOnce(src) {
+    return new Promise((resolve, reject) => {
+      const existing = document.querySelector(`script[src="${src}"]`);
+      if (existing) {
+        if (existing.dataset.loaded === "true") {
+          resolve();
+          return;
+        }
+        existing.addEventListener("load", resolve, { once: true });
+        existing.addEventListener("error", reject, { once: true });
+        return;
+      }
+
+      const script = document.createElement("script");
+      script.src = src;
+      script.async = true;
+      script.onload = () => {
+        script.dataset.loaded = "true";
+        resolve();
+      };
+      script.onerror = reject;
+      document.head.appendChild(script);
+    });
+  }
+
+  function loadStyleOnce(href) {
+    return new Promise((resolve, reject) => {
+      const existing = document.querySelector(`link[href="${href}"]`);
+      if (existing) {
+        resolve();
+        return;
+      }
+
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = href;
+      link.onload = resolve;
+      link.onerror = reject;
+      document.head.appendChild(link);
+    });
+  }
+
+  function loadSwiperAssets() {
+    if (!swiperAssetsPromise) {
+      swiperAssetsPromise = Promise.all([
+        loadStyleOnce("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"),
+        loadScriptOnce("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js")
+      ]);
+    }
+
+    return swiperAssetsPromise;
+  }
+
+  function runWhenIdle(callback, timeout = 2500) {
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(callback, { timeout });
+    } else {
+      setTimeout(callback, Math.min(timeout, 1200));
+    }
+  }
 
   // ================= SLIDER =================
   async function loadSliders() {
@@ -19,7 +81,7 @@
       );
       if (!container) return;
 
-      container.innerHTML = "";
+      const fallbackSlide = container.querySelector(".slide");
       sliderData = [];
 
       if (!Array.isArray(data)) return;
@@ -43,6 +105,11 @@
       if (!sliderData.length) return;
 
       const createSlide = (item, i) => {
+        if (i === 0 && fallbackSlide) {
+          fallbackSlide.alt = item.heading || "Himalayan Passes";
+          return;
+        }
+
         const img = document.createElement("img");
         img.src = item.image;
         img.alt = item.heading || "Himalayan Passes";
@@ -71,11 +138,7 @@
         startSlider();
       };
 
-      if ("requestIdleCallback" in window) {
-        requestIdleCallback(loadDeferredSlides, { timeout: 2500 });
-      } else {
-        setTimeout(loadDeferredSlides, 1200);
-      }
+      runWhenIdle(loadDeferredSlides);
 
       current = 0;
       updateSliderText();
@@ -149,6 +212,8 @@
   // ================= CERTIFICATES =================
   async function loadCertificates() {
     try {
+      await loadSwiperAssets();
+
       const endpoint = "/api/certificates";
       const url = API_CONFIG.getUrl(endpoint);
 
@@ -256,17 +321,10 @@
   document.addEventListener(
     "DOMContentLoaded",
     function () {
-      const runWhenIdle = (callback) => {
-        if ("requestIdleCallback" in window) {
-          requestIdleCallback(callback, { timeout: 2500 });
-        } else {
-          setTimeout(callback, 1200);
-        }
-      };
-
       loadSliders();
       loadAnnouncement();
       runWhenIdle(loadCertificates);
+      runWhenIdle(() => loadScriptOnce("https://elfsightcdn.com/platform.js"), 4500);
     },
   );
 })();

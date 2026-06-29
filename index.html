@@ -10,18 +10,13 @@
   <meta name="keywords"
     content="trekking packages in Sikkim, Himalayan treks, trekking in Darjeeling, North Bengal trekking, adventure tours, mountain trekking, guided treks, Glacier Treks & Adventure" />
   <link rel="preconnect" href="https://himalayanpassesbackend.logicraftsoftware.com" crossorigin />
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon" sizes="16x16" />
+  <link rel="preload" as="image" href="/images/wallaper-photo.webp" fetchpriority="high" />
   <link rel="stylesheet" href="/style/tailwind.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
     rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
 
   <script src="config/apiConfig.js" defer></script>
   <script src="controllers/api.js?v=2" defer></script>
@@ -160,7 +155,11 @@
   <div class="relative overflow-hidden h-[60vh] md:h-screen">
     <!-- Background Slider -->
     <div id="heroSlider" class="absolute inset-0">
-      <div id="slider-container" class="relative w-full h-full"></div>
+      <div id="slider-container" class="relative w-full h-full">
+        <img src="/images/wallaper-photo.webp" width="1920" height="900" alt="Himalayan Passes adventure"
+          fetchpriority="high" decoding="async"
+          class="slide absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100" />
+      </div>
     </div>
 
     <!-- Dark Overlay -->
@@ -182,11 +181,13 @@
           <!-- Heading -->
           <h1 id="slider-heading"
             class="text-white text-2xl sm:text-4xl md:text-6xl lg:text-7xl leading-snug sm:leading-tight mb-3 md:mb-6 gloock-regular">
+            Explore the World, One Trail at a Time
           </h1>
 
           <!-- Paragraph -->
           <p id="slider-subtype"
             class="text-white/85 text-sm sm:text-base md:text-xl leading-6 sm:leading-7 md:leading-8 mb-5 md:mb-10 max-w-2xl mx-auto plus-jakarta-sans px-2 sm:px-0">
+            Experience breathtaking mountain trails, peaceful valleys, and unforgettable journeys with our professional trekking team.
           </p>
 
           <!-- Buttons -->
@@ -929,7 +930,6 @@
 
       <!-- Review Widget -->
       <div class="mt-1">
-        <script src="https://elfsightcdn.com/platform.js" async></script>
         <div class="elfsight-app-c4ab3217-e3c6-4495-91d1-6730f00a4658" data-elfsight-app-lazy></div>
       </div>
     </div>

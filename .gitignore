@@ -8,3 +8,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+backend/**/.env
+backend/**/.git/
+backend/**/node_modules/
+backend/frontend/dist/
+backend/backend/scratch/

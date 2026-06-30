@@ -1,6 +1,6 @@
 const API_CONFIG = {
     // BASE_URL: "https://glacier-treks-adventures-admin-back.vercel.app",
-    BASE_URL: "https://himalayanpassesbackend.logicraftsoftware.com",
+    BASE_URL: "",
 
     ENDPOINTS: {
         FAQS: "/api/faqs",

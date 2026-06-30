@@ -57,6 +57,7 @@ const contentTypes = new Map([
 ]);
 
 const publicAssetDirs = new Set([
+  "backend",
   "config",
   "controllers",
   "favicon",
@@ -167,6 +168,10 @@ function resolveHtmlRoute(pathname) {
   }
 
   const parts = routePath.split("/");
+
+  if (parts[0] === "backend") {
+    return "backend/index.html";
+  }
 
   if (parts[0] === "blog" && parts[1]) {
     return "blog.html";

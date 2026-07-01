@@ -103,12 +103,12 @@ export default function Sidebar({ collapsed, onToggle }) {
       <div className="h-16 flex items-center justify-center px-4 border-b border-gray-200">
         {collapsed ? (
           <div className="w-9 h-9 rounded-lg overflow-hidden">
-            <img src="/logo.jpeg" alt="logo" className="w-full h-full object-contain" />
+            <img src="/backend/logo.jpeg" alt="logo" className="w-full h-full object-contain" />
           </div>
         ) : (
           <div className="flex items-center cursor-pointer" onClick={() => navigate('/')}>
             <div className="w-14 h-14 rounded-lg overflow-hidden mr-2">
-              <img src="/logo.jpeg" alt="logo" className="w-full h-full object-contain" />
+              <img src="/backend/logo.jpeg" alt="logo" className="w-full h-full object-contain" />
             </div>
           </div>
         )}

@@ -132,7 +132,7 @@ function AppRoutes() {
 function App() {
   return (
     <AuthProvider>
-      <Router>
+      <Router basename="/backend">
         <AppRoutes />
       </Router>
     </AuthProvider>

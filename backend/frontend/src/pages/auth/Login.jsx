@@ -30,7 +30,7 @@ export default function Login() {
           <div className="flex justify-center mb-6">
               <div className="w-28 h-28 rounded-lg overflow-hidden">
       <img
-        src="/logo.jpeg"
+        src="/backend/logo.jpeg"
         alt="logo"
         className="w-full h-full object-contain"
       />
